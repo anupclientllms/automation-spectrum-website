@@ -1,0 +1,719 @@
+/* =========================================================
+   AUTOMATION SPECTRUM — INTELLECTUAL PROPERTY
+   ========================================================= */
+
+.as-ip-page {
+  --ip-bg: #050914;
+  --ip-panel: rgba(12, 21, 39, 0.72);
+  --ip-border: rgba(148, 163, 184, 0.13);
+  --ip-text: #f8fafc;
+  --ip-muted: #8f9bb1;
+  --ip-cyan: #67e8f9;
+  --ip-blue: #7da7ff;
+  --ip-violet: #aa91ff;
+  --ip-green: #5eead4;
+
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--ip-text);
+  background: var(--ip-bg);
+}
+
+.as-ip-page *,
+.as-ip-page *::before,
+.as-ip-page *::after {
+  box-sizing: border-box;
+}
+
+.as-ip-container {
+  width: min(1500px, calc(100% - 72px));
+  margin-inline: auto;
+}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.as-ip-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0 90px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.09);
+  background:
+    linear-gradient(
+      130deg,
+      rgba(8, 29, 48, 0.98),
+      rgba(19, 15, 48, 0.96)
+    );
+  isolation: isolate;
+}
+
+.as-ip-hero::before {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  content: "";
+  opacity: 0.2;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 95%);
+}
+
+.as-ip-hero__glow {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.as-ip-hero__glow--one {
+  top: -150px;
+  left: -140px;
+  width: 430px;
+  height: 430px;
+  background: rgba(34, 211, 238, 0.11);
+}
+
+.as-ip-hero__glow--two {
+  right: -160px;
+  bottom: -230px;
+  width: 520px;
+  height: 520px;
+  background: rgba(139, 92, 246, 0.13);
+}
+
+.as-ip-back {
+  display: inline-flex;
+  align-items: center;
+  color: #8492a7;
+  font-size: 0.75rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    color 170ms ease,
+    transform 170ms ease;
+  gap: 8px;
+}
+
+.as-ip-back:hover {
+  transform: translateX(-3px);
+  color: #d5e0ec;
+}
+
+.as-ip-hero__badge {
+  display: inline-flex;
+  min-height: 34px;
+  margin-top: 50px;
+  padding: 0 13px;
+  align-items: center;
+  color: #c9f1f5;
+  border: 1px solid rgba(103, 232, 249, 0.19);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.6);
+  font-size: 0.71rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  gap: 8px;
+}
+
+.as-ip-hero h1 {
+  margin: 25px 0 0;
+  font-size: clamp(3.1rem, 6vw, 5.8rem);
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+.as-ip-hero > .as-ip-container > p {
+  max-width: 880px;
+  margin: 25px 0 0;
+  color: #a2afc1;
+  font-size: 1.03rem;
+  line-height: 1.8;
+}
+
+.as-ip-hero__meta {
+  display: flex;
+  margin-top: 38px;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.as-ip-hero__meta span {
+  display: flex;
+  color: #8592a6;
+  font-size: 0.72rem;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.as-ip-hero__meta strong {
+  color: #c7d2df;
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   CONTENT LAYOUT
+   ========================================================= */
+
+.as-ip-content {
+  padding: 90px 0 120px;
+  background:
+    radial-gradient(
+      circle at 90% 15%,
+      rgba(139, 92, 246, 0.045),
+      transparent 26%
+    ),
+    #060b15;
+}
+
+.as-ip-layout {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 290px minmax(0, 930px);
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.as-ip-navigation__inner {
+  position: sticky;
+  top: 110px;
+  padding: 25px;
+  border: 1px solid var(--ip-border);
+  border-radius: 17px;
+  background: rgba(10, 18, 34, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.as-ip-navigation__inner > span {
+  display: block;
+  margin-bottom: 18px;
+  color: #77859a;
+  font-size: 0.65rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.as-ip-navigation nav {
+  display: grid;
+  max-height: calc(100vh - 190px);
+  overflow-y: auto;
+  padding-right: 4px;
+  gap: 4px;
+}
+
+.as-ip-navigation a {
+  display: grid;
+  min-height: 38px;
+  padding: 8px 9px;
+  align-items: center;
+  color: #8491a5;
+  border-radius: 8px;
+  font-size: 0.69rem;
+  line-height: 1.35;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+  grid-template-columns: 29px 1fr;
+  gap: 5px;
+}
+
+.as-ip-navigation a:hover {
+  color: #d9e3ed;
+  background: rgba(148, 163, 184, 0.07);
+}
+
+.as-ip-navigation a small {
+  color: #5f6d82;
+  font-size: 0.57rem;
+}
+
+/* =========================================================
+   DOCUMENT
+   ========================================================= */
+
+.as-ip-document {
+  min-width: 0;
+}
+
+.as-ip-summary {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 25px 27px;
+  align-items: flex-start;
+  border: 1px solid rgba(103, 232, 249, 0.17);
+  border-radius: 17px;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(34, 211, 238, 0.055),
+      rgba(139, 92, 246, 0.04)
+    );
+  gap: 15px;
+}
+
+.as-ip-summary > svg {
+  margin-top: 2px;
+  flex: 0 0 auto;
+  color: #75dfe9;
+}
+
+.as-ip-summary strong {
+  color: #dae4ee;
+  font-size: 0.83rem;
+}
+
+.as-ip-summary p {
+  margin: 8px 0 0;
+  color: #8f9cb0;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.as-ip-document__section {
+  padding: 0 0 58px;
+  scroll-margin-top: 115px;
+}
+
+.as-ip-document__section + .as-ip-document__section {
+  padding-top: 58px;
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.as-ip-document__heading {
+  display: flex;
+  margin-bottom: 28px;
+  align-items: center;
+  gap: 15px;
+}
+
+.as-ip-document__icon {
+  display: grid;
+  width: 47px;
+  height: 47px;
+  flex: 0 0 auto;
+  color: #82dfe9;
+  border: 1px solid rgba(103, 232, 249, 0.16);
+  border-radius: 13px;
+  background: rgba(34, 211, 238, 0.06);
+  place-items: center;
+}
+
+.as-ip-document__heading small {
+  display: block;
+  margin-bottom: 5px;
+  color: #647287;
+  font-size: 0.6rem;
+  font-weight: 750;
+  letter-spacing: 0.1em;
+}
+
+.as-ip-document__heading h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 650;
+  letter-spacing: -0.027em;
+}
+
+.as-ip-document__body {
+  padding-left: 62px;
+}
+
+.as-ip-document__body p {
+  margin: 0 0 18px;
+  color: #929fb2;
+  font-size: 0.88rem;
+  line-height: 1.82;
+}
+
+.as-ip-document__body p:last-child {
+  margin-bottom: 0;
+}
+
+.as-ip-document__body ul {
+  display: grid;
+  margin: 20px 0 24px;
+  padding: 0;
+  list-style: none;
+  gap: 11px;
+}
+
+.as-ip-document__body li {
+  position: relative;
+  padding-left: 19px;
+  color: #9aa7b9;
+  font-size: 0.84rem;
+  line-height: 1.68;
+}
+
+.as-ip-document__body li::before {
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  content: "";
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--ip-cyan),
+    var(--ip-violet)
+  );
+  box-shadow: 0 0 8px rgba(103, 232, 249, 0.28);
+}
+
+.as-ip-document__body strong {
+  color: #d4dee8;
+}
+
+/* =========================================================
+   COMPANY DETAILS
+   ========================================================= */
+
+.as-ip-company-card {
+  overflow: hidden;
+  max-width: 650px;
+  margin: 24px 0;
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 15px;
+  background: rgba(12, 21, 39, 0.68);
+}
+
+.as-ip-company-card > div {
+  display: grid;
+  min-height: 60px;
+  align-items: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.as-ip-company-card > div:last-child {
+  border-bottom: 0;
+}
+
+.as-ip-company-card span,
+.as-ip-company-card strong {
+  padding: 15px 18px;
+}
+
+.as-ip-company-card span {
+  color: #748197;
+  font-size: 0.7rem;
+}
+
+.as-ip-company-card strong {
+  color: #d3dde8;
+  border-left: 1px solid rgba(148, 163, 184, 0.08);
+  font-size: 0.76rem;
+  font-weight: 650;
+}
+
+/* =========================================================
+   TECHNOLOGY GRID
+   ========================================================= */
+
+.as-ip-technology-grid {
+  display: grid;
+  margin: 25px 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.as-ip-technology-grid > div {
+  display: flex;
+  min-height: 92px;
+  padding: 17px;
+  align-items: flex-start;
+  border: 1px solid rgba(148, 163, 184, 0.11);
+  border-radius: 13px;
+  background: rgba(12, 21, 39, 0.58);
+  gap: 12px;
+}
+
+.as-ip-technology-grid svg {
+  margin-top: 2px;
+  flex: 0 0 auto;
+  color: #7edfe8;
+}
+
+.as-ip-technology-grid strong,
+.as-ip-technology-grid small {
+  display: block;
+}
+
+.as-ip-technology-grid strong {
+  color: #cdd8e4;
+  font-size: 0.76rem;
+}
+
+.as-ip-technology-grid small {
+  margin-top: 5px;
+  color: #768398;
+  font-size: 0.66rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   PRODUCT CARDS
+   ========================================================= */
+
+.as-ip-product-grid {
+  display: grid;
+  margin: 25px 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.as-ip-product-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+  padding: 27px;
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 17px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(16, 27, 48, 0.82),
+      rgba(8, 14, 28, 0.94)
+    );
+}
+
+.as-ip-product-card__icon {
+  display: grid;
+  width: 49px;
+  height: 49px;
+  margin-bottom: 34px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.68);
+  place-items: center;
+}
+
+.as-ip-product-card--energy .as-ip-product-card__icon {
+  color: var(--ip-cyan);
+}
+
+.as-ip-product-card--enterprise .as-ip-product-card__icon {
+  color: var(--ip-violet);
+}
+
+.as-ip-product-card h3 {
+  margin: 0;
+  color: #e3eaf2;
+  font-size: 1.25rem;
+}
+
+.as-ip-product-card p {
+  margin-top: 13px;
+  color: #8794a8;
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   IMPORTANT NOTICE
+   ========================================================= */
+
+.as-ip-notice {
+  display: flex;
+  margin: 25px 0;
+  padding: 21px 23px;
+  align-items: flex-start;
+  color: #f5cba7;
+  border: 1px solid rgba(251, 191, 36, 0.17);
+  border-radius: 14px;
+  background: rgba(120, 53, 15, 0.09);
+  gap: 12px;
+}
+
+.as-ip-notice svg {
+  margin-top: 2px;
+  flex: 0 0 auto;
+}
+
+.as-ip-notice p {
+  margin: 0;
+  color: #b9a795;
+  font-size: 0.79rem;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   CONTACT CARD
+   ========================================================= */
+
+.as-ip-contact-card {
+  display: flex;
+  max-width: 520px;
+  margin: 24px 0;
+  padding: 22px 24px;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid rgba(148, 163, 184, 0.13);
+  border-radius: 15px;
+  background: rgba(12, 21, 39, 0.68);
+  gap: 6px;
+}
+
+.as-ip-contact-card strong {
+  color: #dce5ef;
+  font-size: 0.84rem;
+}
+
+.as-ip-contact-card span {
+  color: #758298;
+  font-size: 0.7rem;
+}
+
+.as-ip-contact-card a {
+  margin: 7px 0;
+  color: #83e1e9;
+  font-size: 0.77rem;
+  text-decoration: none;
+}
+
+.as-ip-contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   FINAL NOTE
+   ========================================================= */
+
+.as-ip-document__footer-note {
+  display: flex;
+  margin-top: 20px;
+  padding: 25px 27px;
+  align-items: flex-start;
+  border: 1px solid rgba(94, 234, 212, 0.16);
+  border-radius: 17px;
+  background: rgba(45, 212, 191, 0.045);
+  gap: 14px;
+}
+
+.as-ip-document__footer-note > svg {
+  margin-top: 2px;
+  flex: 0 0 auto;
+  color: var(--ip-green);
+}
+
+.as-ip-document__footer-note strong {
+  color: #d9e5ed;
+  font-size: 0.82rem;
+}
+
+.as-ip-document__footer-note p {
+  margin: 7px 0;
+  color: #8997aa;
+  font-size: 0.77rem;
+  line-height: 1.65;
+}
+
+.as-ip-document__footer-note a {
+  color: #85e1e9;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.as-ip-page a:focus-visible {
+  outline: 2px solid rgba(103, 232, 249, 0.78);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .as-ip-layout {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 860px) {
+  .as-ip-container {
+    width: min(100% - 32px, 1500px);
+  }
+
+  .as-ip-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .as-ip-navigation__inner {
+    position: static;
+  }
+
+  .as-ip-navigation nav {
+    max-height: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .as-ip-hero {
+    padding: 120px 0 70px;
+  }
+
+  .as-ip-hero__badge {
+    margin-top: 36px;
+  }
+
+  .as-ip-hero__meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .as-ip-content {
+    padding: 65px 0 88px;
+  }
+
+  .as-ip-navigation nav,
+  .as-ip-technology-grid,
+  .as-ip-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .as-ip-document__heading {
+    align-items: flex-start;
+  }
+
+  .as-ip-document__body {
+    padding-left: 0;
+  }
+
+  .as-ip-company-card > div {
+    grid-template-columns: 1fr;
+  }
+
+  .as-ip-company-card strong {
+    padding-top: 0;
+    border-left: 0;
+  }
+
+  .as-ip-summary,
+  .as-ip-document__footer-note {
+    padding: 21px;
+  }
+}

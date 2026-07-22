@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://automationspectrum.com.au/sitemap.xml
