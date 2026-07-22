@@ -554,15 +554,23 @@
 
 .as-navbar__mobile-panel {
   position: fixed;
+  z-index: 999;
   top: 74px;
   right: 0;
   bottom: 0;
   left: 0;
+
+  display: block;
+  width: 100%;
+  height: calc(100dvh - 74px);
+
   visibility: hidden;
   overflow-y: auto;
   transform: translateY(-12px);
   opacity: 0;
+
   border-top: 1px solid rgba(148, 163, 184, 0.09);
+
   background:
     radial-gradient(
       circle at 90% 5%,
@@ -570,11 +578,14 @@
       transparent 30%
     ),
     rgba(5, 9, 20, 0.985);
+
   pointer-events: none;
+
   transition:
     visibility 220ms ease,
     transform 220ms ease,
     opacity 220ms ease;
+
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
 }
