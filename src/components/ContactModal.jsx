@@ -12,7 +12,7 @@ import {
   X,
 } from "lucide-react";
 
-import "../styles/contactmodal.css";
+import "../styles/contact.css";
 
 const initialForm = {
   name: "",
@@ -243,10 +243,20 @@ function ContactModal({ isOpen, onClose }) {
     }
   };
 
+  //const handleBackdropClick = (event) => {
+   // if (event.target === event.currentTarget) {
+   //   handleClose();
+  //  }
+  //};
+
   const handleBackdropClick = (event) => {
-    if (event.target === event.currentTarget) {
-      handleClose();
+  // Close only when the actual backdrop is clicked.
+  // Interactions with the dialog, its content or its scrollbar must not close it.
+    if (event.target !== event.currentTarget) {
+      return;
     }
+
+    handleClose();
   };
 
   if (!isOpen) {
@@ -266,6 +276,7 @@ function ContactModal({ isOpen, onClose }) {
         aria-modal="true"
         aria-labelledby="contact-modal-title"
         aria-describedby="contact-modal-description"
+        onClick={(event) => event.stopPropagation()}
       >
         <button
           type="button"
