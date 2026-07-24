@@ -128,7 +128,7 @@ const pilotStages = [
 
 const pilotTypes = [
   {
-    product: "EnergIQ",
+    product: "Energ IQ Tech",
     category: "Energy & Operational Intelligence Pilot",
     icon: Zap,
     theme: "energy",
@@ -142,7 +142,7 @@ const pilotTypes = [
       "Root-cause and anomaly analysis",
       "Distributed energy and flexibility intelligence",
     ],
-    path: "/products/energiq",
+    path: "/products/energiqtech",
   },
   {
     product: "AIChatshoppie",
@@ -443,7 +443,7 @@ function PilotProgramsPage({ openContactModal }) {
             <h2>Choose the platform aligned with the business problem</h2>
 
             <p>
-              Automation Spectrum pilots are delivered through EnergIQ or
+              Automation Spectrum pilots are delivered through Energ IQ Tech or
               AIChatshoppie depending on the use case.
             </p>
           </div>
@@ -755,7 +755,7 @@ function PilotProgramsPage({ openContactModal }) {
 
             <p>
               We will help assess whether the opportunity is suitable for an
-              EnergIQ or AIChatshoppie pilot and define an appropriate next
+              Energ IQ Tech or AIChatshoppie pilot and define an appropriate next
               step.
             </p>
           </div>

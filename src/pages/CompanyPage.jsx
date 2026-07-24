@@ -62,11 +62,11 @@ const technologyCapabilities = [
 
 const companyStructure = [
   {
-    product: "EnergIQ",
+    product: "Energ IQ Tech",
     category: "Energy & Operational Intelligence",
     description:
       "AI-powered energy optimisation, digital twins and operational decision agents for energy-intensive environments.",
-    path: "/products/energiq",
+    path: "/products/energiqtech",
     externalUrl: "https://energiqtech.com",
     icon: Zap,
     theme: "energy",
@@ -227,7 +227,7 @@ function CompanyPage({ openContactModal }) {
               <Zap size={18} />
 
               <span>
-                <strong>EnergIQ</strong>
+                <strong>Energ IQ Tech</strong>
                 <small>Operational intelligence</small>
               </span>
             </div>
@@ -268,7 +268,7 @@ function CompanyPage({ openContactModal }) {
             <p>
               Automation Spectrum Pty Ltd is the parent company, technology
               developer, intellectual-property owner and commercial entity
-              behind EnergIQ and AIChatshoppie.
+              behind Energ IQ Tech and AIChatshoppie.
             </p>
 
             <p>
@@ -282,7 +282,7 @@ function CompanyPage({ openContactModal }) {
 
               <p>
                 Contracts, proposals and invoices are issued by{" "}
-                <strong>Automation Spectrum Pty Ltd</strong>, with EnergIQ or
+                <strong>Automation Spectrum Pty Ltd</strong>, with Energ IQ Tech or
                 AIChatshoppie identified as the relevant product.
               </p>
             </div>
@@ -359,7 +359,7 @@ function CompanyPage({ openContactModal }) {
               <div className="as-company-example__flow">
                 <strong>Customer organisation</strong>
                 <ArrowRight size={17} />
-                <strong>EnergIQ industry solution</strong>
+                <strong>Energ IQ Tech industry solution</strong>
                 <ArrowRight size={17} />
                 <strong>Automation Spectrum Pty Ltd</strong>
               </div>
@@ -616,7 +616,7 @@ function CompanyPage({ openContactModal }) {
 
             <div>
               <span>Products</span>
-              <strong>EnergIQ and AIChatshoppie</strong>
+              <strong>Energ IQ Tech and AIChatshoppie</strong>
             </div>
           </div>
         </div>

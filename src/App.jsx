@@ -66,7 +66,7 @@ function App() {
         />
 
         <Route
-          path="/products/energiq"
+          path="/products/energiqtech"
           element={<EnergIQPage openContactModal={openContactModal} />}
         />
 

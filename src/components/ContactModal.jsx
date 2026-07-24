@@ -36,7 +36,7 @@ const enquiryTypes = [
 ];
 
 const productOptions = [
-  "EnergIQ",
+  "Energ IQ Tech",
   "AIChatshoppie",
   "Both products",
   "Not sure yet",
@@ -322,7 +322,7 @@ function ContactModal({ isOpen, onClose }) {
             <div className="as-contact-modal__topics">
               <div>
                 <CheckCircle2 size={17} />
-                EnergIQ energy and operational intelligence
+                Energ IQ Tech energy and operational intelligence
               </div>
 
               <div>

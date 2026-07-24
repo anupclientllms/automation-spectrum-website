@@ -291,7 +291,7 @@ function EnergIQHeroVisual() {
           <Zap size={31} />
         </span>
 
-        <strong>EnergIQ</strong>
+        <strong>Energ IQ Tech</strong>
         <small>Energy & Operational Intelligence</small>
       </div>
 
@@ -361,7 +361,7 @@ function EnergIQPage({ openContactModal }) {
             </h1>
 
             <p>
-              EnergIQ helps energy-intensive organisations understand
+              Energ IQ Tech helps energy-intensive organisations understand
               operational performance, identify avoidable costs and make
               controlled, data-informed decisions across assets, facilities
               and energy systems.
@@ -373,7 +373,7 @@ function EnergIQPage({ openContactModal }) {
                 className="as-energiq-button as-energiq-button--primary"
                 onClick={handleContactClick}
               >
-                Discuss an EnergIQ pilot
+                Discuss an Energ IQ Tech pilot
                 <ArrowRight size={18} />
               </button>
 
@@ -383,7 +383,7 @@ function EnergIQPage({ openContactModal }) {
                 rel="noreferrer"
                 className="as-energiq-button as-energiq-button--secondary"
               >
-                Visit EnergIQ website
+                Visit Energ IQ Tech website
               </a>
             </div>
 
@@ -417,20 +417,20 @@ function EnergIQPage({ openContactModal }) {
               Product and company relationship
             </span>
 
-            <h2>EnergIQ is developed and commercialised by Automation Spectrum</h2>
+            <h2>Energ IQ Tech is developed and commercialised by Automation Spectrum</h2>
           </div>
 
           <div className="as-energiq-intro__content">
             <p>
-              EnergIQ is Automation Spectrum&apos;s energy and operational
+              Energ IQ Tech is Automation Spectrum&apos;s energy and operational
               intelligence product. Industry offerings such as Cold Storage AI,
               Building AI, Warehouse &amp; Logistics AI and DER intelligence
-              are product configurations within the EnergIQ platform.
+              are product configurations within the Energ IQ Tech platform.
             </p>
 
             <p>
               Customers contract with Automation Spectrum Pty Ltd, while
-              EnergIQ identifies the product and relevant industry solution
+              Energ IQ Tech identifies the product and relevant industry solution
               being delivered.
             </p>
 
@@ -440,7 +440,7 @@ function EnergIQPage({ openContactModal }) {
               <p>
                 <strong>Contracting entity:</strong> Automation Spectrum Pty Ltd
                 <br />
-                <strong>Product:</strong> EnergIQ
+                <strong>Product:</strong> Energ IQ Tech
                 <br />
                 <strong>Solution:</strong> The relevant industry or operational
                 configuration
@@ -461,7 +461,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>From operational data to controlled improvement</h2>
 
             <p>
-              EnergIQ combines connected data, contextual models, AI analysis
+              Energ IQ Tech combines connected data, contextual models, AI analysis
               and human oversight into practical operational workflows.
             </p>
           </div>
@@ -499,7 +499,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Detect, understand, recommend and measure</h2>
 
             <p>
-              EnergIQ is designed to support accountable operational
+              Energ IQ Tech is designed to support accountable operational
               decision-making rather than uncontrolled automation.
             </p>
           </div>
@@ -543,7 +543,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Focused industries with measurable operational opportunities</h2>
 
             <p>
-              EnergIQ&apos;s near-term commercial focus is on environments
+              Energ IQ Tech&apos;s near-term commercial focus is on environments
               where energy intensity, equipment performance and operational
               complexity create a clear business case.
             </p>
@@ -591,7 +591,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Distributed energy and portfolio intelligence</h2>
 
             <p>
-              EnergIQ&apos;s connected-energy architecture can also support
+              Energ IQ Tech&apos;s connected-energy architecture can also support
               distributed energy resources, flexible demand, batteries, solar
               and portfolio-level decision intelligence.
             </p>
@@ -639,7 +639,7 @@ function EnergIQPage({ openContactModal }) {
 
             <div className="as-energiq-der__core">
               <BrainCircuit size={28} />
-              <strong>EnergIQ DER Intelligence</strong>
+              <strong>Energ IQ Tech DER Intelligence</strong>
             </div>
           </div>
         </div>
@@ -656,7 +656,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Designed to work with existing systems and data</h2>
 
             <p>
-              EnergIQ can begin with available data and progressively connect
+              Energ IQ Tech can begin with available data and progressively connect
               more operational systems as the customer moves from pilot to
               production.
             </p>
@@ -721,13 +721,13 @@ function EnergIQPage({ openContactModal }) {
         <div className="as-energiq-container as-energiq-pilot__layout">
           <div className="as-energiq-pilot__content">
             <span className="as-energiq-section-heading__eyebrow">
-              EnergIQ pilot model
+              Energ IQ Tech pilot model
             </span>
 
             <h2>Begin with available data and a focused operational problem</h2>
 
             <p>
-              An EnergIQ pilot can begin without immediately installing new
+              An Energ IQ Tech pilot can begin without immediately installing new
               control hardware. Existing exports, telemetry, meter data or
               representative information may be sufficient to validate the
               initial use case.
@@ -820,7 +820,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Designed to assist operational teams, not bypass them</h2>
 
             <p>
-              EnergIQ can provide recommendations, simulations and evidence
+              Energ IQ Tech can provide recommendations, simulations and evidence
               while leaving critical operational decisions with authorised
               users.
             </p>
@@ -866,7 +866,7 @@ function EnergIQPage({ openContactModal }) {
         <div className="as-energiq-container as-energiq-cta__content">
           <div>
             <span className="as-energiq-section-heading__eyebrow">
-              Explore EnergIQ
+              Explore Energ IQ Tech
             </span>
 
             <h2>
@@ -875,7 +875,7 @@ function EnergIQPage({ openContactModal }) {
 
             <p>
               Automation Spectrum will help assess the available information,
-              appropriate EnergIQ configuration and a focused pilot pathway.
+              appropriate Energ IQ Tech configuration and a focused pilot pathway.
             </p>
           </div>
 
@@ -885,7 +885,7 @@ function EnergIQPage({ openContactModal }) {
               className="as-energiq-button as-energiq-button--primary"
               onClick={handleContactClick}
             >
-              Start an EnergIQ discussion
+              Start an Energ IQ Tech discussion
               <ArrowRight size={18} />
             </button>
 
@@ -895,7 +895,7 @@ function EnergIQPage({ openContactModal }) {
               rel="noreferrer"
               className="as-energiq-button as-energiq-button--secondary"
             >
-              Explore EnergIQ Tech
+              Explore Energ IQ Tech Tech
             </a>
           </div>
         </div>

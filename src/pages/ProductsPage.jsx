@@ -25,7 +25,7 @@ import "../styles/products.css";
 
 const products = [
   {
-    name: "EnergIQ",
+    name: "Energ IQ Tech",
     category: "Energy & Operational Intelligence",
     theme: "energy",
     icon: Zap,
@@ -45,7 +45,7 @@ const products = [
       "Buildings and infrastructure",
       "Distributed energy resources",
     ],
-    internalPath: "/products/energiq",
+    internalPath: "/products/energiqtech",
     externalUrl: "https://energiqtech.com",
   },
   {
@@ -143,7 +143,7 @@ const productDifferences = [
 
 const productUseCases = [
   {
-    product: "EnergIQ",
+    product: "Energ IQ Tech",
     theme: "energy",
     icon: Gauge,
     title: "Operational cost reduction",
@@ -151,7 +151,7 @@ const productUseCases = [
       "Identify inefficient energy use, avoidable demand and equipment-related operating issues.",
   },
   {
-    product: "EnergIQ",
+    product: "Energ IQ Tech",
     theme: "energy",
     icon: Activity,
     title: "Operational decision support",
@@ -159,7 +159,7 @@ const productUseCases = [
       "Analyse events, identify likely causes and support accountable operational action.",
   },
   {
-    product: "EnergIQ",
+    product: "Energ IQ Tech",
     theme: "energy",
     icon: BarChart3,
     title: "Portfolio intelligence",
@@ -203,7 +203,7 @@ const engagementSteps = [
     number: "02",
     title: "Select the product",
     description:
-      "Determine whether EnergIQ, AIChatshoppie or a combined capability best fits the requirement.",
+      "Determine whether Energ IQ Tech, AIChatshoppie or a combined capability best fits the requirement.",
   },
   {
     number: "03",
@@ -255,7 +255,7 @@ function ProductPortfolioVisual() {
         <Zap size={18} />
 
         <span>
-          <strong>EnergIQ</strong>
+          <strong>Energ IQ Tech</strong>
           <small>Operational intelligence</small>
         </span>
       </div>
@@ -376,7 +376,7 @@ function ProductsPage({ openContactModal }) {
 
           <div className="as-products-intro__content">
             <p>
-              EnergIQ and AIChatshoppie are products developed, owned and
+              Energ IQ Tech and AIChatshoppie are products developed, owned and
               commercialised by Automation Spectrum Pty Ltd.
             </p>
 
@@ -502,7 +502,7 @@ function ProductsPage({ openContactModal }) {
               Product distinction
             </span>
 
-            <h2>How EnergIQ and AIChatshoppie differ</h2>
+            <h2>How Energ IQ Tech and AIChatshoppie differ</h2>
 
             <p>
               The products share core engineering capability but address
@@ -516,7 +516,7 @@ function ProductsPage({ openContactModal }) {
 
               <div>
                 <Zap size={17} />
-                EnergIQ
+                Energ IQ Tech
               </div>
 
               <div>
@@ -644,7 +644,7 @@ function ProductsPage({ openContactModal }) {
             </h2>
 
             <p>
-              EnergIQ may generate operational intelligence while
+              Energ IQ Tech may generate operational intelligence while
               AIChatshoppie supports enterprise knowledge, user assistance and
               related business workflows.
             </p>
@@ -670,7 +670,7 @@ function ProductsPage({ openContactModal }) {
               <Zap size={24} />
 
               <span>
-                <strong>EnergIQ</strong>
+                <strong>Energ IQ Tech</strong>
                 <small>Operational intelligence</small>
               </span>
             </div>
@@ -813,7 +813,7 @@ function ProductsPage({ openContactModal }) {
             </h2>
 
             <p>
-              Discuss EnergIQ, AIChatshoppie, a combined opportunity or a
+              Discuss Energ IQ Tech, AIChatshoppie, a combined opportunity or a
               strategic product collaboration with Automation Spectrum.
             </p>
           </div>

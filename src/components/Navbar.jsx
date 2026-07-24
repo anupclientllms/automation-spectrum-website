@@ -29,8 +29,8 @@ const primaryLinks = [
 
 const productLinks = [
   {
-    name: "EnergIQ",
-    path: "/products/energiq",
+    name: "Energ IQ Tech",
+    path: "/products/energiqtech",
     description: "Energy and operational intelligence",
     icon: Zap,
     theme: "energy",

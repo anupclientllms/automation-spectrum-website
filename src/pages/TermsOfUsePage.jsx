@@ -72,11 +72,11 @@ const termsSections = [
           <strong>636 637 904</strong>
 
           <span>Products</span>
-          <strong>EnergIQ and AIChatshoppie</strong>
+          <strong>Energ IQ Tech and AIChatshoppie</strong>
         </div>
 
         <p>
-          EnergIQ and AIChatshoppie are products of Automation Spectrum Pty
+          Energ IQ Tech and AIChatshoppie are products of Automation Spectrum Pty
           Ltd. References to either product on this website do not create a
           separate contracting entity.
         </p>
@@ -92,7 +92,7 @@ const termsSections = [
       <>
         <p>
           The website provides general information about Automation Spectrum,
-          EnergIQ, AIChatshoppie, pilot programs, technology capabilities and
+          Energ IQ Tech, AIChatshoppie, pilot programs, technology capabilities and
           potential commercial applications.
         </p>
 
@@ -310,7 +310,7 @@ const termsSections = [
     content: (
       <>
         <p>
-          EnergIQ may present operational analysis, simulations, savings
+          Energ IQ Tech may present operational analysis, simulations, savings
           estimates, anomaly findings or suggested actions.
         </p>
 
@@ -366,7 +366,7 @@ const termsSections = [
         </p>
 
         <p>
-          EnergIQ, AIChatshoppie, Automation Spectrum and associated marks may
+          Energ IQ Tech, AIChatshoppie, Automation Spectrum and associated marks may
           not be used in a way that suggests endorsement, affiliation or
           ownership without authorisation.
         </p>
@@ -694,7 +694,7 @@ function TermsOfUsePage() {
 
           <p>
             These terms govern access to the Automation Spectrum corporate
-            website and its public information about EnergIQ, AIChatshoppie,
+            website and its public information about Energ IQ Tech, AIChatshoppie,
             technology capabilities and pilot programs.
           </p>
 

@@ -21,7 +21,7 @@ import "../styles/home.css";
 const products = [
   {
     eyebrow: "Energy & Operational Intelligence",
-    name: "EnergIQ",
+    name: "Energ IQ Tech",
     description:
       "An AI-powered energy and operational intelligence platform helping energy-intensive organisations reduce costs, improve asset performance and make better operational decisions.",
     capabilities: [
@@ -30,7 +30,7 @@ const products = [
       "Energy and demand optimisation",
       "Human-approved control workflows",
     ],
-    internalPath: "/products/energiq",
+    internalPath: "/products/energiqtech",
     externalUrl: "https://energiqtech.com",
     icon: Zap,
     theme: "energy",
@@ -235,7 +235,7 @@ function HomePage({ openContactModal }) {
             <div className="as-floating-node as-floating-node--energy">
               <Zap size={18} />
               <div>
-                <strong>EnergIQ</strong>
+                <strong>Energ IQ Tech</strong>
                 <span>Operational intelligence</span>
               </div>
             </div>
@@ -268,7 +268,7 @@ function HomePage({ openContactModal }) {
         <div className="as-container as-identity-strip__content">
           <p>
             <strong>Automation Spectrum Pty Ltd</strong> is the company behind
-            EnergIQ and AIChatshoppie.
+            Energ IQ Tech and AIChatshoppie.
           </p>
 
           <div className="as-identity-strip__divider" />

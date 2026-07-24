@@ -50,7 +50,7 @@ const intellectualPropertySections = [
 
         <ul>
           <li>Automation Spectrum Pty Ltd;</li>
-          <li>EnergIQ;</li>
+          <li>Energ IQ Tech;</li>
           <li>AIChatshoppie;</li>
           <li>pilot programs and demonstrations;</li>
           <li>technology, research and product architecture;</li>
@@ -96,7 +96,7 @@ const intellectualPropertySections = [
 
           <div>
             <span>Energy product</span>
-            <strong>EnergIQ</strong>
+            <strong>Energ IQ Tech</strong>
           </div>
 
           <div>
@@ -106,7 +106,7 @@ const intellectualPropertySections = [
         </div>
 
         <p>
-          EnergIQ and AIChatshoppie are product identities and do not represent
+          Energ IQ Tech and AIChatshoppie are product identities and do not represent
           separate contracting entities unless expressly stated in a written
           agreement.
         </p>
@@ -238,7 +238,7 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          EnergIQ and AIChatshoppie each contain product-specific intellectual
+          Energ IQ Tech and AIChatshoppie each contain product-specific intellectual
           property built on Automation Spectrum&apos;s shared engineering
           foundation.
         </p>
@@ -249,10 +249,10 @@ const intellectualPropertySections = [
               <Zap size={24} />
             </span>
 
-            <h3>EnergIQ</h3>
+            <h3>Energ IQ Tech</h3>
 
             <p>
-              EnergIQ intellectual property may include operational digital
+              Energ IQ Tech intellectual property may include operational digital
               twins, energy intelligence, decision agents, savings analysis,
               connected-asset workflows and industry-specific configurations.
             </p>
@@ -289,7 +289,7 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          The names Automation Spectrum, EnergIQ and AIChatshoppie, together
+          The names Automation Spectrum, Energ IQ Tech and AIChatshoppie, together
           with associated logos, product marks, taglines and visual elements,
           are brand assets of Automation Spectrum Pty Ltd or its related
           interests.
@@ -365,7 +365,7 @@ const intellectualPropertySections = [
         </p>
 
         <p>
-          Any right to access or use EnergIQ, AIChatshoppie, source code,
+          Any right to access or use Energ IQ Tech, AIChatshoppie, source code,
           documentation, APIs, models, connectors or customer environments must
           be granted expressly through a written licence, pilot agreement,
           subscription agreement or customer contract.
@@ -457,7 +457,7 @@ const intellectualPropertySections = [
           <li>are generic and reusable;</li>
           <li>do not reveal customer confidential information;</li>
           <li>are not uniquely commissioned customer materials;</li>
-          <li>form part of the EnergIQ or AIChatshoppie platform;</li>
+          <li>form part of the Energ IQ Tech or AIChatshoppie platform;</li>
           <li>are improvements to Automation Spectrum&apos;s existing technology.</li>
         </ul>
       </>
@@ -595,7 +595,7 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          AIChatshoppie and EnergIQ may use proprietary, open-source or
+          AIChatshoppie and Energ IQ Tech may use proprietary, open-source or
           third-party models as components within a larger product workflow.
         </p>
 
@@ -854,7 +854,7 @@ function IntellectualPropertyPage() {
 
                 <p>
                   Public access to the Automation Spectrum website does not
-                  transfer ownership or grant a licence to EnergIQ,
+                  transfer ownership or grant a licence to Energ IQ Tech,
                   AIChatshoppie or the underlying technology.
                 </p>
               </div>
