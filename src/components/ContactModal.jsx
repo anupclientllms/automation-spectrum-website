@@ -183,7 +183,7 @@ function ContactModal({ isOpen, onClose }) {
     if (!serviceId || !templateId || !publicKey) {
       setSubmissionStatus("error");
       setSubmissionMessage(
-        "The contact service is not configured yet. Please email contact@automationspectrum.com.au.",
+        "The Automation Spectrum contact service is not configured yet. Please email contact@automationspectrum.com.au.",
       );
       return;
     }
@@ -201,7 +201,9 @@ function ContactModal({ isOpen, onClose }) {
       message: formData.message.trim(),
       reply_to: formData.email.trim(),
       submitted_from: window.location.href,
+      to_name: "Automation Spectrum",
       to_email: "contact@automationspectrum.com.au",
+     // email_subject: `Automation Spectrum enquiry — ${formData.enquiryType}`,
     };
 
     try {
@@ -267,7 +269,7 @@ function ContactModal({ isOpen, onClose }) {
     <div
       className="as-contact-modal"
       role="presentation"
-      onMouseDown={handleBackdropClick}
+      onClick={handleBackdropClick}
     >
       <div
         ref={modalRef}
