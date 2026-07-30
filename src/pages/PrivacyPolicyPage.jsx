@@ -38,7 +38,7 @@ const policySections = [
           <li>contact, pilot and partnership enquiry forms;</li>
           <li>commercial discussions and customer relationships;</li>
           <li>
-            Automation Spectrum products, including Energ IQ Tech and
+            Automation Spectrum products, including EnerG IQ Tech and
             AIChatshoppie, where this policy is referenced;
           </li>
           <li>
@@ -83,7 +83,7 @@ const policySections = [
             location, IP address and referring page;
           </li>
           <li>
-            information about your interest in Energ IQ Tech, AIChatshoppie or an
+            information about your interest in EnerG IQ Tech, AIChatshoppie or an
             Automation Spectrum pilot;
           </li>
           <li>
@@ -157,7 +157,7 @@ const policySections = [
         <ul>
           <li>respond to enquiries and requests;</li>
           <li>
-            assess potential Energ IQ Tech or AIChatshoppie pilot opportunities;
+            assess potential EnerG IQ Tech or AIChatshoppie pilot opportunities;
           </li>
           <li>
             communicate about projects, products, demonstrations and

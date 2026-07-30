@@ -381,7 +381,7 @@ function TechnologyPage({ openContactModal }) {
 
           <div className="as-tech-intro__content">
             <p>
-              Energ IQ Tech and AIChatshoppie serve different customer problems, but
+              EnerG IQ Tech and AIChatshoppie serve different customer problems, but
               both are supported by Automation Spectrum&apos;s shared
               engineering, AI, data and deployment capability.
             </p>
@@ -397,7 +397,7 @@ function TechnologyPage({ openContactModal }) {
                 <Zap size={20} />
 
                 <span>
-                  <strong>Energ IQ Tech</strong>
+                  <strong>EnerG IQ Tech</strong>
                   <small>Energy and operational intelligence</small>
                 </span>
               </div>

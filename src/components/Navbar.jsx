@@ -29,7 +29,7 @@ const primaryLinks = [
 
 const productLinks = [
   {
-    name: "Energ IQ Tech",
+    name: "EnerG IQ Tech",
     path: "/products/energiqtech",
     description: "Energy and operational intelligence",
     icon: Zap,

@@ -128,7 +128,7 @@ const pilotStages = [
 
 const pilotTypes = [
   {
-    product: "Energ IQ Tech",
+    product: "EnerG IQ Tech",
     category: "Energy & Operational Intelligence Pilot",
     icon: Zap,
     theme: "energy",
@@ -443,7 +443,7 @@ function PilotProgramsPage({ openContactModal }) {
             <h2>Choose the platform aligned with the business problem</h2>
 
             <p>
-              Automation Spectrum pilots are delivered through Energ IQ Tech or
+              Automation Spectrum pilots are delivered through EnerG IQ Tech or
               AIChatshoppie depending on the use case.
             </p>
           </div>
@@ -755,7 +755,7 @@ function PilotProgramsPage({ openContactModal }) {
 
             <p>
               We will help assess whether the opportunity is suitable for an
-              Energ IQ Tech or AIChatshoppie pilot and define an appropriate next
+              EnerG IQ Tech or AIChatshoppie pilot and define an appropriate next
               step.
             </p>
           </div>

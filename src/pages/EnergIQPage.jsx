@@ -291,7 +291,7 @@ function EnergIQHeroVisual() {
           <Zap size={31} />
         </span>
 
-        <strong>Energ IQ Tech</strong>
+        <strong>EnerG IQ Tech</strong>
         <small>Energy & Operational Intelligence</small>
       </div>
 
@@ -361,7 +361,7 @@ function EnergIQPage({ openContactModal }) {
             </h1>
 
             <p>
-              Energ IQ Tech helps energy-intensive organisations understand
+              EnerG IQ Tech helps energy-intensive organisations understand
               operational performance, identify avoidable costs and make
               controlled, data-informed decisions across assets, facilities
               and energy systems.
@@ -373,7 +373,7 @@ function EnergIQPage({ openContactModal }) {
                 className="as-energiq-button as-energiq-button--primary"
                 onClick={handleContactClick}
               >
-                Discuss an Energ IQ Tech pilot
+                Discuss an EnerG IQ Tech pilot
                 <ArrowRight size={18} />
               </button>
 
@@ -383,7 +383,7 @@ function EnergIQPage({ openContactModal }) {
                 rel="noreferrer"
                 className="as-energiq-button as-energiq-button--secondary"
               >
-                Visit Energ IQ Tech website
+                Visit EnerG IQ Tech website
               </a>
             </div>
 
@@ -417,20 +417,20 @@ function EnergIQPage({ openContactModal }) {
               Product and company relationship
             </span>
 
-            <h2>Energ IQ Tech is developed and commercialised by Automation Spectrum</h2>
+            <h2>EnerG IQ Tech is developed and commercialised by Automation Spectrum</h2>
           </div>
 
           <div className="as-energiq-intro__content">
             <p>
-              Energ IQ Tech is Automation Spectrum&apos;s energy and operational
+              EnerG IQ Tech is Automation Spectrum&apos;s energy and operational
               intelligence product. Industry offerings such as Cold Storage AI,
               Building AI, Warehouse &amp; Logistics AI and DER intelligence
-              are product configurations within the Energ IQ Tech platform.
+              are product configurations within the EnerG IQ Tech platform.
             </p>
 
             <p>
               Customers contract with Automation Spectrum Pty Ltd, while
-              Energ IQ Tech identifies the product and relevant industry solution
+              EnerG IQ Tech identifies the product and relevant industry solution
               being delivered.
             </p>
 
@@ -440,7 +440,7 @@ function EnergIQPage({ openContactModal }) {
               <p>
                 <strong>Contracting entity:</strong> Automation Spectrum Pty Ltd
                 <br />
-                <strong>Product:</strong> Energ IQ Tech
+                <strong>Product:</strong> EnerG IQ Tech
                 <br />
                 <strong>Solution:</strong> The relevant industry or operational
                 configuration
@@ -461,7 +461,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>From operational data to controlled improvement</h2>
 
             <p>
-              Energ IQ Tech combines connected data, contextual models, AI analysis
+              EnerG IQ Tech combines connected data, contextual models, AI analysis
               and human oversight into practical operational workflows.
             </p>
           </div>
@@ -499,7 +499,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Detect, understand, recommend and measure</h2>
 
             <p>
-              Energ IQ Tech is designed to support accountable operational
+              EnerG IQ Tech is designed to support accountable operational
               decision-making rather than uncontrolled automation.
             </p>
           </div>
@@ -543,7 +543,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Focused industries with measurable operational opportunities</h2>
 
             <p>
-              Energ IQ Tech&apos;s near-term commercial focus is on environments
+              EnerG IQ Tech&apos;s near-term commercial focus is on environments
               where energy intensity, equipment performance and operational
               complexity create a clear business case.
             </p>
@@ -591,7 +591,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Distributed energy and portfolio intelligence</h2>
 
             <p>
-              Energ IQ Tech&apos;s connected-energy architecture can also support
+              EnerG IQ Tech&apos;s connected-energy architecture can also support
               distributed energy resources, flexible demand, batteries, solar
               and portfolio-level decision intelligence.
             </p>
@@ -639,7 +639,7 @@ function EnergIQPage({ openContactModal }) {
 
             <div className="as-energiq-der__core">
               <BrainCircuit size={28} />
-              <strong>Energ IQ Tech DER Intelligence</strong>
+              <strong>EnerG IQ Tech DER Intelligence</strong>
             </div>
           </div>
         </div>
@@ -656,7 +656,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Designed to work with existing systems and data</h2>
 
             <p>
-              Energ IQ Tech can begin with available data and progressively connect
+              EnerG IQ Tech can begin with available data and progressively connect
               more operational systems as the customer moves from pilot to
               production.
             </p>
@@ -721,13 +721,13 @@ function EnergIQPage({ openContactModal }) {
         <div className="as-energiq-container as-energiq-pilot__layout">
           <div className="as-energiq-pilot__content">
             <span className="as-energiq-section-heading__eyebrow">
-              Energ IQ Tech pilot model
+              EnerG IQ Tech pilot model
             </span>
 
             <h2>Begin with available data and a focused operational problem</h2>
 
             <p>
-              An Energ IQ Tech pilot can begin without immediately installing new
+              An EnerG IQ Tech pilot can begin without immediately installing new
               control hardware. Existing exports, telemetry, meter data or
               representative information may be sufficient to validate the
               initial use case.
@@ -820,7 +820,7 @@ function EnergIQPage({ openContactModal }) {
             <h2>Designed to assist operational teams, not bypass them</h2>
 
             <p>
-              Energ IQ Tech can provide recommendations, simulations and evidence
+              EnerG IQ Tech can provide recommendations, simulations and evidence
               while leaving critical operational decisions with authorised
               users.
             </p>
@@ -866,7 +866,7 @@ function EnergIQPage({ openContactModal }) {
         <div className="as-energiq-container as-energiq-cta__content">
           <div>
             <span className="as-energiq-section-heading__eyebrow">
-              Explore Energ IQ Tech
+              Explore EnerG IQ Tech
             </span>
 
             <h2>
@@ -875,7 +875,7 @@ function EnergIQPage({ openContactModal }) {
 
             <p>
               Automation Spectrum will help assess the available information,
-              appropriate Energ IQ Tech configuration and a focused pilot pathway.
+              appropriate EnerG IQ Tech configuration and a focused pilot pathway.
             </p>
           </div>
 
@@ -885,7 +885,7 @@ function EnergIQPage({ openContactModal }) {
               className="as-energiq-button as-energiq-button--primary"
               onClick={handleContactClick}
             >
-              Start an Energ IQ Tech discussion
+              Start an EnerG IQ Tech discussion
               <ArrowRight size={18} />
             </button>
 
@@ -895,7 +895,7 @@ function EnergIQPage({ openContactModal }) {
               rel="noreferrer"
               className="as-energiq-button as-energiq-button--secondary"
             >
-              Explore Energ IQ Tech Tech
+              Explore EnerG IQ Tech Tech
             </a>
           </div>
         </div>

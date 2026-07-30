@@ -13,7 +13,7 @@ import "../styles/footer.css";
 
 const productLinks = [
   {
-    label: "Energ IQ Tech",
+    label: "EnerG IQ Tech",
     path: "/products/energiqtech",
   },
   {
@@ -119,7 +119,7 @@ function Footer() {
               >
                 <Zap size={16} />
                 <span>
-                  <strong>Energ IQ Tech</strong>
+                  <strong>EnerG IQ Tech</strong>
                   <small>Energy & operational intelligence</small>
                 </span>
               </Link>
@@ -152,7 +152,7 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Energ IQ Tech website
+                EnerG IQ Tech website
                 <ArrowUpRight size={14} />
               </a>
 
@@ -247,7 +247,7 @@ function Footer() {
           <p>
             © {currentYear} Automation Spectrum Pty Ltd. All rights reserved.<br></br>
 
-            <strong>Energ IQ Tech</strong> and <strong>AIChatshoppie</strong> are
+            <strong>EnerG IQ Tech</strong> and <strong>AIChatshoppie</strong> are
             products of Automation Spectrum Pty Ltd. 
           </p>
 
