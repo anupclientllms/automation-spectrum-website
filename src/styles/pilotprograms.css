@@ -303,8 +303,8 @@
   top: 50%;
   left: 50%;
   display: flex;
-  width: 190px;
-  height: 190px;
+  width: 210px;
+  height: 210px;
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
@@ -322,76 +322,19 @@
 }
 
 .as-pilot-visual__centre strong {
-  margin-top: 15px;
-  font-size: 0.9rem;
+  margin-top: 2px;
+  font-size: 0.94rem;
+  font-weight: 750;
 }
 
 .as-pilot-visual__centre small {
-  margin-top: 5px;
+  margin-top: 6px;
   color: #77849a;
-  font-size: 0.65rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.as-pilot-spectrum {
-  position: relative;
-  display: block;
-  width: 56px;
-  height: 56px;
-}
-
-.as-pilot-spectrum__centre {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--pilot-cyan),
-    var(--pilot-blue),
-    var(--pilot-violet)
-  );
-  box-shadow:
-    0 0 16px rgba(103, 232, 249, 0.62),
-    0 0 30px rgba(170, 145, 255, 0.37);
-}
-
-.as-pilot-spectrum__node {
-  position: absolute;
-  color: #dffbff;
-  font-size: 13px;
-  line-height: 1;
-  animation: as-pilot-spectrum-pulse 5s infinite ease-in-out;
-}
-
-.as-pilot-spectrum__node--top {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.as-pilot-spectrum__node--left {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  animation-delay: 0.5s;
-}
-
-.as-pilot-spectrum__node--right {
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  animation-delay: 1s;
-}
-
-.as-pilot-spectrum__node--bottom {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 1.5s;
-}
 
 .as-pilot-visual__node {
   position: absolute;
@@ -1056,19 +999,17 @@
   gap: 12px;
 }
 
-/* =========================================================
-   ANIMATION
-   ========================================================= */
-
-@keyframes as-pilot-spectrum-pulse {
-  0%,
-  100% {
-    opacity: 0.45;
-  }
-
-  50% {
-    opacity: 1;
-  }
+.as-pilot-visual__brand-logo {
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 15px;
+  object-fit: contain;
+  border-radius: 18px;
+  transform: scale(0.9);
+  filter:
+    drop-shadow(0 0 10px rgba(74, 195, 255, 0.28))
+    drop-shadow(0 0 20px rgba(139, 92, 246, 0.16));
 }
 
 /* =========================================================

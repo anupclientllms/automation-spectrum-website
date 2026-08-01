@@ -449,8 +449,8 @@
   top: 50%;
   left: 50%;
   display: flex;
-  width: 195px;
-  height: 195px;
+  width: 215px;
+  height: 215px;
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
@@ -487,14 +487,17 @@
 }
 
 .as-hero-visual__core > span {
-  font-size: 0.95rem;
+  margin-top: 2px;
+  font-size: 0.98rem;
   font-weight: 750;
 }
 
 .as-hero-visual__core > small {
-  margin-top: 5px;
+  margin-top: 6px;
   color: #7f8aa0;
-  font-size: 0.69rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
 }
 
 .as-floating-node {
@@ -1131,88 +1134,20 @@
   gap: 12px;
 }
 
-.hero-spectrum-logo {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
+.as-hero-visual__brand-logo {
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 16px;
+  object-fit: contain;
+  border-radius: 20px;
+  transform: scale(0.9);
+  filter:
+    drop-shadow(0 0 10px rgba(74, 195, 255, 0.28))
+    drop-shadow(0 0 20px rgba(139, 92, 246, 0.16));
 }
 
-.hero-spectrum-logo .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
 
-  width: 20px;
-  height: 20px;
-
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-
-  background: linear-gradient(
-    135deg,
-    #67e8f9,
-    #7da7ff,
-    #aa91ff
-  );
-
-  box-shadow:
-    0 0 15px rgba(103, 232, 249, 0.7),
-    0 0 30px rgba(125, 167, 255, 0.5),
-    0 0 50px rgba(170, 145, 255, 0.3);
-}
-
-.hero-spectrum-logo .top,
-.hero-spectrum-logo .left,
-.hero-spectrum-logo .right,
-.hero-spectrum-logo .bottom {
-  position: absolute;
-
-  color: #dffbff;
-  font-size: 16px;
-
-  animation: spectrumPulse 5s infinite ease-in-out;
-}
-
-.hero-spectrum-logo .top {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.hero-spectrum-logo .left {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  animation-delay: 0.5s;
-}
-
-.hero-spectrum-logo .right {
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  animation-delay: 1s;
-}
-
-.hero-spectrum-logo .bottom {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 1.5s;
-}
-
-@keyframes spectrumPulse {
-  0%,
-  100% {
-    opacity: 0.4;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.25);
-  }
-}
 
 /* =========================================================
    RESPONSIVE

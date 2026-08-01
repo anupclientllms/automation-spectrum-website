@@ -20,7 +20,6 @@ import {
   ServerCog,
   ShieldCheck,
   ShoppingBag,
-  Sparkles,
   Ticket,
   Users,
   Workflow,
@@ -826,21 +825,12 @@ function AIChatshoppiePage({ openContactModal }) {
         <div className="as-aichat-container as-aichat-relationship__layout">
           <div className="as-aichat-relationship__diagram">
             <div className="as-aichat-relationship__company">
-              <span className="as-aichat-company-spectrum">
-                <span className="as-aichat-company-spectrum__centre" />
-                <span className="as-aichat-company-spectrum__node as-aichat-company-spectrum__node--top">
-                  ✦
-                </span>
-                <span className="as-aichat-company-spectrum__node as-aichat-company-spectrum__node--left">
-                  ✦
-                </span>
-                <span className="as-aichat-company-spectrum__node as-aichat-company-spectrum__node--right">
-                  ✦
-                </span>
-                <span className="as-aichat-company-spectrum__node as-aichat-company-spectrum__node--bottom">
-                  ✦
-                </span>
-              </span>
+              <img
+                src="/favicon.png"
+                alt=""
+                className="as-aichat-relationship__company-logo"
+                aria-hidden="true"
+              />
 
               <strong>Automation Spectrum</strong>
               <small>Product company and contracting entity</small>

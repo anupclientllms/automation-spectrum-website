@@ -227,25 +227,12 @@ function ProductPortfolioVisual() {
       <div className="as-products-orbit as-products-orbit--inner" />
 
       <div className="as-products-visual__centre">
-        <span className="as-products-spectrum">
-          <span className="as-products-spectrum__centre" />
-
-          <span className="as-products-spectrum__node as-products-spectrum__node--top">
-            ✦
-          </span>
-
-          <span className="as-products-spectrum__node as-products-spectrum__node--left">
-            ✦
-          </span>
-
-          <span className="as-products-spectrum__node as-products-spectrum__node--right">
-            ✦
-          </span>
-
-          <span className="as-products-spectrum__node as-products-spectrum__node--bottom">
-            ✦
-          </span>
-        </span>
+        <img
+          src="/favicon.png"
+          alt=""
+          className="as-products-brand-logo"
+          aria-hidden="true"
+        />
 
         <strong>Product Portfolio</strong>
         <small>Automation Spectrum</small>
@@ -697,25 +684,12 @@ function ProductsPage({ openContactModal }) {
         <div className="as-products-container as-products-future__layout">
           <div className="as-products-future__visual">
             <div className="as-products-future__core">
-              <span className="as-products-spectrum">
-                <span className="as-products-spectrum__centre" />
-
-                <span className="as-products-spectrum__node as-products-spectrum__node--top">
-                  ✦
-                </span>
-
-                <span className="as-products-spectrum__node as-products-spectrum__node--left">
-                  ✦
-                </span>
-
-                <span className="as-products-spectrum__node as-products-spectrum__node--right">
-                  ✦
-                </span>
-
-                <span className="as-products-spectrum__node as-products-spectrum__node--bottom">
-                  ✦
-                </span>
-              </span>
+              <img
+                src="/favicon.png"
+                alt=""
+                className="as-pilot-visual__brand-logo"
+                aria-hidden="true"
+              />
 
               <strong>Automation Spectrum</strong>
             </div>

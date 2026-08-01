@@ -233,21 +233,12 @@ function PilotJourneyVisual() {
       <div className="as-pilot-orbit as-pilot-orbit--inner" />
 
       <div className="as-pilot-visual__centre">
-        <span className="as-pilot-spectrum">
-          <span className="as-pilot-spectrum__centre" />
-          <span className="as-pilot-spectrum__node as-pilot-spectrum__node--top">
-            ✦
-          </span>
-          <span className="as-pilot-spectrum__node as-pilot-spectrum__node--left">
-            ✦
-          </span>
-          <span className="as-pilot-spectrum__node as-pilot-spectrum__node--right">
-            ✦
-          </span>
-          <span className="as-pilot-spectrum__node as-pilot-spectrum__node--bottom">
-            ✦
-          </span>
-        </span>
+        <img
+          src="/favicon.png"
+          alt=""
+          className="as-pilot-visual__brand-logo"
+          aria-hidden="true"
+        />
 
         <strong>Pilot Program</strong>
         <small>Evidence before scale</small>

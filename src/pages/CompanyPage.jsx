@@ -13,7 +13,6 @@ import {
   Network,
   Rocket,
   ShieldCheck,
-  Sparkles,
   Target,
   Users,
   Workflow,
@@ -112,25 +111,12 @@ const engagementSteps = [
 
 function SpectrumMark() {
   return (
-    <span className="as-company-spectrum" aria-hidden="true">
-      <span className="as-company-spectrum__centre" />
-
-      <span className="as-company-spectrum__node as-company-spectrum__node--top">
-        ✦
-      </span>
-
-      <span className="as-company-spectrum__node as-company-spectrum__node--left">
-        ✦
-      </span>
-
-      <span className="as-company-spectrum__node as-company-spectrum__node--right">
-        ✦
-      </span>
-
-      <span className="as-company-spectrum__node as-company-spectrum__node--bottom">
-        ✦
-      </span>
-    </span>
+    <img
+      src="/favicon.png"
+      alt=""
+      className="as-company-logo"
+      aria-hidden="true"
+    />
   );
 }
 

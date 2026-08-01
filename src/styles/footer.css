@@ -90,14 +90,14 @@
   align-items: center;
   color: var(--footer-text);
   text-decoration: none;
-  gap: 13px;
+  gap: 20px;
 }
 
 .as-footer__brand-mark {
   position: relative;
   display: grid;
-  width: 48px;
-  height: 48px;
+  width: 68px;
+  height: 68px;
   flex: 0 0 auto;
   overflow: hidden;
   color: #caf8fb;
@@ -434,70 +434,30 @@ a.as-footer__contact-item:hover strong {
   outline: 2px solid rgba(103, 232, 249, 0.78);
   outline-offset: 3px;
 }
-.as-footer-spectrum-logo {
-  position: relative;
-  width: 28px;
-  height: 28px;
+
+
+.as-footer__brand-mark {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: visible;
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
 
-.as-footer-spectrum-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 9px;
-  height: 9px;
-
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-
-  background: linear-gradient(
-    135deg,
-    #67e8f9,
-    #7da7ff,
-    #aa91ff
-  );
-
-  box-shadow:
-    0 0 12px rgba(103, 232, 249, 0.55),
-    0 0 22px rgba(170, 145, 255, 0.35);
+.as-footer__brand-logo {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  display: block;
+  filter:
+    drop-shadow(0 0 10px rgba(74,195,255,.35))
+    drop-shadow(0 0 22px rgba(123,97,255,.18));
 }
-
-.as-footer-spectrum-node {
-  position: absolute;
-  color: #dffbff;
-  font-size: 9px;
-  line-height: 1;
-  animation: footerSpectrumPulse 5s infinite ease-in-out;
-}
-
-.as-footer-spectrum-node--top {
-  top: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.as-footer-spectrum-node--left {
-  top: 50%;
-  left: -1px;
-  transform: translateY(-50%);
-  animation-delay: 0.5s;
-}
-
-.as-footer-spectrum-node--right {
-  top: 50%;
-  right: -1px;
-  transform: translateY(-50%);
-  animation-delay: 1s;
-}
-
-.as-footer-spectrum-node--bottom {
-  bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 1.5s;
-}
-
 @keyframes footerSpectrumPulse {
   0%,
   100% {

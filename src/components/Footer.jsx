@@ -9,6 +9,7 @@ import {
   Zap,
 } from "lucide-react";
 
+import footerLogo from "../assets/logos/logo-footer.png";
 import "../styles/footer.css";
 
 const productLinks = [
@@ -77,25 +78,11 @@ function Footer() {
               aria-label="Automation Spectrum home"
             >
               <span className="as-footer__brand-mark" aria-hidden="true">
-                <span className="as-footer-spectrum-logo">
-                  <span className="as-footer-spectrum-center" />
-
-                  <span className="as-footer-spectrum-node as-footer-spectrum-node--top">
-                    ✦
-                  </span>
-
-                  <span className="as-footer-spectrum-node as-footer-spectrum-node--left">
-                    ✦
-                  </span>
-
-                  <span className="as-footer-spectrum-node as-footer-spectrum-node--right">
-                    ✦
-                  </span>
-
-                  <span className="as-footer-spectrum-node as-footer-spectrum-node--bottom">
-                    ✦
-                  </span>
-                </span>
+                <img
+                  src={footerLogo}
+                  alt="Automation Spectrum"
+                  className="as-footer__brand-logo"
+                />
               </span>
 
               <span className="as-footer__brand-copy">

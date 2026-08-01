@@ -66,149 +66,43 @@
 
 .as-navbar__brand {
   display: inline-flex;
-  min-width: 260px;
+  min-width: 285px;
   align-items: center;
   color: var(--nav-text);
   text-decoration: none;
-  gap: 12px;
+  gap: 16px;
 }
 
 .as-navbar__brand-mark {
-  position: relative;
-  display: grid;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 auto;
-  overflow: hidden;
-  color: #c8f8fb;
-  border: 1px solid rgba(103, 232, 249, 0.24);
+  display: flex;
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.as-navbar__brand-logo {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
   border-radius: 13px;
-  background:
-    linear-gradient(
-      140deg,
-      rgba(34, 211, 238, 0.17),
-      rgba(139, 92, 246, 0.2)
-    );
-  box-shadow:
-    0 9px 25px rgba(31, 138, 210, 0.14),
-    inset 0 1px rgba(255, 255, 255, 0.08);
-  place-items: center;
+  transform: scale(0.9);
+  filter:
+    drop-shadow(0 0 8px rgba(74, 195, 255, 0.28))
+    drop-shadow(0 0 16px rgba(139, 92, 246, 0.14));
 }
 
-.as-spectrum-logo {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-.as-spectrum-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  width: 8px;
-  height: 8px;
-
-  transform: translate(-50%, -50%);
-
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    #67e8f9,
-    #7da7ff,
-    #aa91ff
-  );
-
-  box-shadow:
-    0 0 12px rgba(103, 232, 249, 0.5),
-    0 0 20px rgba(170, 145, 255, 0.35);
-}
-
-.as-spectrum-node {
-  position: absolute;
-  color: #d9f8fb;
-  font-size: 9px;
-  line-height: 1;
-}
-
-.as-spectrum-node--top {
-  top: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.as-spectrum-node--left {
-  top: 50%;
-  left: -2px;
-  transform: translateY(-50%);
-}
-
-.as-spectrum-node--right {
-  top: 50%;
-  right: -2px;
-  transform: translateY(-50%);
-}
-
-.as-spectrum-node--bottom {
-  bottom: -2px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-
-.as-spectrum-node {
-  animation: spectrumPulse 3s infinite ease-in-out;
-}
-
-.as-spectrum-node--left {
-  animation-delay: 0.3s;
-}
-
-.as-spectrum-node--right {
-  animation-delay: 0.6s;
-}
-
-.as-spectrum-node--bottom {
-  animation-delay: 0.9s;
-}
-
-@keyframes spectrumPulse {
-  0%,
-  100% {
-    opacity: 0.5;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.15);
-  }
-}
 .as-navbar__brand-mark svg {
   position: relative;
   z-index: 3;
 }
 
-.as-navbar__brand-ring {
-  position: absolute;
-  border: 1px solid rgba(196, 247, 250, 0.16);
-  border-radius: 50%;
-}
 
-.as-navbar__brand-ring--one {
-  top: -12px;
-  right: -9px;
-  width: 35px;
-  height: 35px;
-}
-
-.as-navbar__brand-ring--two {
-  bottom: -15px;
-  left: -12px;
-  width: 41px;
-  height: 41px;
-}
 
 .as-navbar__brand-copy {
   display: flex;
@@ -218,8 +112,8 @@
 
 .as-navbar__brand-copy strong {
   color: #f8fbff;
-  font-size: 0.97rem;
-  font-weight: 750;
+  font-size: 1rem;
+  font-weight: 780;
   line-height: 1.08;
   letter-spacing: -0.018em;
   white-space: nowrap;
@@ -829,13 +723,21 @@
   }
 
   .as-navbar__brand {
-    gap: 10px;
+    min-width: 0;
+    gap: 11px;
   }
 
   .as-navbar__brand-mark {
-    width: 39px;
-    height: 39px;
-    border-radius: 12px;
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border-radius: 13px;
+  }
+
+  .as-navbar__brand-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
   }
 
   .as-navbar__brand-copy strong {
@@ -845,12 +747,6 @@
   .as-navbar__brand-copy small {
     font-size: 0.54rem;
     letter-spacing: 0.09em;
-  }
-
-  .as-navbar__mobile-company {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 5px;
   }
 }
 

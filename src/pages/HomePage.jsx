@@ -11,7 +11,6 @@ import {
   Layers3,
   Network,
   ShieldCheck,
-  Sparkles,
   Workflow,
   Zap,
 } from "lucide-react";
@@ -220,13 +219,12 @@ function HomePage({ openContactModal }) {
             <div className="as-orbit as-orbit--inner" />
 
             <div className="as-hero-visual__core">
-              <div className="hero-spectrum-logo">
-                <span className="top">✦</span>
-                <span className="left">✦</span>
-                <span className="center">◉</span>
-                <span className="right">✦</span>
-                <span className="bottom">✦</span>
-              </div>
+              <img
+                src="/favicon.png"
+                alt=""
+                className="as-hero-visual__brand-logo"
+                aria-hidden="true"
+              />
 
               <span>Automation Spectrum</span>
               <small>Applied AI Platforms</small>

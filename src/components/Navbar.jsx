@@ -5,10 +5,10 @@ import {
   BrainCircuit,
   ChevronDown,
   Menu,
-  Sparkles,
   X,
   Zap,
 } from "lucide-react";
+
 
 import "../styles/navbar.css";
 
@@ -148,25 +148,11 @@ function Navbar({ openContactModal }) {
           aria-label="Automation Spectrum home"
         >
           <span className="as-navbar__brand-mark" aria-hidden="true">
-            <span className="as-spectrum-logo">
-                <span className="as-spectrum-center" />
-
-                <span className="as-spectrum-node as-spectrum-node--top">
-                ✦
-                </span>
-
-                <span className="as-spectrum-node as-spectrum-node--left">
-                ✦
-                </span>
-
-                <span className="as-spectrum-node as-spectrum-node--right">
-                ✦
-                </span>
-
-                <span className="as-spectrum-node as-spectrum-node--bottom">
-                ✦
-                </span>
-            </span>
+            <img
+              src="/favicon.png"
+              alt=""
+              className="as-navbar__brand-logo"
+            />
           </span>
 
           <span className="as-navbar__brand-copy">

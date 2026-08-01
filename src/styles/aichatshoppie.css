@@ -920,6 +920,22 @@
   background: #070d18;
 }
 
+.as-aichat-relationship__company-logo {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 18px;
+  object-fit: contain;
+  border-radius: 16px;
+  transform: scale(0.9);
+  filter:
+    drop-shadow(0 0 9px rgba(74, 195, 255, 0.26))
+    drop-shadow(0 0 18px rgba(139, 92, 246, 0.15));
+}
+.as-aichat-relationship__company {
+  overflow: visible;
+}
+
 .as-aichat-relationship__layout {
   display: grid;
   align-items: center;
@@ -983,65 +999,7 @@
   line-height: 1.45;
 }
 
-.as-aichat-company-spectrum {
-  position: relative;
-  width: 52px;
-  height: 52px;
-}
 
-.as-aichat-company-spectrum__centre {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    var(--aichat-cyan),
-    var(--aichat-blue),
-    var(--aichat-violet)
-  );
-  box-shadow:
-    0 0 15px rgba(103, 232, 249, 0.55),
-    0 0 27px rgba(170, 145, 255, 0.37);
-}
-
-.as-aichat-company-spectrum__node {
-  position: absolute;
-  color: #e1faff;
-  font-size: 12px;
-  line-height: 1;
-  animation: as-aichat-spectrum-pulse 5s infinite ease-in-out;
-}
-
-.as-aichat-company-spectrum__node--top {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.as-aichat-company-spectrum__node--left {
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  animation-delay: 0.5s;
-}
-
-.as-aichat-company-spectrum__node--right {
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  animation-delay: 1s;
-}
-
-.as-aichat-company-spectrum__node--bottom {
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-delay: 1.5s;
-}
 
 .as-aichat-relationship__content .as-aichat-button {
   margin-top: 30px;
@@ -1095,20 +1053,7 @@
   gap: 12px;
 }
 
-/* =========================================================
-   ANIMATION
-   ========================================================= */
 
-@keyframes as-aichat-spectrum-pulse {
-  0%,
-  100% {
-    opacity: 0.45;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
 
 /* =========================================================
    RESPONSIVE
@@ -1245,9 +1190,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .as-aichat-company-spectrum__node {
-    animation: none;
-  }
+  
 
   .as-aichat-button {
     transition: none;
