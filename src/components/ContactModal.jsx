@@ -294,9 +294,11 @@ function ContactModal({ isOpen, onClose }) {
           <div className="as-contact-modal__aside-glow" />
 
           <div className="as-contact-modal__brand">
-            <span className="as-contact-modal__brand-icon">
-              <Sparkles size={22} />
-            </span>
+            <img
+              src="/favicon.png"
+              alt="Automation Spectrum"
+              className="as-contact-modal__brand-logo"
+            />
 
             <span>
               <strong>

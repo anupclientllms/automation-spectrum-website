@@ -133,7 +133,7 @@
 .as-contact-modal__brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .as-contact-modal__brand-icon {
@@ -157,6 +157,17 @@
   flex-direction: column;
 }
 
+.as-contact-modal__brand-logo{
+    width:56px;
+    height:56px;
+    object-fit:contain;
+    display:block;
+    border-radius:14px;
+    transform:scale(.90);
+    filter:
+        drop-shadow(0 0 10px rgba(74,195,255,.30))
+        drop-shadow(0 0 18px rgba(139,92,246,.16));
+}
 .as-contact-modal__brand strong {
   font-size: 0.93rem;
   font-style: normal;
