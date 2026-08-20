@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import "../styles/home.css";
+import AIChatshoppieLogos from "../components/AIChatshoppieLogos";
 
 const products = [
   {
