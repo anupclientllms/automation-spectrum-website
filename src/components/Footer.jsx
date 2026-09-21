@@ -203,7 +203,7 @@ function Footer() {
 
             <div className="as-footer__social">
                 <a
-                    href="https://www.linkedin.com/company/automation-spectrum"
+                    href="https://www.linkedin.com/company/automation-spectrum-pty-ltd/"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Automation Spectrum on LinkedIn"
