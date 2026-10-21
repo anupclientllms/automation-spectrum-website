@@ -244,32 +244,33 @@ function CompanyPage({ openContactModal }) {
         <div className="as-company-container as-company-identity__layout">
           <div className="as-company-section-heading">
             <span className="as-company-section-heading__eyebrow">
-              The company behind the products
+              Company and platform relationship
             </span>
 
-            <h2>One company identity. Two specialised AI platforms.</h2>
+            <h2>Founder-led innovation. Distinct company identities.</h2>
           </div>
 
           <div className="as-company-identity__content">
             <p>
-              Automation Spectrum Pty Ltd is the parent company, technology
-              developer, intellectual-property owner and commercial entity
-              behind EnerG IQ Tech and AIChatshoppie.
+              Automation Spectrum Pty Ltd is an Australian enterprise AI
+              company associated with the earlier founder-led development
+              history of EnerG IQ Tech and the AIChatshoppie platform.
             </p>
 
             <p>
-              Customers engage with Automation Spectrum for product pilots,
-              commercial agreements, implementation, technology partnerships
-              and long-term platform deployment.
+              EnerG IQ Tech Pty Ltd was separately incorporated in October 2026
+              to advance the EnerG IQ platform through further development,
+              demonstration and commercialisation. Automation Spectrum
+              continues its own enterprise AI activities.
             </p>
 
             <div className="as-company-identity__statement">
               <Check size={18} />
 
               <p>
-                Contracts, proposals and invoices are issued by{" "}
-                <strong>Automation Spectrum Pty Ltd</strong>, with EnerG IQ Tech or
-                AIChatshoppie identified as the relevant product.
+                <strong>EnerG IQ Tech Pty Ltd</strong> is a separate company.
+                Any commercial engagement should identify the appropriate
+                legal contracting entity for the relevant offering.
               </p>
             </div>
           </div>
@@ -284,12 +285,12 @@ function CompanyPage({ openContactModal }) {
               Product portfolio
             </span>
 
-            <h2>Distinct products supported by one technology company</h2>
+            <h2>Specialised AI platforms and founder-led initiatives</h2>
 
             <p>
-              Each platform serves a focused business need while drawing on
-              Automation Spectrum&apos;s shared AI, data, product engineering
-              and commercialisation capabilities.
+              These platforms address distinct business needs. EnerG IQ Tech
+              is now being advanced by the separately incorporated
+              EnerG IQ Tech Pty Ltd.
             </p>
           </div>
 
@@ -347,12 +348,13 @@ function CompanyPage({ openContactModal }) {
                 <ArrowRight size={17} />
                 <strong>EnerG IQ Tech industry solution</strong>
                 <ArrowRight size={17} />
-                <strong>Automation Spectrum Pty Ltd</strong>
+                <strong>EnerG IQ Tech Pty Ltd</strong>
               </div>
 
               <p>
-                The product defines the solution. Automation Spectrum remains
-                the accountable contracting and delivery entity.
+                EnerG IQ Tech Pty Ltd is the separately incorporated company
+                advancing the EnerG IQ platform. Contracting arrangements
+                should be confirmed directly with that company.
               </p>
             </div>
           </div>
@@ -601,8 +603,8 @@ function CompanyPage({ openContactModal }) {
             </div>
 
             <div>
-              <span>Products</span>
-              <strong>EnerG IQ Tech and AIChatshoppie</strong>
+              <span>Platform and historical association</span>
+              <strong>AIChatshoppie; EnerG IQ Tech (separately incorporated)</strong>
             </div>
           </div>
         </div>

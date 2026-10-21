@@ -38,9 +38,10 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          This Intellectual Property Notice explains the ownership and
-          permitted use of intellectual property associated with Automation
-          Spectrum Pty Ltd, its corporate website and its products.
+          This Intellectual Property Notice explains the permitted use of
+          intellectual property presented on the Automation Spectrum Pty Ltd
+          website, including material relating to separately incorporated
+          technology businesses.
         </p>
 
         <p>
@@ -73,9 +74,11 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Automation Spectrum Pty Ltd is the Australian company responsible
-          for developing, owning, commercialising and supporting its product
-          portfolio.
+          Automation Spectrum Pty Ltd is an Australian enterprise AI technology
+          company associated with AIChatshoppie and the founder-led development
+          history of EnerG IQ Tech. EnerG IQ Tech Pty Ltd was separately
+          incorporated on 19 October 2026 to advance EnerG IQ Tech development,
+          demonstration and commercialisation.
         </p>
 
         <div className="as-ip-company-card">
@@ -95,8 +98,13 @@ const intellectualPropertySections = [
           </div>
 
           <div>
-            <span>Energy product</span>
-            <strong>EnerG IQ Tech</strong>
+            <span>Separately incorporated energy platform company</span>
+            <strong>EnerG IQ Tech Pty Ltd</strong>
+          </div>
+
+          <div>
+            <span>EnerG IQ Tech ABN</span>
+            <strong>67 703 353 468</strong>
           </div>
 
           <div>
@@ -106,9 +114,11 @@ const intellectualPropertySections = [
         </div>
 
         <p>
-          EnerG IQ Tech and AIChatshoppie are product identities and do not represent
-          separate contracting entities unless expressly stated in a written
-          agreement.
+          EnerG IQ Tech Pty Ltd and Automation Spectrum Pty Ltd are distinct
+          legal entities. The ownership, licensing and contracting arrangements
+          applicable to particular technology or engagements are determined
+          by the relevant rights and written agreements; this website does
+          not assert an IP assignment between the companies.
         </p>
       </>
     ),
@@ -121,9 +131,11 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Unless otherwise stated, intellectual property displayed, described
-          or demonstrated through the website is owned by, licensed to, or
-          controlled by Automation Spectrum Pty Ltd.
+          Intellectual property displayed, described or demonstrated through
+          this website may belong to Automation Spectrum Pty Ltd, the
+          relevant founder or other rights holders, including parties
+          associated with EnerG IQ Tech. Publication here does not establish
+          ownership by Automation Spectrum Pty Ltd.
         </p>
 
         <p>Protected material may include:</p>
@@ -154,10 +166,10 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Automation Spectrum&apos;s technology intellectual property may
-          include reusable software components and platform capabilities
-          developed across infrastructure, model, data and agentic-system
-          layers.
+          Technology described on this website may include reusable software
+          components and platform capabilities developed across infrastructure,
+          model, data and agentic-system layers. Rights in particular
+          implementations remain with their respective rights holders.
         </p>
 
         <div className="as-ip-technology-grid">
@@ -238,9 +250,10 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          EnerG IQ Tech and AIChatshoppie each contain product-specific intellectual
-          property built on Automation Spectrum&apos;s shared engineering
-          foundation.
+          EnerG IQ Tech and AIChatshoppie contain distinct product-specific
+          technology and share a founder-led engineering background.
+          Their respective intellectual-property rights should not be
+          inferred from their appearance together on this website.
         </p>
 
         <div className="as-ip-product-grid">
@@ -274,9 +287,9 @@ const intellectualPropertySections = [
         </div>
 
         <p>
-          Industry solutions, use cases and product configurations remain part
-          of the relevant Automation Spectrum product unless a written
-          agreement expressly provides otherwise.
+          Industry solutions, use cases and product configurations remain
+          subject to the rights of their respective owners and the terms
+          of applicable written agreements.
         </p>
       </>
     ),
@@ -289,10 +302,11 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          The names Automation Spectrum, EnerG IQ Tech and AIChatshoppie, together
-          with associated logos, product marks, taglines and visual elements,
-          are brand assets of Automation Spectrum Pty Ltd or its related
-          interests.
+          The names Automation Spectrum, EnerG IQ Tech and AIChatshoppie,
+          together with their associated logos and visual elements, are
+          associated with distinct business and product identities.
+          Their appearance on this website does not establish common
+          trademark or brand ownership.
         </p>
 
         <p>You must not use these assets in a way that:</p>
@@ -307,8 +321,8 @@ const intellectualPropertySections = [
         </ul>
 
         <p>
-          Written approval should be obtained before using Automation Spectrum
-          brand assets in public marketing, media, events, case studies or
+          Written approval should be obtained from the relevant rights holder
+          before using protected brand assets in public marketing, media, events, case studies or
           commercial material.
         </p>
       </>
@@ -358,10 +372,10 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Access to this website does not grant a licence to Automation
-          Spectrum software, products, patents, confidential information,
-          trade secrets, methodologies, trademarks or other intellectual
-          property.
+          Access to this website does not grant a licence to software,
+          products, patents, confidential information, trade secrets,
+          methodologies, trademarks or other intellectual property of
+          Automation Spectrum or any other relevant rights holder.
         </p>
 
         <p>
@@ -372,7 +386,7 @@ const intellectualPropertySections = [
         </p>
 
         <p>
-          No licence is created merely because Automation Spectrum:
+          No licence is created merely because a relevant technology provider:
         </p>
 
         <ul>
@@ -400,14 +414,14 @@ const intellectualPropertySections = [
         </p>
 
         <p>
-          Automation Spectrum&apos;s right to access and process customer
-          materials should be limited to the purposes described in the relevant
-          agreement.
+          The relevant contracting party&apos;s right to access and process
+          customer materials should be limited to the purposes described in
+          the applicable agreement.
         </p>
 
         <p>
-          Customer ownership of its materials does not transfer ownership of
-          Automation Spectrum&apos;s:
+          Customer ownership of its materials does not, by itself, transfer
+          ownership of a technology provider&apos;s:
         </p>
 
         <ul>
@@ -443,9 +457,10 @@ const intellectualPropertySections = [
         </p>
 
         <p>
-          Unless a written agreement states otherwise, Automation Spectrum
-          retains ownership of its background intellectual property and
-          reusable platform capability.
+          Unless a written agreement states otherwise, each rights holder
+          retains its own background intellectual property and reusable
+          platform capability. This notice does not determine ownership
+          of EnerG IQ Tech intellectual property.
         </p>
 
         <p>
@@ -457,8 +472,8 @@ const intellectualPropertySections = [
           <li>are generic and reusable;</li>
           <li>do not reveal customer confidential information;</li>
           <li>are not uniquely commissioned customer materials;</li>
-          <li>form part of the EnerG IQ Tech or AIChatshoppie platform;</li>
-          <li>are improvements to Automation Spectrum&apos;s existing technology.</li>
+          <li>form part of a platform to which the relevant rights holder has rights;</li>
+          <li>are improvements to the relevant rights holder&apos;s existing technology.</li>
         </ul>
       </>
     ),
@@ -481,10 +496,10 @@ const intellectualPropertySections = [
 
         <ul>
           <li>customer ownership of specified commissioned materials;</li>
-          <li>an Automation Spectrum licence to customer-specific materials;</li>
-          <li>a customer licence to use Automation Spectrum technology;</li>
+          <li>a technology-provider licence to customer-specific materials;</li>
+          <li>a customer licence to use the relevant provider&apos;s technology;</li>
           <li>shared rights in agreed collaborative research outputs;</li>
-          <li>Automation Spectrum ownership of product improvements;</li>
+          <li>ownership of product improvements by the applicable rights holder;</li>
           <li>restrictions on reuse of confidential customer information.</li>
         </ul>
 
@@ -508,15 +523,15 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Customers, users and partners may provide feedback about Automation
-          Spectrum products, demonstrations or potential improvements.
+          Customers, users and partners may provide feedback about products,
+          demonstrations or potential improvements discussed on this website.
         </p>
 
         <p>
-          Unless otherwise agreed in writing, Automation Spectrum may use
-          general feedback and suggestions to improve its products, provided
-          that it does not disclose protected customer confidential
-          information.
+          Use of feedback and suggestions is subject to applicable agreements
+          and rights. The relevant technology provider may use general
+          feedback to improve its products where permitted, without disclosing
+          protected customer confidential information.
         </p>
 
         <p>
@@ -568,7 +583,7 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Automation Spectrum products may use open-source software,
+          The products described on this website may use open-source software,
           third-party libraries, cloud services, models, datasets or other
           licensed technology.
         </p>
@@ -581,8 +596,8 @@ const intellectualPropertySections = [
 
         <p>
           References to third-party technologies do not transfer ownership of
-          Automation Spectrum&apos;s proprietary configuration, integration,
-          orchestration, product design or surrounding software.
+          proprietary configurations, integrations, orchestration, product
+          designs or surrounding software held by their respective owners.
         </p>
       </>
     ),
@@ -613,7 +628,7 @@ const intellectualPropertySections = [
         </ul>
 
         <p>
-          Automation Spectrum does not guarantee that every AI-generated output
+          Automation Spectrum does not represent that every AI-generated output
           will qualify for intellectual-property protection or be free of all
           third-party rights.
         </p>
@@ -628,7 +643,8 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Certain Automation Spectrum materials may be confidential even where
+          Certain materials presented by Automation Spectrum or a relevant
+          technology provider may be confidential even where
           they are shared during a demonstration, pilot discussion, funding
           process, due-diligence exercise or commercial negotiation.
         </p>
@@ -666,7 +682,7 @@ const intellectualPropertySections = [
         </p>
 
         <ul>
-          <li>reverse engineer Automation Spectrum software;</li>
+          <li>reverse engineer software belonging to a relevant rights holder;</li>
           <li>decompile or attempt to extract source code;</li>
           <li>circumvent technical protection measures;</li>
           <li>copy agent workflows or product logic to build a competing system;</li>
@@ -729,7 +745,7 @@ const intellectualPropertySections = [
         </ul>
 
         <p>
-          A permission request should explain the material, intended use,
+          A permission request to the relevant rights holder should explain the material, intended use,
           audience, format and expected duration of use.
         </p>
       </>
@@ -763,8 +779,9 @@ const intellectualPropertySections = [
     content: (
       <>
         <p>
-          Permission requests, suspected infringement reports and
-          intellectual-property enquiries may be directed to:
+          For Automation Spectrum website materials, permission requests,
+          suspected infringement reports and intellectual-property enquiries
+          may be directed to:
         </p>
 
         <div className="as-ip-contact-card">
@@ -778,6 +795,12 @@ const intellectualPropertySections = [
           <span>Melbourne, Victoria, Australia</span>
           <span>ABN 80 636 637 904</span>
         </div>
+
+        <p>
+          For EnerG IQ Tech-specific intellectual-property enquiries, contact
+          EnerG IQ Tech Pty Ltd at{" "}
+          <a href="mailto:anup@energiqtech.com">anup@energiqtech.com</a>.
+        </p>
       </>
     ),
   },
@@ -804,9 +827,9 @@ function IntellectualPropertyPage() {
           <h1>Intellectual Property</h1>
 
           <p>
-            This notice explains the ownership and permitted use of Automation
-            Spectrum technology, products, website material, brands,
-            demonstrations and related intellectual property.
+            This notice explains the permitted use of Automation Spectrum website
+            material and technology information, including references to
+            independently incorporated EnerG IQ Tech Pty Ltd.
           </p>
 
           <div className="as-ip-hero__meta">
@@ -817,11 +840,11 @@ function IntellectualPropertyPage() {
 
             <span>
               <strong>Last updated</strong>
-              22 July 2026
+              21 October 2026
             </span>
 
             <span>
-              <strong>Rights holder</strong>
+              <strong>Website operator</strong>
               Automation Spectrum Pty Ltd
             </span>
           </div>
@@ -853,9 +876,9 @@ function IntellectualPropertyPage() {
                 <strong>Ownership remains protected</strong>
 
                 <p>
-                  Public access to the Automation Spectrum website does not
-                  transfer ownership or grant a licence to EnerG IQ Tech,
-                  AIChatshoppie or the underlying technology.
+                  Public access to this website does not transfer ownership or
+                  grant a licence to EnerG IQ Tech, AIChatshoppie or
+                  underlying technology held by their respective rights holders.
                 </p>
               </div>
             </div>
@@ -894,9 +917,9 @@ function IntellectualPropertyPage() {
                 <strong>Need permission to use our material?</strong>
 
                 <p>
-                  Contact Automation Spectrum before reproducing product,
-                  technical, brand or website material outside ordinary
-                  internal reference use.
+                  Contact Automation Spectrum regarding its website or materials.
+                  For EnerG IQ Tech-specific permissions, contact
+                  EnerG IQ Tech Pty Ltd directly.
                 </p>
 
                 <a href="mailto:contact@automationspectrum.com.au">

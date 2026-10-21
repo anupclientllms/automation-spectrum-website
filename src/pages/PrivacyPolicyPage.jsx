@@ -38,8 +38,8 @@ const policySections = [
           <li>contact, pilot and partnership enquiry forms;</li>
           <li>commercial discussions and customer relationships;</li>
           <li>
-            Automation Spectrum products, including EnerG IQ Tech and
-            AIChatshoppie, where this policy is referenced;
+            Automation Spectrum products, including AIChatshoppie, where
+            this policy is referenced;
           </li>
           <li>
             events, demonstrations, meetings, email communications and
@@ -48,9 +48,11 @@ const policySections = [
         </ul>
 
         <p>
-          A separate privacy notice, customer agreement or product-specific
-          data-processing arrangement may apply where Automation Spectrum
-          processes information through a customer implementation.
+          EnerG IQ Tech Pty Ltd is a separately incorporated company.
+          This policy does not govern personal information collected or
+          processed independently by EnerG IQ Tech Pty Ltd. A separate
+          privacy notice, customer agreement or product-specific
+          data-processing arrangement may apply to customer implementations.
         </p>
       </>
     ),
@@ -157,7 +159,8 @@ const policySections = [
         <ul>
           <li>respond to enquiries and requests;</li>
           <li>
-            assess potential EnerG IQ Tech or AIChatshoppie pilot opportunities;
+            assess potential AIChatshoppie pilot opportunities or refer EnerG IQ Tech
+            enquiries to the appropriate company where authorised;
           </li>
           <li>
             communicate about projects, products, demonstrations and
@@ -196,7 +199,8 @@ const policySections = [
     content: (
       <>
         <p>
-          Automation Spectrum develops AI-enabled products. Information
+          Automation Spectrum develops AI-enabled products, including
+          AIChatshoppie. Information
           provided during a project or pilot may be processed using automated
           systems where this is necessary to deliver the agreed capability.
         </p>
@@ -214,7 +218,9 @@ const policySections = [
         </ul>
 
         <p>
-          The applicable customer agreement should specify the data sources,
+          Any EnerG IQ Tech pilot or service operated by EnerG IQ Tech Pty Ltd
+          is subject to that company's applicable privacy arrangements.
+          The applicable Automation Spectrum customer agreement should specify the data sources,
           purposes, access controls, hosting arrangements and responsibility
           for reviewing AI-generated outputs.
         </p>
@@ -251,6 +257,10 @@ const policySections = [
           <li>
             contractors and implementation partners supporting an authorised
             engagement;
+          </li>
+          <li>
+            EnerG IQ Tech Pty Ltd, where you authorise referral of an enquiry
+            or another lawful basis permits the disclosure;
           </li>
           <li>
             government bodies, regulators or law-enforcement agencies where
@@ -548,7 +558,7 @@ function PrivacyPolicyPage() {
 
             <span>
               <strong>Last updated</strong>
-              22 July 2026
+              21 October 2026
             </span>
 
             <span>

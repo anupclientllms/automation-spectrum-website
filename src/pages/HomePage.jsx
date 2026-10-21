@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -23,7 +24,7 @@ const products = [
     eyebrow: "Energy & Operational Intelligence",
     name: "EnerG IQ Tech",
     description:
-      "An AI-powered energy and operational intelligence platform helping energy-intensive organisations reduce costs, improve asset performance and make better operational decisions.",
+      "A founder-led AI-powered energy and operational intelligence platform, now being advanced through the separately incorporated EnerG IQ Tech Pty Ltd, helping energy-intensive organisations reduce costs, improve asset performance and make better operational decisions.",
     capabilities: [
       "AI decision agents",
       "Operational digital twins",
@@ -176,9 +177,10 @@ function HomePage({ openContactModal }) {
             </h1>
 
             <p className="as-hero__description">
-              Automation Spectrum builds specialised AI products that help
-              organisations reduce operational costs, improve decision-making
-              and automate complex enterprise workflows.
+              Automation Spectrum develops specialised AI technology and
+              supports founder-led innovation that helps organisations
+              reduce operational costs, improve decision-making and
+              automate complex enterprise workflows.
             </p>
 
             <div className="as-hero__actions">
@@ -191,9 +193,9 @@ function HomePage({ openContactModal }) {
                 type="button"
                 className="as-button as-button--secondary"
                 onClick={openContactModal}
-                >
+              >
                 Discuss an AI pilot
-                </button>
+              </button>
             </div>
 
             <div className="as-hero__assurance">
@@ -266,15 +268,17 @@ function HomePage({ openContactModal }) {
       <section className="as-identity-strip">
         <div className="as-container as-identity-strip__content">
           <p>
-            <strong>Automation Spectrum Pty Ltd</strong> is the company behind
-            EnerG IQ Tech and AIChatshoppie.
+            <strong>Automation Spectrum Pty Ltd</strong> supports applied
+            AI innovation, including the founder-led development history
+            of EnerG IQ Tech and the AIChatshoppie platform.
           </p>
 
           <div className="as-identity-strip__divider" />
 
           <p>
-            One Australian company. Two specialised AI platforms. One clear
-            commercial and technology structure.
+            EnerG IQ Tech Pty Ltd was separately incorporated in October
+            2026 to advance the EnerG IQ platform's development,
+            demonstration and commercialisation.
           </p>
         </div>
       </section>
@@ -290,8 +294,9 @@ function HomePage({ openContactModal }) {
             <h2>Specialised platforms for distinct enterprise problems</h2>
 
             <p>
-              Each product has a focused commercial purpose while sharing the
-              engineering, AI and delivery capabilities of Automation Spectrum.
+              Our technology portfolio and associated founder-led
+              initiatives address distinct commercial problems through
+              specialised AI, engineering and delivery capabilities.
             </p>
           </div>
 
@@ -467,8 +472,6 @@ function HomePage({ openContactModal }) {
               );
             })}
           </div>
-
-          
         </div>
       </section>
 
@@ -539,12 +542,12 @@ function HomePage({ openContactModal }) {
 
           <div className="as-final-cta__actions">
             <button
-                type="button"
-                className="as-button as-button--primary"
-                onClick={openContactModal}
+              type="button"
+              className="as-button as-button--primary"
+              onClick={openContactModal}
             >
-                Start a conversation
-                <ArrowRight size={18} />
+              Start a conversation
+              <ArrowRight size={18} />
             </button>
 
             <Link className="as-button as-button--secondary" to="/company">

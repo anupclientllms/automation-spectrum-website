@@ -306,9 +306,10 @@ function PilotProgramsPage({ openContactModal }) {
             </h1>
 
             <p>
-              Automation Spectrum pilot programs help organisations validate
-              applied AI against a focused business problem before committing
-              to broader production deployment.
+              These pilot programs help organisations validate applied AI
+              against a focused business problem before committing
+              to broader production deployment. EnerG IQ Tech pilots
+              are pursued through the separately incorporated EnerG IQ Tech Pty Ltd.
             </p>
 
             <div className="as-pilot-hero__actions">
@@ -370,9 +371,9 @@ function PilotProgramsPage({ openContactModal }) {
             </p>
 
             <p>
-              A focused pilot gives the organisation and Automation Spectrum a
-              structured environment to validate those assumptions using a
-              real business problem.
+              A focused pilot gives the customer and the relevant technology
+              provider a structured environment to validate those
+              assumptions using a real business problem.
             </p>
 
             <div className="as-pilot-intro__statement">
@@ -434,8 +435,9 @@ function PilotProgramsPage({ openContactModal }) {
             <h2>Choose the platform aligned with the business problem</h2>
 
             <p>
-              Automation Spectrum pilots are delivered through EnerG IQ Tech or
-              AIChatshoppie depending on the use case.
+              EnerG IQ Tech pilots are pursued through EnerG IQ Tech Pty Ltd,
+              a separately incorporated company. AIChatshoppie pilots
+              are offered through Automation Spectrum Pty Ltd.
             </p>
           </div>
 
@@ -676,7 +678,7 @@ function PilotProgramsPage({ openContactModal }) {
 
           <div className="as-pilot-responsibilities__grid">
             <article className="as-pilot-responsibility-card">
-              <span>Automation Spectrum</span>
+              <span>Relevant technology provider</span>
 
               <h3>Product, AI and pilot delivery</h3>
 
@@ -745,9 +747,9 @@ function PilotProgramsPage({ openContactModal }) {
             </h2>
 
             <p>
-              We will help assess whether the opportunity is suitable for an
-              EnerG IQ Tech or AIChatshoppie pilot and define an appropriate next
-              step.
+              We can help identify whether an EnerG IQ Tech or AIChatshoppie
+              pilot is relevant and direct the enquiry to the appropriate
+              company for the next step.
             </p>
           </div>
 

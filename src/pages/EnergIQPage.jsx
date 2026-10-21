@@ -352,7 +352,7 @@ function EnergIQPage({ openContactModal }) {
           <div className="as-energiq-hero__content">
             <div className="as-energiq-eyebrow">
               <Zap size={15} />
-              A product of Automation Spectrum Pty Ltd
+              A founder-led platform now advanced by EnerG IQ Tech Pty Ltd
             </div>
 
             <h1>
@@ -417,30 +417,33 @@ function EnergIQPage({ openContactModal }) {
               Product and company relationship
             </span>
 
-            <h2>EnerG IQ Tech is developed and commercialised by Automation Spectrum</h2>
+            <h2>EnerG IQ Tech is advancing through a separately incorporated company</h2>
           </div>
 
           <div className="as-energiq-intro__content">
             <p>
-              EnerG IQ Tech is Automation Spectrum&apos;s energy and operational
-              intelligence product. Industry offerings such as Cold Storage AI,
+              EnerG IQ Tech was conceptualised and developed by its founder, with
+              Automation Spectrum Pty Ltd serving as the earlier business entity
+              associated with the initiative. Industry offerings such as Cold Storage AI,
               Building AI, Warehouse &amp; Logistics AI and DER intelligence
               are product configurations within the EnerG IQ Tech platform.
             </p>
 
             <p>
-              Customers contract with Automation Spectrum Pty Ltd, while
-              EnerG IQ Tech identifies the product and relevant industry solution
-              being delivered.
+              EnerG IQ Tech Pty Ltd was incorporated in October 2026 to advance the
+              platform&apos;s development, demonstration and commercialisation
+              as a separate Australian company.
             </p>
 
             <div className="as-energiq-intro__statement">
               <Building2 size={19} />
 
               <p>
-                <strong>Contracting entity:</strong> Automation Spectrum Pty Ltd
+                <strong>Current company:</strong> EnerG IQ Tech Pty Ltd
                 <br />
-                <strong>Product:</strong> EnerG IQ Tech
+                <strong>Historical association:</strong> Automation Spectrum Pty Ltd
+                <br />
+                <strong>Platform:</strong> EnerG IQ Tech
                 <br />
                 <strong>Solution:</strong> The relevant industry or operational
                 configuration
@@ -874,8 +877,8 @@ function EnergIQPage({ openContactModal }) {
             </h2>
 
             <p>
-              Automation Spectrum will help assess the available information,
-              appropriate EnerG IQ Tech configuration and a focused pilot pathway.
+              For current EnerG IQ Tech enquiries and pilot opportunities, visit the
+              EnerG IQ Tech website to connect with the separately incorporated company.
             </p>
           </div>
 
@@ -895,7 +898,7 @@ function EnergIQPage({ openContactModal }) {
               rel="noreferrer"
               className="as-energiq-button as-energiq-button--secondary"
             >
-              Explore EnerG IQ Tech Tech
+              Explore EnerG IQ Tech
             </a>
           </div>
         </div>

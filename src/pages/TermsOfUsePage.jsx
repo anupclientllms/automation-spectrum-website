@@ -71,14 +71,22 @@ const termsSections = [
           <span>Australian Company Number</span>
           <strong>636 637 904</strong>
 
-          <span>Products</span>
-          <strong>EnerG IQ Tech and AIChatshoppie</strong>
+          <span>Enterprise AI platform</span>
+          <strong>AIChatshoppie</strong>
+
+          <span>Founder-led platform association</span>
+          <strong>EnerG IQ Tech (separately incorporated)</strong>
         </div>
 
         <p>
-          EnerG IQ Tech and AIChatshoppie are products of Automation Spectrum Pty
-          Ltd. References to either product on this website do not create a
-          separate contracting entity.
+          AIChatshoppie is an Automation Spectrum technology platform.
+          EnerG IQ Tech was conceptualised and developed by the founder,
+          with Automation Spectrum historically serving as the business entity
+          associated with earlier activities. EnerG IQ Tech Pty Ltd was
+          separately incorporated on 19 October 2026 to advance the EnerG IQ
+          platform's development, demonstration and commercialisation.
+          References to EnerG IQ Tech do not make Automation Spectrum the
+          contracting entity for EnerG IQ Tech Pty Ltd.
         </p>
       </>
     ),
@@ -317,7 +325,7 @@ const termsSections = [
         <p>
           Actual outcomes depend on customer systems, tariffs, weather,
           equipment condition, operational constraints, implementation quality
-          and other factors outside Automation Spectrum&apos;s control.
+          and other factors beyond the control of the relevant technology provider.
         </p>
 
         <p>
@@ -342,8 +350,10 @@ const termsSections = [
     content: (
       <>
         <p>
-          Unless otherwise stated, the website and its content are owned by or
-          licensed to Automation Spectrum Pty Ltd.
+          Unless otherwise stated, this website's content is owned by or
+          licensed to Automation Spectrum Pty Ltd or used with permission.
+          References to EnerG IQ Tech do not establish ownership of its
+          underlying technology or intellectual property by Automation Spectrum.
         </p>
 
         <p>Protected material may include:</p>
@@ -368,7 +378,7 @@ const termsSections = [
         <p>
           EnerG IQ Tech, AIChatshoppie, Automation Spectrum and associated marks may
           not be used in a way that suggests endorsement, affiliation or
-          ownership without authorisation.
+          ownership without authorisation from the relevant rights holder.
         </p>
 
         <p>
@@ -706,7 +716,7 @@ function TermsOfUsePage() {
 
             <span>
               <strong>Last updated</strong>
-              22 July 2026
+              21 October 2026
             </span>
 
             <span>
@@ -742,9 +752,11 @@ function TermsOfUsePage() {
                 <strong>Important distinction</strong>
 
                 <p>
-                  These website terms do not replace a pilot agreement,
-                  customer contract, subscription agreement, software licence,
-                  data-processing agreement or statement of work.
+                  These Automation Spectrum website terms do not replace a pilot
+                  agreement, customer contract, subscription agreement, software
+                  licence, data-processing agreement or statement of work with
+                  the relevant legal entity, including EnerG IQ Tech Pty Ltd
+                  where applicable.
                 </p>
               </div>
             </div>

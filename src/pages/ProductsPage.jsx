@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   Activity,
@@ -30,7 +31,7 @@ const products = [
     theme: "energy",
     icon: Zap,
     description:
-      "An applied AI platform helping energy-intensive organisations understand operations, reduce avoidable costs and improve asset and energy performance.",
+      "A founder-led industrial energy optimisation platform now being advanced through the separately incorporated EnerG IQ Tech Pty Ltd, helping energy-intensive organisations understand operations, reduce avoidable costs and improve asset and energy performance.",
     capabilities: [
       "Operational energy intelligence",
       "AI decision agents",
@@ -300,14 +301,15 @@ function ProductsPage({ openContactModal }) {
 
             <h1>
               Specialised AI products built on{" "}
-              <span>one shared company foundation.</span>
+              <span>a shared engineering foundation.</span>
             </h1>
 
             <p>
-              Automation Spectrum develops focused products for distinct
-              enterprise and operational problems while sharing AI, data,
-              integration and product-engineering capabilities across the
-              portfolio.
+              Automation Spectrum develops specialised enterprise AI
+              technology and supports founder-led product innovation.
+              Its portfolio showcases AIChatshoppie and the separately
+              incorporated EnerG IQ Tech platform, which share an
+              engineering and technology background.
             </p>
 
             <div className="as-products-hero__actions">
@@ -331,7 +333,7 @@ function ProductsPage({ openContactModal }) {
             <div className="as-products-hero__assurance">
               <div>
                 <Check size={16} />
-                Clear product ownership
+                Distinct company identities
               </div>
 
               <div>
@@ -358,28 +360,40 @@ function ProductsPage({ openContactModal }) {
               Product and company structure
             </span>
 
-            <h2>Automation Spectrum is the company behind both products</h2>
+            <h2>
+              Founder-led technology initiatives with distinct company
+              identities
+            </h2>
           </div>
 
           <div className="as-products-intro__content">
             <p>
-              EnerG IQ Tech and AIChatshoppie are products developed, owned and
-              commercialised by Automation Spectrum Pty Ltd.
+              EnerG IQ Tech was conceptualised and developed by the
+              founder, with Automation Spectrum Pty Ltd serving as
+              the earlier business entity associated with its development
+              and commercialisation activities. EnerG IQ Tech Pty Ltd
+              was separately incorporated in October 2026 to advance
+              the platform's development, demonstration and
+              commercialisation.
             </p>
 
             <p>
-              Each product has a clear customer purpose and market position,
-              while contracts, product delivery, technology development and
-              commercial relationships remain with Automation Spectrum.
+              AIChatshoppie remains an Automation Spectrum technology
+              platform. EnerG IQ Tech and AIChatshoppie address distinct
+              customer needs while sharing a founder-led engineering
+              and technology background.
             </p>
 
             <div className="as-products-intro__statement">
               <Building2 size={19} />
 
               <p>
-                Customer agreements identify the relevant product while{" "}
-                <strong>Automation Spectrum Pty Ltd</strong> remains the
-                contracting and accountable delivery entity.
+                <strong>EnerG IQ Tech Pty Ltd</strong> is a separately
+                incorporated company advancing EnerG IQ Tech.
+                <strong> Automation Spectrum Pty Ltd</strong> continues
+                its enterprise AI activities, including AIChatshoppie.
+                Commercial agreements identify the relevant legal
+                contracting entity.
               </p>
             </div>
           </div>
@@ -492,8 +506,8 @@ function ProductsPage({ openContactModal }) {
             <h2>How EnerG IQ Tech and AIChatshoppie differ</h2>
 
             <p>
-              The products share core engineering capability but address
-              different customer problems, users and data environments.
+              The products share a founder-led engineering background but
+              address different customer problems, users and data environments.
             </p>
           </div>
 
@@ -537,9 +551,10 @@ function ProductsPage({ openContactModal }) {
             <h2>Reusable capability strengthens every product</h2>
 
             <p>
-              Automation Spectrum develops common AI, data, integration,
-              governance and deployment capabilities that can be adapted to
-              different product contexts.
+              Reusable AI, data, integration, governance and deployment
+              capabilities reflect the platforms' shared founder-led
+              engineering background and can be adapted to different
+              product contexts.
             </p>
           </div>
 
@@ -637,9 +652,10 @@ function ProductsPage({ openContactModal }) {
             </p>
 
             <p>
-              These capabilities remain separate products but can be integrated
-              where a customer requirement genuinely spans operational and
-              enterprise intelligence.
+              These capabilities remain separate products under distinct
+              company arrangements but can be integrated where a customer
+              requirement genuinely spans operational and enterprise
+              intelligence, subject to appropriate commercial agreements.
             </p>
 
             <button
@@ -751,8 +767,9 @@ function ProductsPage({ openContactModal }) {
             <h2>Start with the customer problem, not the product label</h2>
 
             <p>
-              Automation Spectrum helps determine the appropriate platform and
-              pilot structure after understanding the business requirement.
+              Automation Spectrum can help identify a suitable AI platform
+              and pilot approach, with EnerG IQ Tech opportunities directed
+              to the separately incorporated EnerG IQ Tech Pty Ltd.
             </p>
           </div>
 
@@ -787,8 +804,10 @@ function ProductsPage({ openContactModal }) {
             </h2>
 
             <p>
-              Discuss EnerG IQ Tech, AIChatshoppie, a combined opportunity or a
-              strategic product collaboration with Automation Spectrum.
+              Discuss AIChatshoppie, a potential collaboration involving
+              EnerG IQ Tech, or another strategic product opportunity.
+              EnerG IQ Tech is being advanced separately by EnerG IQ Tech
+              Pty Ltd.
             </p>
           </div>
 

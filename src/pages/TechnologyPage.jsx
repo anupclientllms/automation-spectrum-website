@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   Activity,
@@ -273,10 +274,11 @@ function TechnologyPage({ openContactModal }) {
             </h1>
 
             <p>
-              Automation Spectrum combines AI agents, digital twins,
+              Automation Spectrum applies AI agents, digital twins,
               enterprise knowledge, connected data and human-controlled
-              workflows into specialised products that can move from pilot to
-              production.
+              workflows to enterprise solutions and founder-led technology
+              initiatives, including the separately incorporated EnerG IQ Tech
+              platform.
             </p>
 
             <div className="as-tech-hero__actions">
@@ -376,20 +378,26 @@ function TechnologyPage({ openContactModal }) {
               Product technology strategy
             </span>
 
-            <h2>One reusable foundation supporting specialised products</h2>
+            <h2>
+              Reusable engineering capabilities supporting specialised AI
+              platforms
+            </h2>
           </div>
 
           <div className="as-tech-intro__content">
             <p>
-              EnerG IQ Tech and AIChatshoppie serve different customer problems, but
-              both are supported by Automation Spectrum&apos;s shared
-              engineering, AI, data and deployment capability.
+              EnerG IQ Tech and AIChatshoppie address different customer
+              problems and share a founder-led engineering and technology
+              background. EnerG IQ Tech is now being advanced through the
+              separately incorporated EnerG IQ Tech Pty Ltd, while
+              AIChatshoppie remains an Automation Spectrum technology platform.
             </p>
 
             <p>
-              This approach enables product-specific experiences without
-              rebuilding the entire technical foundation for every customer or
-              industry.
+              Reusable engineering, AI, data and deployment capabilities
+              support product-specific experiences without requiring the
+              entire technical foundation to be rebuilt for every customer
+              or industry.
             </p>
 
             <div className="as-tech-intro__products">
@@ -604,9 +612,10 @@ function TechnologyPage({ openContactModal }) {
             <h2>Control and accountability remain part of the architecture</h2>
 
             <p>
-              Automation Spectrum products are designed to support review,
-              governance and human responsibility—particularly where
-              recommendations may affect operations, cost, assets or customers.
+              The AI technologies and product initiatives presented here
+              are designed to support review, governance and human
+              responsibility—particularly where recommendations may affect
+              operations, cost, assets or customers.
             </p>
 
             <button

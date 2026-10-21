@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
@@ -41,9 +42,9 @@ const companyLinks = [
     path: "/pilot-programs",
   },
   //{
-   // label: "Contact",
-  //  path: "/contact",
- // },
+  // label: "Contact",
+  // path: "/contact",
+  // },
 ];
 
 const legalLinks = [
@@ -95,8 +96,9 @@ function Footer() {
 
             <p className="as-footer__description">
               Automation Spectrum Pty Ltd is an Australian enterprise AI
-              product company building specialised platforms for energy,
-              operations and enterprise intelligence.
+              technology company focused on applied AI, intelligent
+              automation and enterprise solutions, with a history of
+              supporting founder-led technology innovation.
             </p>
 
             <div className="as-footer__product-badges">
@@ -175,7 +177,9 @@ function Footer() {
 
                 <span>
                   <strong>Melbourne, Australia</strong>
-                  <small>Serving organisations across Australia and globally</small>
+                  <small>
+                    Serving organisations across Australia and globally
+                  </small>
                 </span>
               </div>
 
@@ -202,42 +206,41 @@ function Footer() {
             </div>
 
             <div className="as-footer__social">
-                <a
-                    href="https://www.linkedin.com/company/automation-spectrum-pty-ltd/"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Automation Spectrum on LinkedIn"
+              <a
+                href="https://www.linkedin.com/company/automation-spectrum-pty-ltd/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Automation Spectrum on LinkedIn"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
                 >
-                    <svg
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                    >
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
-                    <rect width="4" height="12" x="2" y="9" />
-                    <circle cx="4" cy="4" r="2" />
-                    </svg>
-                </a>
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
             </div>
-            </div>
+          </div>
         </div>
-
-       
 
         <div className="as-footer__bottom">
           <p>
-            © {currentYear} Automation Spectrum Pty Ltd. All rights reserved.<br></br>
-
-            <strong>EnerG IQ Tech</strong> and <strong>AIChatshoppie</strong> are
-            products of Automation Spectrum Pty Ltd. 
+            © {currentYear} Automation Spectrum Pty Ltd. All rights reserved.
+            <br />
+            <strong>AIChatshoppie</strong> is an Automation Spectrum
+            technology platform. <strong>EnerG IQ Tech</strong> is a
+            founder-led platform now being advanced through the separately
+            incorporated <strong>EnerG IQ Tech Pty Ltd</strong>.
           </p>
-
 
           <nav
             className="as-footer__legal"
