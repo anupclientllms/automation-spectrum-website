@@ -566,3 +566,33 @@ a.as-footer__contact-item:hover strong {
     transition: none;
   }
 }
+
+/* Services-first footer: five columns, preserving original visual design */
+@media (min-width: 1081px) {
+  .as-footer__top {
+    grid-template-columns: minmax(260px, 1.65fr) minmax(130px, .9fr) minmax(130px, .9fr) minmax(110px, .75fr) minmax(225px, 1.25fr);
+    gap: clamp(22px, 2.7vw, 48px);
+  }
+}
+@media (min-width: 761px) and (max-width: 1080px) {
+  .as-footer__top {
+    grid-template-columns: minmax(280px, 1.4fr) repeat(2, minmax(0, 1fr));
+  }
+  .as-footer__brand-column { grid-column: 1 / -1; }
+  .as-footer__contact-column { grid-column: auto; }
+  .as-footer__contact-list { grid-template-columns: 1fr; }
+}
+.as-footer__bottom p { line-height: 1.65; }
+.as-footer__bottom-note {
+  display: block;
+  max-width: 700px;
+  margin-top: 7px;
+  color: #66758a;
+}
+@media (max-width: 760px) {
+  .as-footer__brand-column { grid-column: 1 / -1; }
+  .as-footer__contact-column { grid-column: 1 / -1; }
+}
+@media (max-width: 520px) {
+  .as-footer__brand-column, .as-footer__contact-column { grid-column: auto; }
+}

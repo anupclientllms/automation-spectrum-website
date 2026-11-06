@@ -93,7 +93,7 @@ const engagementSteps = [
     number: "02",
     title: "Demonstrate",
     description:
-      "Develop a focused pilot or proof of value using representative enterprise or operational data.",
+      "Design and build a focused proof of value, prototype or initial solution using suitable data.",
   },
   {
     number: "03",
@@ -105,7 +105,7 @@ const engagementSteps = [
     number: "04",
     title: "Scale",
     description:
-      "Expand validated capabilities into secure, integrated and production-ready product deployments.",
+      "Develop validated capabilities into secure, integrated and maintainable production solutions.",
   },
 ];
 
@@ -142,14 +142,15 @@ function CompanyPage({ openContactModal }) {
             </div>
 
             <h1>
-              An Australian AI product company building{" "}
-              <span>specialised applied AI platforms.</span>
+              An Australian AI engineering company helping businesses{" "}
+              <span>turn AI opportunities into measurable outcomes.</span>
             </h1>
 
             <p>
-              Automation Spectrum develops enterprise AI products that help
-              organisations improve operational performance, reduce costs,
-              automate complex workflows and make better-informed decisions.
+              Based in Melbourne, Automation Spectrum provides AI consulting,
+              intelligent automation, generative AI solutions and custom
+              software engineering. We help organisations identify practical
+              opportunities, integrate technology and deliver useful systems.
             </p>
 
             <div className="as-company-hero__actions">
@@ -163,10 +164,10 @@ function CompanyPage({ openContactModal }) {
               </button>
 
               <Link
-                to="/products"
+                to="/technology"
                 className="as-company-button as-company-button--secondary"
               >
-                Explore our products
+                Explore our capabilities
               </Link>
             </div>
 
@@ -183,15 +184,15 @@ function CompanyPage({ openContactModal }) {
                 <Building2 size={17} />
                 <span>
                   <strong>Australian company</strong>
-                  <small>ABN 80 636 637 904</small>
+                  <small>Melbourne-based AI engineering</small>
                 </span>
               </div>
 
               <div>
                 <Globe2 size={17} />
                 <span>
-                  <strong>Global ambition</strong>
-                  <small>Australian foundation</small>
+                  <strong>Practical delivery</strong>
+                  <small>Consulting to implementation</small>
                 </span>
               </div>
             </div>
@@ -206,7 +207,7 @@ function CompanyPage({ openContactModal }) {
               <SpectrumMark />
 
               <strong>Automation Spectrum</strong>
-              <small>Applied AI Platforms</small>
+              <small>AI Solutions &amp; Automation</small>
             </div>
 
             <div className="as-company-visual__node as-company-visual__node--energiq">
@@ -231,48 +232,67 @@ function CompanyPage({ openContactModal }) {
               <Database size={18} />
 
               <span>
-                <strong>Shared foundation</strong>
-                <small>AI, data and integration</small>
+                <strong>Engineering services</strong>
+                <small>AI, software and integration</small>
               </span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Corporate role */}
+      {/* Company positioning */}
       <section className="as-company-section as-company-identity">
         <div className="as-company-container as-company-identity__layout">
           <div className="as-company-section-heading">
-            <span className="as-company-section-heading__eyebrow">
-              Company and platform relationship
-            </span>
-
-            <h2>Founder-led innovation. Distinct company identities.</h2>
+            <span className="as-company-section-heading__eyebrow">Who we are</span>
+            <h2>Experienced engineering. Practical AI adoption.</h2>
           </div>
-
           <div className="as-company-identity__content">
             <p>
-              Automation Spectrum Pty Ltd is an Australian enterprise AI
-              company associated with the earlier founder-led development
-              history of EnerG IQ Tech and the AIChatshoppie platform.
+              Automation Spectrum Pty Ltd is a Melbourne-based technology company
+              combining software engineering, systems integration and applied AI
+              to solve business problems.
             </p>
-
             <p>
-              EnerG IQ Tech Pty Ltd was separately incorporated in October 2026
-              to advance the EnerG IQ platform through further development,
-              demonstration and commercialisation. Automation Spectrum
-              continues its own enterprise AI activities.
+              Our work spans AI discovery and advisory, enterprise knowledge
+              systems, intelligent workflows, bespoke applications and technical
+              implementation. We aim to make AI useful within the systems and
+              processes organisations already rely on.
             </p>
-
             <div className="as-company-identity__statement">
               <Check size={18} />
-
-              <p>
-                <strong>EnerG IQ Tech Pty Ltd</strong> is a separate company.
-                Any commercial engagement should identify the appropriate
-                legal contracting entity for the relevant offering.
-              </p>
+              <p><strong>Our approach:</strong> understand the problem, build the right
+              solution, validate its value and support responsible adoption.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service capabilities */}
+      <section className="as-company-section as-company-services">
+        <div className="as-company-container">
+          <div className="as-company-section-heading as-company-section-heading--center">
+            <span className="as-company-section-heading__eyebrow">What we do</span>
+            <h2>AI expertise and software delivery, from idea to implementation</h2>
+            <p>Engage us for a focused discovery conversation or for the engineering
+            work needed to bring a solution into production.</p>
+          </div>
+          <div className="as-company-services__grid">
+            {[
+              { icon: Lightbulb, title: "AI consulting & discovery", description: "Identify worthwhile AI use cases, assess feasibility and define a practical delivery roadmap." },
+              { icon: BrainCircuit, title: "Generative AI & knowledge systems", description: "Build assistants, retrieval-based applications and domain-aware AI workflows." },
+              { icon: Workflow, title: "Intelligent automation", description: "Connect AI agents, human approvals and existing business processes to reduce manual effort." },
+              { icon: Layers3, title: "Custom software & integration", description: "Engineer applications, APIs, data pipelines and cloud systems that fit your organisation." },
+            ].map((service) => {
+              const Icon = service.icon;
+              return (
+                <article className="as-company-service" key={service.title}>
+                  <span className="as-company-service__icon"><Icon size={24} /></span>
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -285,12 +305,12 @@ function CompanyPage({ openContactModal }) {
               Product portfolio
             </span>
 
-            <h2>Specialised AI platforms and founder-led initiatives</h2>
+            <h2>Product initiatives alongside our consulting services</h2>
 
             <p>
-              These platforms address distinct business needs. EnerG IQ Tech
-              is now being advanced by the separately incorporated
-              EnerG IQ Tech Pty Ltd.
+              Our product experience informs our engineering work. These initiatives
+              address distinct markets and operate separately from general
+              Automation Spectrum consulting engagements.
             </p>
           </div>
 
@@ -336,25 +356,14 @@ function CompanyPage({ openContactModal }) {
           </div>
 
           <div className="as-company-example">
-            <div className="as-company-example__icon">
-              <Handshake size={25} />
-            </div>
-
+            <div className="as-company-example__icon"><Handshake size={25} /></div>
             <div>
-              <span>Example customer relationship</span>
-
-              <div className="as-company-example__flow">
-                <strong>Customer organisation</strong>
-                <ArrowRight size={17} />
-                <strong>EnerG IQ Tech industry solution</strong>
-                <ArrowRight size={17} />
-                <strong>EnerG IQ Tech Pty Ltd</strong>
-              </div>
-
+              <span>Distinct company identities</span>
               <p>
-                EnerG IQ Tech Pty Ltd is the separately incorporated company
-                advancing the EnerG IQ platform. Contracting arrangements
-                should be confirmed directly with that company.
+                EnerG IQ Tech Pty Ltd was separately incorporated in October 2026
+                to advance the EnerG IQ platform. Automation Spectrum Pty Ltd
+                continues to offer its own AI consulting and engineering services.
+                The relevant entity is identified for each engagement.
               </p>
             </div>
           </div>
@@ -380,9 +389,9 @@ function CompanyPage({ openContactModal }) {
             </p>
 
             <p>
-              Automation Spectrum develops focused products that combine AI,
-              enterprise integration and human oversight into workflows that
-              can be tested, trusted and progressively scaled.
+              We combine discovery, AI engineering, enterprise integration and human
+              oversight to deliver solutions that can be tested, trusted and
+              progressively improved.
             </p>
           </div>
 
@@ -420,7 +429,7 @@ function CompanyPage({ openContactModal }) {
             <h2>Enterprise AI guided by practical operating principles</h2>
 
             <p>
-              Our products are designed for real organisations, established
+              Our solutions are designed for real organisations, established
               systems, accountable decision-makers and measurable business
               outcomes.
             </p>
@@ -459,15 +468,14 @@ function CompanyPage({ openContactModal }) {
             <h2>Building reusable AI capability through focused R&amp;D</h2>
 
             <p>
-              Automation Spectrum&apos;s product development combines
-              infrastructure, model and agentic-system engineering to address
-              practical enterprise and operational challenges.
+              Our engineering work combines software architecture, data platforms,
+              model integration and agentic systems to address practical
+              enterprise and operational challenges.
             </p>
 
             <p>
-              This shared foundation enables the company to develop specialised
-              products while reusing validated components across different
-              customer environments.
+              We apply reusable engineering patterns where appropriate, while tailoring
+              each solution to its security, operational and integration needs.
             </p>
 
             <Link
@@ -498,20 +506,20 @@ function CompanyPage({ openContactModal }) {
               Commercial strategy
             </span>
 
-            <h2>Focused market entry with a scalable platform vision</h2>
+            <h2>Where our experience creates value</h2>
 
             <p>
-              We prioritise markets where operational complexity, energy
-              intensity and enterprise data create a clear path to measurable
-              customer value.
+              We work across enterprise software, information-intensive workflows
+              and operational environments where better systems can deliver
+              measurable value.
             </p>
           </div>
 
           <div className="as-company-strategy__grid">
             <article className="as-company-strategy__card">
-              <span>Near-term commercial focus</span>
+              <span>Operational solutions</span>
 
-              <h3>Operationally intensive environments</h3>
+              <h3>Operationally complex businesses</h3>
 
               <ul>
                 <li>Cold and food storage</li>
@@ -521,21 +529,21 @@ function CompanyPage({ openContactModal }) {
             </article>
 
             <article className="as-company-strategy__card">
-              <span>Strategic platform opportunity</span>
+              <span>Data and integration</span>
 
-              <h3>Energy and distributed intelligence</h3>
+              <h3>Connected systems and data</h3>
 
               <ul>
-                <li>Distributed energy resources</li>
-                <li>Demand flexibility and optimisation</li>
-                <li>Connected energy and portfolio intelligence</li>
+                <li>System and API integration</li>
+                <li>Data engineering and analytics</li>
+                <li>Cloud and edge architecture</li>
               </ul>
             </article>
 
             <article className="as-company-strategy__card">
-              <span>Enterprise AI expansion</span>
+              <span>Enterprise intelligence</span>
 
-              <h3>Knowledge and workflow automation</h3>
+              <h3>AI knowledge and automation</h3>
 
               <ul>
                 <li>Enterprise AI assistants</li>
@@ -578,11 +586,11 @@ function CompanyPage({ openContactModal }) {
               Company information
             </span>
 
-            <h2>Australian foundation. Product-led global ambition.</h2>
+            <h2>Melbourne-based. Built for practical business outcomes.</h2>
 
             <p>
-              Automation Spectrum is based in Melbourne and develops its
-              products for Australian and international enterprise markets.
+              Automation Spectrum operates from Melbourne, delivering AI and software
+              engineering services while developing selected technology initiatives.
             </p>
           </div>
 
@@ -603,8 +611,8 @@ function CompanyPage({ openContactModal }) {
             </div>
 
             <div>
-              <span>Platform and historical association</span>
-              <strong>AIChatshoppie; EnerG IQ Tech (separately incorporated)</strong>
+              <span>Core services</span>
+              <strong>AI consulting, automation and software engineering</strong>
             </div>
           </div>
         </div>
@@ -621,13 +629,13 @@ function CompanyPage({ openContactModal }) {
             </span>
 
             <h2>
-              Explore an AI pilot, product collaboration or strategic
-              partnership.
+              Discuss an AI opportunity, software project or strategic
+              collaboration.
             </h2>
 
             <p>
-              Speak with us about operational intelligence, enterprise AI,
-              research collaboration, technology partnerships or investment.
+              Tell us about the business challenge you want to solve. We can explore
+              discovery, implementation or collaboration opportunities.
             </p>
           </div>
 
@@ -642,10 +650,10 @@ function CompanyPage({ openContactModal }) {
             </button>
 
             <Link
-              to="/pilot-programs"
+              to="/partners"
               className="as-company-button as-company-button--secondary"
             >
-              View pilot programs
+              Explore partnerships
             </Link>
           </div>
         </div>

@@ -1357,3 +1357,23 @@
     transition: none;
   }
 }
+/* =========================================================
+   HOMEPAGE EXTENSIONS — retain existing theme and components
+   ========================================================= */
+.as-services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.as-discovery-section { background: #070c17; }
+.as-discovery-layout { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 72px; }
+.as-discovery-layout h2, .as-partners-layout h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.3rem); line-height: 1.1; letter-spacing: -.045em; }
+.as-discovery-layout p, .as-partners-layout p { color: var(--as-text-muted); font-size: 1rem; line-height: 1.8; }
+.as-discovery-points { display: grid; gap: 14px; margin-top: 26px; }
+.as-discovery-points span { display: flex; align-items: center; gap: 10px; color: var(--as-text-soft); font-size: .92rem; }
+.as-discovery-points svg { color: var(--as-green); flex-shrink: 0; }
+.as-discovery-offer { padding: 42px; border: 1px solid var(--as-border-strong); border-radius: 24px; background: linear-gradient(145deg, rgba(20,36,64,.88), rgba(10,17,35,.94)); box-shadow: 0 26px 80px rgba(0,0,0,.18); }
+.as-discovery-price { margin: 5px 0 14px; font-size: clamp(3.4rem, 5vw, 5rem); font-weight: 700; letter-spacing: -.06em; color: #c4f5fa; }
+.as-discovery-offer .as-button { margin-top: 20px; }
+.as-partners-section { background: #080e1a; }
+.as-partners-layout { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 30px; align-items: center; }
+.as-partners-icon { width: 72px; height: 72px; display: grid; place-items: center; border: 1px solid var(--as-border-strong); border-radius: 20px; background: rgba(34,211,238,.07); color: #8adfe9; }
+.as-partners-layout p { max-width: 750px; }
+@media (max-width: 1080px) { .as-discovery-layout { grid-template-columns: 1fr; gap: 36px; } .as-partners-layout { grid-template-columns: auto 1fr; } .as-partners-layout > .as-button { grid-column: 2; justify-self: start; } }
+@media (max-width: 620px) { .as-services-grid { grid-template-columns: 1fr; } .as-discovery-offer { padding: 29px 23px; } .as-partners-layout { grid-template-columns: 1fr; gap: 18px; } .as-partners-layout > .as-button { grid-column: 1; justify-self: stretch; } }

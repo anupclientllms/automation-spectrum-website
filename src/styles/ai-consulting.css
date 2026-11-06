@@ -1,0 +1,84 @@
+/* Automation Spectrum — AI Consulting & Strategy. Scoped to this page. */
+.as-consulting-page{--ac-bg:#050914;--ac-panel:rgba(13,23,42,.72);--ac-border:rgba(148,163,184,.14);--ac-muted:#8f9bb1;--ac-cyan:#67e8f9;--ac-blue:#7da7ff;--ac-violet:#aa91ff;min-height:100vh;overflow:hidden;color:#f8fafc;background:var(--ac-bg)}
+.as-consulting-page *,.as-consulting-page *::before,.as-consulting-page *::after{box-sizing:border-box}
+.as-consulting-container{width:min(1500px,calc(100% - 80px));margin:0 auto}
+.as-consulting-section{position:relative;padding:110px 0;border-top:1px solid rgba(148,163,184,.08)}
+.as-consulting-kicker{display:inline-block;margin-bottom:18px;color:#79dde8;font-size:.72rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase}
+.as-consulting-page h1,.as-consulting-page h2,.as-consulting-page h3{margin-top:0}
+.as-consulting-page h2{font-size:clamp(2rem,4vw,3.35rem);font-weight:650;line-height:1.1;letter-spacing:-.045em}
+.as-consulting-page h2 span{color:#93c5fd}
+.as-consulting-page p{color:var(--ac-muted);line-height:1.8}
+.as-consulting-button{display:inline-flex;min-height:51px;padding:0 22px;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:11px;background:transparent;color:inherit;font:inherit;font-size:.88rem;font-weight:750;text-decoration:none;cursor:pointer;transition:transform .18s,border-color .18s,background-color .18s}
+.as-consulting-button:hover{transform:translateY(-2px)}
+.as-consulting-button--primary{color:#06121d;background:linear-gradient(135deg,#6ee2eb,#79a8ff 58%,#aa8fff);box-shadow:0 15px 38px rgba(65,142,238,.2)}
+.as-consulting-button--secondary{color:#eef4fa;border-color:rgba(148,163,184,.22);background:rgba(15,23,42,.58)}
+.as-consulting-button--secondary:hover{border-color:rgba(103,232,249,.3);background:rgba(22,34,56,.78)}
+.as-consulting-hero{position:relative;isolation:isolate;min-height:730px;padding:150px 0 110px;display:flex;align-items:center;background:linear-gradient(145deg,#070d1b,#050914)}
+.as-consulting-hero::before{content:"";position:absolute;inset:0;z-index:-2;opacity:.24;background-image:linear-gradient(rgba(148,163,184,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.06) 1px,transparent 1px);background-size:65px 65px;mask-image:linear-gradient(to bottom,#000,transparent 95%)}
+.as-consulting-hero__glow{position:absolute;z-index:-1;width:440px;height:440px;border-radius:50%;filter:blur(100px);pointer-events:none}
+.as-consulting-hero__glow--left{top:10%;left:-220px;background:rgba(34,211,238,.1)}
+.as-consulting-hero__glow--right{right:-200px;bottom:-120px;background:rgba(139,92,246,.13)}
+.as-consulting-hero__grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(390px,.92fr);align-items:center;gap:80px}
+.as-consulting-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border:1px solid rgba(103,232,249,.19);border-radius:999px;background:rgba(15,23,42,.6);color:#c8edf4;font-size:.73rem;font-weight:700;letter-spacing:.1em}
+.as-consulting-hero h1{margin:28px 0 0;font-size:clamp(3rem,5.6vw,5.45rem);font-weight:660;line-height:1;letter-spacing:-.063em}
+.as-consulting-hero h1 span{color:transparent;background:linear-gradient(100deg,#f8fafc,#98e8f4 38%,#8db1ff 68%,#c09dff);background-clip:text;-webkit-background-clip:text}
+.as-consulting-hero__copy>p{max-width:670px;margin:28px 0 0;font-size:1.08rem;color:#aab6c8}
+.as-consulting-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:36px}
+.as-consulting-hero__highlights{display:flex;flex-wrap:wrap;gap:14px 24px;margin-top:36px;padding-top:26px;border-top:1px solid rgba(148,163,184,.12)}
+.as-consulting-hero__highlights span{display:flex;align-items:center;gap:7px;color:#a4b5c8;font-size:.79rem}
+.as-consulting-hero__highlights svg{color:#5eead4}
+.as-consulting-hero__visual{position:relative;padding:30px;border:1px solid rgba(148,163,184,.17);border-radius:24px;background:linear-gradient(145deg,rgba(16,29,50,.91),rgba(8,14,28,.96));box-shadow:0 28px 85px rgba(0,0,0,.3)}
+.as-consulting-visual__halo{position:absolute;inset:-50px;z-index:-1;border-radius:50%;background:radial-gradient(circle,rgba(60,154,235,.12),transparent 70%)}
+.as-consulting-visual__header{display:flex;align-items:center;gap:9px;margin-bottom:26px;color:#80e0e9;font-size:.72rem;font-weight:750;letter-spacing:.12em}
+.as-consulting-visual__item{display:flex;align-items:center;gap:16px;padding:19px;border:1px solid rgba(148,163,184,.12);border-radius:15px;background:rgba(10,20,38,.88)}
+.as-consulting-visual__item>span:first-child{display:grid;width:48px;height:48px;flex:0 0 auto;place-items:center;border:1px solid rgba(103,232,249,.17);border-radius:12px;background:rgba(34,211,238,.055);color:#87e4ed}
+.as-consulting-visual__item div{flex:1;min-width:0}
+.as-consulting-visual__item strong,.as-consulting-visual__item small{display:block}
+.as-consulting-visual__item strong{font-size:.9rem;color:#e6edf7}
+.as-consulting-visual__item small{margin-top:5px;font-size:.7rem;color:#7f8ea5}
+.as-consulting-visual__index{color:#64748b;font-size:.7rem}
+.as-consulting-visual__connector{height:25px;width:1px;margin:0 0 0 43px;background:linear-gradient(#67e8f9,#aa91ff)}
+.as-consulting-visual__footer{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:25px;color:#93a9c5;font-size:.75rem}
+.as-consulting-split{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px;align-items:start}
+.as-consulting-intro{background:#070c17}
+.as-consulting-intro__text p{margin:0 0 22px;font-size:1rem}
+.as-consulting-text-link{display:inline-flex;align-items:center;gap:8px;color:#8de7ee;text-decoration:none;font-weight:700;font-size:.86rem}
+.as-consulting-text-link:hover{color:#c7f8fa}
+.as-consulting-heading{max-width:790px;margin-bottom:50px}
+.as-consulting-heading h2{margin-bottom:0}
+.as-consulting-heading p{margin:19px 0 0;font-size:1rem}
+.as-consulting-services{background:radial-gradient(circle at 0 30%,rgba(34,211,238,.045),transparent 33%),#050914;scroll-margin-top:90px}
+.as-consulting-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+.as-consulting-card{min-height:260px;padding:31px;border:1px solid var(--ac-border);border-radius:19px;background:linear-gradient(145deg,rgba(16,27,48,.86),rgba(8,14,28,.95));transition:transform .2s,border-color .2s}
+.as-consulting-card:hover{transform:translateY(-3px);border-color:rgba(103,232,249,.27)}
+.as-consulting-card__icon{display:grid;width:51px;height:51px;place-items:center;border:1px solid rgba(103,232,249,.16);border-radius:14px;background:rgba(34,211,238,.06);color:#83dfe9}
+.as-consulting-card h3{margin:26px 0 10px;font-size:1.1rem;font-weight:650}
+.as-consulting-card p{margin:0;font-size:.85rem}
+.as-consulting-usecases{background:#070d18}
+.as-consulting-usecase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.as-consulting-usecase{padding:32px;border:1px solid rgba(148,163,184,.13);border-radius:19px;background:rgba(12,21,39,.68)}
+.as-consulting-usecase>svg{color:#a99cff}
+.as-consulting-usecase h3{margin:25px 0 12px;font-size:1.1rem}
+.as-consulting-usecase p{margin:0;font-size:.85rem}
+.as-consulting-process{background:#060b15}
+.as-consulting-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.as-consulting-step{min-height:235px;padding:28px 24px;border-top:1px solid rgba(103,232,249,.3);background:rgba(11,20,37,.64)}
+.as-consulting-step>span{display:block;margin-bottom:35px;color:#74dce7;font-size:.75rem;font-weight:750;letter-spacing:.1em}
+.as-consulting-step h3{margin-bottom:12px;font-size:1.08rem}
+.as-consulting-step p{margin:0;font-size:.83rem}
+.as-consulting-outcomes{background:linear-gradient(110deg,#0b1425,#080d19)}
+.as-consulting-outcomes__panel{display:grid;gap:0;padding:20px 30px;border:1px solid var(--ac-border);border-radius:20px;background:rgba(13,23,42,.68)}
+.as-consulting-outcomes__panel>div{display:flex;gap:12px;align-items:flex-start;padding:19px 0;border-bottom:1px solid rgba(148,163,184,.1);color:#c4d0de;font-size:.9rem;line-height:1.5}
+.as-consulting-outcomes__panel>div:last-child{border-bottom:0}
+.as-consulting-outcomes__panel svg{flex:0 0 auto;color:#5eead4}
+.as-consulting-cta{position:relative;padding:115px 0;background:linear-gradient(120deg,rgba(10,27,49,.97),rgba(22,15,54,.94))}
+.as-consulting-cta__grid{display:grid;grid-template-columns:1fr auto;gap:65px;align-items:end}
+.as-consulting-cta__grid>div:first-child{max-width:770px}
+.as-consulting-cta__grid h2{margin-bottom:0}
+.as-consulting-cta__grid p{margin:20px 0 0}
+.as-consulting-cta__actions{display:flex;flex-direction:column;gap:12px}
+.as-consulting-page a:focus-visible,.as-consulting-page button:focus-visible{outline:2px solid #67e8f9;outline-offset:3px}
+@media(max-width:1100px){.as-consulting-hero__grid,.as-consulting-split{grid-template-columns:1fr;gap:55px}.as-consulting-hero__visual{max-width:660px;width:100%;margin:0 auto}.as-consulting-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.as-consulting-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.as-consulting-cta__grid{grid-template-columns:1fr;gap:35px}.as-consulting-cta__actions{align-items:flex-start}}
+@media(max-width:760px){.as-consulting-container{width:min(100% - 32px,1180px)}.as-consulting-section{padding:85px 0}.as-consulting-hero{min-height:auto;padding:120px 0 85px}.as-consulting-hero h1{font-size:clamp(2.7rem,9vw,4.5rem)}.as-consulting-usecase-grid{grid-template-columns:1fr}.as-consulting-cta{padding:85px 0}}
+@media(max-width:540px){.as-consulting-hero h1{font-size:clamp(2.55rem,12vw,3.7rem)}.as-consulting-actions,.as-consulting-cta__actions{flex-direction:column;align-items:stretch}.as-consulting-button{width:100%}.as-consulting-card-grid,.as-consulting-steps{grid-template-columns:1fr}.as-consulting-card,.as-consulting-usecase{padding:25px}.as-consulting-hero__visual{padding:18px}.as-consulting-visual__item{padding:14px;gap:10px}.as-consulting-visual__item>span:first-child{width:42px;height:42px}.as-consulting-visual__connector{margin-left:34px}.as-consulting-outcomes__panel{padding:15px 22px}}
+@media(prefers-reduced-motion:reduce){.as-consulting-page *{scroll-behavior:auto!important;transition:none!important}}

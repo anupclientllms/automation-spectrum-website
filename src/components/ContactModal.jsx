@@ -26,6 +26,7 @@ const initialForm = {
 };
 
 const enquiryTypes = [
+  "Free AI Discovery Consultation (30 minutes)",
   "AI pilot",
   "Product enquiry",
   "Technology partnership",
@@ -36,6 +37,7 @@ const enquiryTypes = [
 ];
 
 const productOptions = [
+  "AI consulting & business automation",
   "EnerG IQ Tech",
   "AIChatshoppie",
   "Both products",
@@ -128,7 +130,7 @@ function ContactModal({ isOpen, onClose }) {
     }
 
     if (!formData.product) {
-      nextErrors.product = "Please select a product.";
+      nextErrors.product = "Please select a service or product.";
     }
 
     if (!formData.message.trim()) {
@@ -314,13 +316,13 @@ function ContactModal({ isOpen, onClose }) {
             </span>
 
             <h2 id="contact-modal-title">
-              Discuss an AI project, pilot or partnership.
+              Discuss a free AI discovery call, project or partnership.
             </h2>
 
             <p id="contact-modal-description">
-              Tell us about your operational or enterprise challenge.
-              We will review the opportunity and contact you to discuss
-              an appropriate next step.
+              Start with a free, no-obligation 30-minute AI discovery conversation,
+              or tell us about your project, pilot or partnership.
+              We will review your enquiry and contact you about next steps.
             </p>
 
             <div className="as-contact-modal__topics">
@@ -336,7 +338,7 @@ function ContactModal({ isOpen, onClose }) {
 
               <div>
                 <CheckCircle2 size={17} />
-                Pilot and proof-of-value engagements
+                Free AI discovery and pilot engagements
               </div>
 
               <div>
@@ -537,7 +539,7 @@ function ContactModal({ isOpen, onClose }) {
 
                   <div className="as-contact-modal__field">
                     <label htmlFor="contact-product">
-                      Product or platform <span>*</span>
+                      Service or product <span>*</span>
                     </label>
 
                     <select
@@ -548,7 +550,7 @@ function ContactModal({ isOpen, onClose }) {
                       disabled={submissionStatus === "submitting"}
                       aria-invalid={Boolean(errors.product)}
                     >
-                      <option value="">Select a product</option>
+                      <option value="">Select a service or product</option>
 
                       {productOptions.map((product) => (
                         <option value={product} key={product}>
@@ -574,7 +576,7 @@ function ContactModal({ isOpen, onClose }) {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Briefly describe the business problem, available data, target operations or AI capability you would like to explore."
+                      placeholder="Briefly describe your business challenge or what you would like to discuss in the free discovery call."
                       rows={6}
                       maxLength={2000}
                       disabled={submissionStatus === "submitting"}

@@ -1173,3 +1173,36 @@
     transition: none;
   }
 }
+/* =========================================================
+   COMPANY — SERVICES (added; existing design preserved)
+   ========================================================= */
+.as-company-services {
+  background: linear-gradient(130deg, #080f1d, #070c17);
+}
+.as-company-services__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+.as-company-service {
+  min-height: 270px;
+  padding: 29px 25px;
+  border: 1px solid rgba(148, 163, 184, .14);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(16, 27, 48, .82), rgba(8, 14, 28, .92));
+}
+.as-company-service__icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 30px;
+  place-items: center;
+  color: #83dfe9;
+  border: 1px solid rgba(103, 232, 249, .18);
+  border-radius: 13px;
+  background: rgba(34, 211, 238, .06);
+}
+.as-company-service h3 { margin: 0; font-size: 1.04rem; font-weight: 650; line-height: 1.4; }
+.as-company-service p { margin: 13px 0 0; color: #8491a5; font-size: .84rem; line-height: 1.72; }
+@media (max-width: 1080px) { .as-company-services__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .as-company-services__grid { grid-template-columns: 1fr; } .as-company-service { min-height: auto; } }

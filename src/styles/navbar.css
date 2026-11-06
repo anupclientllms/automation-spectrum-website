@@ -770,3 +770,54 @@
     transition: none;
   }
 }
+/* Additional service navigation styles; original visual system retained */
+.as-navbar__services-dropdown { width: min(660px, calc(100vw - 40px)); }
+.as-navbar__services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.as-navbar__service-link { min-width: 0; }
+.as-navbar__service-link:hover { border-color: rgba(103, 232, 249, 0.26); }
+.as-navbar__service-link .as-navbar__product-icon { color: #8ddfeb; }
+.as-navbar__mobile-services.is-open { max-height: 650px; }
+@media (max-width: 1150px) and (min-width: 921px) {
+  .as-navbar__container { gap: 15px; }
+  .as-navbar__link { padding-inline: 9px; }
+}
+@media (max-width: 540px) {
+  .as-navbar__services-grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================================
+   SOLUTIONS MEGA MENU — same design system as Services
+   ========================================================= */
+.as-navbar__solutions-dropdown {
+  width: min(740px, calc(100vw - 40px));
+}
+.as-navbar__solutions-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.as-navbar__solution-link { min-width: 0; }
+.as-navbar__solution-link:hover { border-color: rgba(103, 232, 249, 0.26); }
+.as-navbar__solution-link .as-navbar__product-icon { color: #8ddfeb; }
+.as-navbar__mobile-solutions.is-open { max-height: 650px; }
+.as-navbar__mobile-solutions .as-navbar__mobile-product-icon { color: #8ddfeb; background: rgba(34, 211, 238, 0.07); }
+
+/* Additional navigation item requires the mobile layout a little earlier. */
+@media (max-width: 1260px) and (min-width: 1081px) {
+  .as-navbar__container { width: calc(100% - 36px); gap: 12px; }
+  .as-navbar__brand { min-width: 0; gap: 10px; }
+  .as-navbar__brand-copy small { display: none; }
+  .as-navbar__desktop { gap: 0; }
+  .as-navbar__link { padding-inline: 9px; font-size: 0.76rem; }
+  .as-navbar__contact { padding-inline: 11px; font-size: 0.74rem; }
+}
+@media (max-width: 1080px) {
+  .as-navbar, .as-navbar--scrolled, .as-navbar--mobile-open { height: 74px; }
+  .as-navbar__desktop, .as-navbar__contact { display: none; }
+  .as-navbar__menu-button { display: inline-flex; }
+  .as-navbar__brand-copy small { display: block; }
+}
+@media (max-width: 540px) {
+  .as-navbar__solutions-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .as-navbar__solution-link { transition: none; }
+}

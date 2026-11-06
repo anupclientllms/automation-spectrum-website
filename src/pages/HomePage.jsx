@@ -1,8 +1,11 @@
-
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
   BarChart3,
+  Code2,
+  Lightbulb,
+  Handshake,
+  Bot,
   BrainCircuit,
   Building2,
   Check,
@@ -17,14 +20,20 @@ import {
 } from "lucide-react";
 
 import "../styles/home.css";
-import AIChatshoppieLogos from "../components/AIChatshoppieLogos";
+
+const services = [
+  { icon: Lightbulb, title: "AI strategy & business discovery", description: "Identify valuable AI opportunities, assess feasibility and prioritise practical improvements across your business." },
+  { icon: BrainCircuit, title: "Generative AI & knowledge systems", description: "Build secure AI assistants, document intelligence and retrieval-augmented knowledge experiences." },
+  { icon: Bot, title: "AI agents & workflow automation", description: "Automate repetitive tasks and connect decisions, approvals and existing business processes." },
+  { icon: Code2, title: "Custom software & integration", description: "Engineer enterprise applications, APIs and integrations that connect AI with the systems you already use." },
+];
 
 const products = [
   {
     eyebrow: "Energy & Operational Intelligence",
     name: "EnerG IQ Tech",
     description:
-      "A founder-led AI-powered energy and operational intelligence platform, now being advanced through the separately incorporated EnerG IQ Tech Pty Ltd, helping energy-intensive organisations reduce costs, improve asset performance and make better operational decisions.",
+      "An industrial energy optimisation platform developed by the founder and advanced through the separately incorporated EnerG IQ Tech Pty Ltd. It combines edge AI, digital twins and human-approved decision workflows to help energy-intensive facilities reduce costs and emissions.",
     capabilities: [
       "AI decision agents",
       "Operational digital twins",
@@ -40,7 +49,7 @@ const products = [
     eyebrow: "Enterprise AI & Intelligent Automation",
     name: "AIChatshoppie",
     description:
-      "A secure enterprise AI platform for intelligent assistants, private knowledge systems, agentic workflows and domain-specific automation.",
+      "An enterprise AI platform focused on intelligent assistants, private knowledge systems, retrieval-augmented generation and domain-specific automation.",
     capabilities: [
       "Enterprise AI assistants",
       "Knowledge systems and RAG",
@@ -168,50 +177,49 @@ function HomePage({ openContactModal }) {
           <div className="as-hero__content">
             <div className="as-eyebrow">
               <span className="as-eyebrow__dot" />
-              Australian enterprise AI product company
+              Australian AI consulting & technology company
             </div>
 
             <h1 className="as-hero__title">
-              Applied AI platforms for{" "}
-              <span>energy, operations and enterprise intelligence.</span>
+              AI solutions that{" "}
+              <span>drive business growth.</span>
             </h1>
 
             <p className="as-hero__description">
-              Automation Spectrum develops specialised AI technology and
-              supports founder-led innovation that helps organisations
-              reduce operational costs, improve decision-making and
-              automate complex enterprise workflows.
+              We help businesses increase productivity, reduce operating costs and
+              unlock new opportunities through AI consulting, intelligent
+              automation, Generative AI and custom software engineering.
             </p>
 
             <div className="as-hero__actions">
-              <Link className="as-button as-button--primary" to="/products">
-                Explore our products
+              <a className="as-button as-button--primary" href="#ai-services">
+                Explore our AI services
                 <ArrowRight size={18} />
-              </Link>
+              </a>
 
               <button
                 type="button"
                 className="as-button as-button--secondary"
                 onClick={openContactModal}
               >
-                Discuss an AI pilot
+                Book a free 30-minute AI discovery call
               </button>
             </div>
 
             <div className="as-hero__assurance">
               <div>
                 <Check size={16} />
-                Enterprise-focused
+                Business-outcome focused
               </div>
 
               <div>
                 <Check size={16} />
-                Pilot-to-production
+                Strategy-to-delivery
               </div>
 
               <div>
                 <Check size={16} />
-                Human-controlled AI
+                Practical, governed AI
               </div>
             </div>
           </div>
@@ -230,30 +238,30 @@ function HomePage({ openContactModal }) {
               />
 
               <span>Automation Spectrum</span>
-              <small>Applied AI Platforms</small>
+              <small>AI Consulting & Technology</small>
             </div>
 
             <div className="as-floating-node as-floating-node--energy">
               <Zap size={18} />
               <div>
-                <strong>EnerG IQ Tech</strong>
-                <span>Operational intelligence</span>
+                <strong>AI consulting</strong>
+                <span>Strategy & implementation</span>
               </div>
             </div>
 
             <div className="as-floating-node as-floating-node--ai">
               <BrainCircuit size={18} />
               <div>
-                <strong>AIChatshoppie</strong>
-                <span>Enterprise intelligence</span>
+                <strong>Generative AI</strong>
+                <span>Agents & knowledge systems</span>
               </div>
             </div>
 
             <div className="as-floating-node as-floating-node--data">
               <Database size={18} />
               <div>
-                <strong>Connected data</strong>
-                <span>Systems and telemetry</span>
+                <strong>Software engineering</strong>
+                <span>Integration & automation</span>
               </div>
             </div>
 
@@ -264,22 +272,58 @@ function HomePage({ openContactModal }) {
         </div>
       </section>
 
-      {/* Corporate identity strip */}
+      {/* Business positioning strip — original layout retained */}
       <section className="as-identity-strip">
         <div className="as-container as-identity-strip__content">
-          <p>
-            <strong>Automation Spectrum Pty Ltd</strong> supports applied
-            AI innovation, including the founder-led development history
-            of EnerG IQ Tech and the AIChatshoppie platform.
-          </p>
-
+          <p><strong>Automation Spectrum Pty Ltd</strong> helps organisations plan, build and integrate practical AI and software solutions.</p>
           <div className="as-identity-strip__divider" />
+          <p>From an initial business assessment to pilot and production, we focus on measurable value and solutions that fit existing operations.</p>
+        </div>
+      </section>
 
-          <p>
-            EnerG IQ Tech Pty Ltd was separately incorporated in October
-            2026 to advance the EnerG IQ platform's development,
-            demonstration and commercialisation.
-          </p>
+      {/* AI services — uses existing capability card styling */}
+      <section className="as-section as-technology-section" id="ai-services">
+        <div className="as-container">
+          <div className="as-section-heading as-section-heading--center">
+            <span className="as-section-heading__eyebrow">Our AI & engineering services</span>
+            <h2>Practical AI services built around your business</h2>
+            <p>Whether you are exploring AI for the first time or integrating it into established operations, we help turn opportunities into working solutions.</p>
+          </div>
+          <div className="as-services-grid">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <article className="as-capability-card" key={service.title}>
+                  <Icon size={24} />
+                  <div><h3>{service.title}</h3><p>{service.description}</p></div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Introductory discovery consultation */}
+      <section className="as-section as-discovery-section" id="ai-discovery">
+        <div className="as-container as-discovery-layout">
+          <div>
+            <span className="as-section-heading__eyebrow">Start with a focused conversation</span>
+            <h2>AI Business Discovery</h2>
+            <p>Not sure where AI could make a meaningful difference? In a free 30-minute introductory consultation, we'll discuss your business challenges, explore potential AI and automation opportunities, and agree on practical next steps.</p>
+            <div className="as-discovery-points">
+              <span><Check size={17} /> Your business priorities and pain points</span>
+              <span><Check size={17} /> Potential AI and automation opportunities</span>
+              <span><Check size={17} /> A practical direction for next steps</span>
+            </div>
+          </div>
+          <div className="as-discovery-offer">
+            <span className="as-section-heading__eyebrow">Free 30-minute introductory consultation</span>
+            <div className="as-discovery-price">FREE</div>
+            <p>A complimentary 30-minute, one-to-one discovery call. No obligation or upfront payment. Detailed assessments and implementation services are quoted separately.</p>
+            <button type="button" className="as-button as-button--primary" onClick={openContactModal}>
+              Enquire about a Free AI Consultation <ArrowRight size={18} />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -288,15 +332,15 @@ function HomePage({ openContactModal }) {
         <div className="as-container">
           <div className="as-section-heading as-section-heading--center">
             <span className="as-section-heading__eyebrow">
-              Our product portfolio
+              Our technology products
             </span>
 
-            <h2>Specialised platforms for distinct enterprise problems</h2>
+            <h2>Purpose-built AI products alongside our consulting services</h2>
 
             <p>
-              Our technology portfolio and associated founder-led
-              initiatives address distinct commercial problems through
-              specialised AI, engineering and delivery capabilities.
+              Explore the specialised platforms associated with our technology
+              portfolio. Consulting engagements are tailored separately
+              to each client’s business needs.
             </p>
           </div>
 
@@ -371,8 +415,8 @@ function HomePage({ openContactModal }) {
             <h2>AI should create operational value, not additional complexity</h2>
 
             <p>
-              Our platforms are designed around measurable problems,
-              accountable decisions and practical enterprise adoption.
+              Our consulting and technology work starts with measurable business
+              problems, accountable decisions and practical adoption.
             </p>
           </div>
 
@@ -400,15 +444,15 @@ function HomePage({ openContactModal }) {
         <div className="as-container as-technology-layout">
           <div className="as-technology-intro">
             <span className="as-section-heading__eyebrow">
-              Shared technology foundation
+              Engineering capabilities
             </span>
 
             <h2>From connected data to governed AI decisions</h2>
 
             <p>
-              Automation Spectrum combines enterprise integration, applied AI,
-              operational intelligence and human oversight into deployable
-              product experiences.
+              We combine enterprise integration, applied AI, secure knowledge
+              systems and human oversight to deliver solutions that
+              work with real-world business processes.
             </p>
 
             <Link className="as-button as-button--secondary" to="/technology">
@@ -444,15 +488,15 @@ function HomePage({ openContactModal }) {
         <div className="as-container">
           <div className="as-section-heading as-section-heading--center">
             <span className="as-section-heading__eyebrow">
-              Initial commercial focus
+              Industries we support
             </span>
 
-            <h2>Focused market entry with a broader platform vision</h2>
+            <h2>AI opportunities across operationally complex industries</h2>
 
             <p>
-              Our near-term commercial focus is on operationally complex,
-              energy-intensive environments where AI can produce measurable
-              value.
+              We work across operational and enterprise challenges, including
+              environments where connected assets, data and automation
+              can unlock meaningful value.
             </p>
           </div>
 
@@ -480,15 +524,15 @@ function HomePage({ openContactModal }) {
         <div className="as-container">
           <div className="as-section-heading">
             <span className="as-section-heading__eyebrow">
-              Pilot-to-production model
+              Our delivery approach
             </span>
 
-            <h2>Start with evidence. Scale with confidence.</h2>
+            <h2>Discover, deliver and scale with confidence.</h2>
 
             <p>
-              We use focused pilot engagements to establish technical
-              feasibility, demonstrate measurable outcomes and build a clear
-              pathway to production.
+              We start by understanding your business challenge, then connect
+              the right systems, validate a focused solution and plan
+              the next stage of delivery.
             </p>
           </div>
 
@@ -505,7 +549,7 @@ function HomePage({ openContactModal }) {
           <div className="as-pilot-cta">
             <div>
               <span>Have an operational or enterprise AI challenge?</span>
-              <h3>Explore it through a focused Automation Spectrum pilot.</h3>
+              <h3>Start with discovery, then define a practical implementation or pilot.</h3>
             </div>
 
             <Link
@@ -516,6 +560,21 @@ function HomePage({ openContactModal }) {
               <ArrowRight size={18} />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Partnerships — reuses existing CTA and button components */}
+      <section className="as-section as-partners-section" id="partners">
+        <div className="as-container as-partners-layout">
+          <div className="as-partners-icon"><Handshake size={32} /></div>
+          <div>
+            <span className="as-section-heading__eyebrow">Work with us</span>
+            <h2>Partners who help businesses move forward</h2>
+            <p>We welcome conversations with business advisers, consultants and technology providers who want to help their clients discover and implement practical AI solutions. Collaboration arrangements are discussed individually.</p>
+          </div>
+          <button type="button" className="as-button as-button--secondary" onClick={openContactModal}>
+            Discuss a partnership <ArrowRight size={18} />
+          </button>
         </div>
       </section>
 
@@ -530,13 +589,12 @@ function HomePage({ openContactModal }) {
             </span>
 
             <h2>
-              Turn complex operational and enterprise problems into practical
-              AI products.
+              Turn business challenges into practical AI solutions.
             </h2>
 
             <p>
-              Speak with us about an AI pilot, product collaboration,
-              technology partnership or strategic investment opportunity.
+              Talk to us about AI consulting, business automation, custom software
+              or a technology partnership.
             </p>
           </div>
 
