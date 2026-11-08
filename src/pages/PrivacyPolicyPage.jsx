@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 
 import "../styles/privacyPolicy.css";
+import SEO from "./SEO";
 
 const policySections = [
   {
@@ -526,129 +527,140 @@ const policySections = [
 
 function PrivacyPolicyPage() {
   return (
-    <main className="as-privacy-page">
-      <section className="as-privacy-hero">
-        <div className="as-privacy-hero__glow as-privacy-hero__glow--one" />
-        <div className="as-privacy-hero__glow as-privacy-hero__glow--two" />
+    <>
+    
+      <SEO
+        title="Privacy Policy | Automation Spectrum Pty Ltd"
+        description="Read the Automation Spectrum Pty Ltd Privacy Policy to learn how we collect, use, store and protect personal information when you visit our website or engage with our services."
+        path="/privacy-policy"
+      />
 
-        <div className="as-privacy-container">
-          <Link to="/" className="as-privacy-back">
-            <ArrowLeft size={16} />
-            Back to Automation Spectrum
-          </Link>
+      <main className="as-privacy-page">
+        <section className="as-privacy-hero">
+          <div className="as-privacy-hero__glow as-privacy-hero__glow--one" />
+          <div className="as-privacy-hero__glow as-privacy-hero__glow--two" />
 
-          <div className="as-privacy-hero__badge">
-            <ShieldCheck size={16} />
-            Privacy and personal information
-          </div>
+          <div className="as-privacy-container">
+            <Link to="/" className="as-privacy-back">
+              <ArrowLeft size={16} />
+              Back to Automation Spectrum
+            </Link>
 
-          <h1>Privacy Policy</h1>
-
-          <p>
-            This policy explains how Automation Spectrum Pty Ltd manages
-            personal information across its corporate activities, websites,
-            products and commercial relationships.
-          </p>
-
-          <div className="as-privacy-hero__meta">
-            <span>
-              <strong>Effective date</strong>
-              22 July 2026
-            </span>
-
-            <span>
-              <strong>Last updated</strong>
-              21 October 2026
-            </span>
-
-            <span>
-              <strong>Entity</strong>
-              Automation Spectrum Pty Ltd
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section className="as-privacy-content">
-        <div className="as-privacy-container as-privacy-layout">
-          <aside className="as-privacy-navigation">
-            <div className="as-privacy-navigation__inner">
-              <span>On this page</span>
-
-              <nav aria-label="Privacy Policy sections">
-                {policySections.map((section) => (
-                  <a href={`#${section.id}`} key={section.id}>
-                    <small>{section.number}</small>
-                    {section.title}
-                  </a>
-                ))}
-              </nav>
-            </div>
-          </aside>
-
-          <article className="as-privacy-policy">
-            <div className="as-privacy-summary">
-              <ShieldCheck size={23} />
-
-              <div>
-                <strong>Our approach</strong>
-
-                <p>
-                  Automation Spectrum aims to collect only information
-                  reasonably necessary for its business activities and to
-                  manage that information transparently, securely and
-                  consistently with applicable privacy obligations.
-                </p>
-              </div>
+            <div className="as-privacy-hero__badge">
+              <ShieldCheck size={16} />
+              Privacy and personal information
             </div>
 
-            {policySections.map((section) => {
-              const Icon = section.icon;
+            <h1>Privacy Policy</h1>
 
-              return (
-                <section
-                  id={section.id}
-                  className="as-privacy-policy__section"
-                  key={section.id}
-                >
-                  <div className="as-privacy-policy__heading">
-                    <span className="as-privacy-policy__icon">
-                      <Icon size={21} />
-                    </span>
+            <p>
+              This policy explains how Automation Spectrum Pty Ltd manages
+              personal information across its corporate activities, websites,
+              products and commercial relationships.
+            </p>
 
-                    <div>
+            <div className="as-privacy-hero__meta">
+              <span>
+                <strong>Effective date</strong>
+                22 July 2026
+              </span>
+
+              <span>
+                <strong>Last updated</strong>
+                21 October 2026
+              </span>
+
+              <span>
+                <strong>Entity</strong>
+                Automation Spectrum Pty Ltd
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section className="as-privacy-content">
+          <div className="as-privacy-container as-privacy-layout">
+            <aside className="as-privacy-navigation">
+              <div className="as-privacy-navigation__inner">
+                <span>On this page</span>
+
+                <nav aria-label="Privacy Policy sections">
+                  {policySections.map((section) => (
+                    <a href={`#${section.id}`} key={section.id}>
                       <small>{section.number}</small>
-                      <h2>{section.title}</h2>
-                    </div>
-                  </div>
-
-                  <div className="as-privacy-policy__body">
-                    {section.content}
-                  </div>
-                </section>
-              );
-            })}
-
-            <div className="as-privacy-policy__footer-note">
-              <CheckCircle2 size={20} />
-
-              <div>
-                <strong>Need this policy in another format?</strong>
-
-                <p>
-                  Contact Automation Spectrum and we will take reasonable steps
-                  to provide an accessible copy.
-                </p>
-
-                <a href="mailto:contact@automationspectrum.com.au">
-                  contact@automationspectrum.com.au
-                </a>
+                      {section.title}
+                    </a>
+                  ))}
+                </nav>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+            </aside>
+
+            <article className="as-privacy-policy">
+              <div className="as-privacy-summary">
+                <ShieldCheck size={23} />
+
+                <div>
+                  <strong>Our approach</strong>
+
+                  <p>
+                    Automation Spectrum aims to collect only information
+                    reasonably necessary for its business activities and to
+                    manage that information transparently, securely and
+                    consistently with applicable privacy obligations.
+                  </p>
+                </div>
+              </div>
+
+              {policySections.map((section) => {
+                const Icon = section.icon;
+
+                return (
+                  <section
+                    id={section.id}
+                    className="as-privacy-policy__section"
+                    key={section.id}
+                  >
+                    <div className="as-privacy-policy__heading">
+                      <span className="as-privacy-policy__icon">
+                        <Icon size={21} />
+                      </span>
+
+                      <div>
+                        <small>{section.number}</small>
+                        <h2>{section.title}</h2>
+                      </div>
+                    </div>
+
+                    <div className="as-privacy-policy__body">
+                      {section.content}
+                    </div>
+                  </section>
+                );
+              })}
+
+              <div className="as-privacy-policy__footer-note">
+                <CheckCircle2 size={20} />
+
+                <div>
+                  <strong>Need this policy in another format?</strong>
+
+                  <p>
+                    Contact Automation Spectrum and we will take reasonable steps
+                    to provide an accessible copy.
+                  </p>
+
+                  <a href="mailto:contact@automationspectrum.com.au">
+                    contact@automationspectrum.com.au
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    
+    </>
+    
   );
 }
 

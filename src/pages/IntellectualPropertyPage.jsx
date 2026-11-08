@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 
 import "../styles/intellectualProperty.css";
+import SEO from "./SEO";
 
 const intellectualPropertySections = [
   {
@@ -808,129 +809,142 @@ const intellectualPropertySections = [
 
 function IntellectualPropertyPage() {
   return (
-    <main className="as-ip-page">
-      <section className="as-ip-hero">
-        <div className="as-ip-hero__glow as-ip-hero__glow--one" />
-        <div className="as-ip-hero__glow as-ip-hero__glow--two" />
+    <>
+    
+      <SEO
+        title="Intellectual Property & Technology Ownership | Automation Spectrum"
+        description="Learn how Automation Spectrum approaches intellectual property, proprietary AI technology, software ownership, licensing, confidentiality and protection of client information."
+        path="/intellectual-property"
+      />
 
-        <div className="as-ip-container">
-          <Link to="/" className="as-ip-back">
-            <ArrowLeft size={16} />
-            Back to Automation Spectrum
-          </Link>
+      <main className="as-ip-page">
+        <section className="as-ip-hero">
+          <div className="as-ip-hero__glow as-ip-hero__glow--one" />
+          <div className="as-ip-hero__glow as-ip-hero__glow--two" />
 
-          <div className="as-ip-hero__badge">
-            <Copyright size={16} />
-            Technology, products and brand assets
-          </div>
+          <div className="as-ip-container">
+            <Link to="/" className="as-ip-back">
+              <ArrowLeft size={16} />
+              Back to Automation Spectrum
+            </Link>
 
-          <h1>Intellectual Property</h1>
-
-          <p>
-            This notice explains the permitted use of Automation Spectrum website
-            material and technology information, including references to
-            independently incorporated EnerG IQ Tech Pty Ltd.
-          </p>
-
-          <div className="as-ip-hero__meta">
-            <span>
-              <strong>Effective date</strong>
-              22 July 2026
-            </span>
-
-            <span>
-              <strong>Last updated</strong>
-              21 October 2026
-            </span>
-
-            <span>
-              <strong>Website operator</strong>
-              Automation Spectrum Pty Ltd
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section className="as-ip-content">
-        <div className="as-ip-container as-ip-layout">
-          <aside className="as-ip-navigation">
-            <div className="as-ip-navigation__inner">
-              <span>On this page</span>
-
-              <nav aria-label="Intellectual Property sections">
-                {intellectualPropertySections.map((section) => (
-                  <a href={`#${section.id}`} key={section.id}>
-                    <small>{section.number}</small>
-                    {section.title}
-                  </a>
-                ))}
-              </nav>
-            </div>
-          </aside>
-
-          <article className="as-ip-document">
-            <div className="as-ip-summary">
-              <ShieldCheck size={23} />
-
-              <div>
-                <strong>Ownership remains protected</strong>
-
-                <p>
-                  Public access to this website does not transfer ownership or
-                  grant a licence to EnerG IQ Tech, AIChatshoppie or
-                  underlying technology held by their respective rights holders.
-                </p>
-              </div>
+            <div className="as-ip-hero__badge">
+              <Copyright size={16} />
+              Technology, products and brand assets
             </div>
 
-            {intellectualPropertySections.map((section) => {
-              const Icon = section.icon;
+            <h1>Intellectual Property</h1>
 
-              return (
-                <section
-                  id={section.id}
-                  className="as-ip-document__section"
-                  key={section.id}
-                >
-                  <div className="as-ip-document__heading">
-                    <span className="as-ip-document__icon">
-                      <Icon size={21} />
-                    </span>
+            <p>
+              This notice explains the permitted use of Automation Spectrum website
+              material and technology information, including references to
+              independently incorporated EnerG IQ Tech Pty Ltd.
+            </p>
 
-                    <div>
+            <div className="as-ip-hero__meta">
+              <span>
+                <strong>Effective date</strong>
+                22 July 2026
+              </span>
+
+              <span>
+                <strong>Last updated</strong>
+                21 October 2026
+              </span>
+
+              <span>
+                <strong>Website operator</strong>
+                Automation Spectrum Pty Ltd
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section className="as-ip-content">
+          <div className="as-ip-container as-ip-layout">
+            <aside className="as-ip-navigation">
+              <div className="as-ip-navigation__inner">
+                <span>On this page</span>
+
+                <nav aria-label="Intellectual Property sections">
+                  {intellectualPropertySections.map((section) => (
+                    <a href={`#${section.id}`} key={section.id}>
                       <small>{section.number}</small>
-                      <h2>{section.title}</h2>
-                    </div>
-                  </div>
-
-                  <div className="as-ip-document__body">
-                    {section.content}
-                  </div>
-                </section>
-              );
-            })}
-
-            <div className="as-ip-document__footer-note">
-              <Mail size={20} />
-
-              <div>
-                <strong>Need permission to use our material?</strong>
-
-                <p>
-                  Contact Automation Spectrum regarding its website or materials.
-                  For EnerG IQ Tech-specific permissions, contact
-                  EnerG IQ Tech Pty Ltd directly.
-                </p>
-
-                <a href="mailto:contact@automationspectrum.com.au">
-                  contact@automationspectrum.com.au
-                </a>
+                      {section.title}
+                    </a>
+                  ))}
+                </nav>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+            </aside>
+
+            <article className="as-ip-document">
+              <div className="as-ip-summary">
+                <ShieldCheck size={23} />
+
+                <div>
+                  <strong>Ownership remains protected</strong>
+
+                  <p>
+                    Public access to this website does not transfer ownership or
+                    grant a licence to EnerG IQ Tech, AIChatshoppie or
+                    underlying technology held by their respective rights holders.
+                  </p>
+                </div>
+              </div>
+
+              {intellectualPropertySections.map((section) => {
+                const Icon = section.icon;
+
+                return (
+                  <section
+                    id={section.id}
+                    className="as-ip-document__section"
+                    key={section.id}
+                  >
+                    <div className="as-ip-document__heading">
+                      <span className="as-ip-document__icon">
+                        <Icon size={21} />
+                      </span>
+
+                      <div>
+                        <small>{section.number}</small>
+                        <h2>{section.title}</h2>
+                      </div>
+                    </div>
+
+                    <div className="as-ip-document__body">
+                      {section.content}
+                    </div>
+                  </section>
+                );
+              })}
+
+              <div className="as-ip-document__footer-note">
+                <Mail size={20} />
+
+                <div>
+                  <strong>Need permission to use our material?</strong>
+
+                  <p>
+                    Contact Automation Spectrum regarding its website or materials.
+                    For EnerG IQ Tech-specific permissions, contact
+                    EnerG IQ Tech Pty Ltd directly.
+                  </p>
+
+                  <a href="mailto:contact@automationspectrum.com.au">
+                    contact@automationspectrum.com.au
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      
+    
+    
+    </>
+    
   );
 }
 

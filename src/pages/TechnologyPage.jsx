@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 
 import "../styles/technology.css";
+import SEO from "./SEO";
 
 const technologyLayers = [
   {
@@ -255,475 +256,490 @@ function TechnologyPage({ openContactModal }) {
   };
 
   return (
-    <main className="as-technology-page">
-      {/* Hero */}
-      <section className="as-tech-hero">
-        <div className="as-tech-hero__glow as-tech-hero__glow--one" />
-        <div className="as-tech-hero__glow as-tech-hero__glow--two" />
+    <>
 
-        <div className="as-tech-container as-tech-hero__layout">
-          <div className="as-tech-hero__content">
-            <div className="as-tech-eyebrow">
-              <Sparkles size={15} />
-              Shared technology foundation
+    
+      <SEO
+        title="AI Technology, LLMs & Software Architecture | Automation Spectrum"
+        description="Explore Automation Spectrum's AI engineering capabilities, including LLMs, RAG, multi-agent systems, digital twins, Python, Django, React, cloud and edge AI, and enterprise system integration."
+        path="/technology"
+      />
+
+      <main className="as-technology-page">
+        {/* Hero */}
+        <section className="as-tech-hero">
+          <div className="as-tech-hero__glow as-tech-hero__glow--one" />
+          <div className="as-tech-hero__glow as-tech-hero__glow--two" />
+
+          <div className="as-tech-container as-tech-hero__layout">
+            <div className="as-tech-hero__content">
+              <div className="as-tech-eyebrow">
+                <Sparkles size={15} />
+                Shared technology foundation
+              </div>
+
+              <h1>
+                Applied AI architecture built for{" "}
+                <span>enterprise and operational environments.</span>
+              </h1>
+
+              <p>
+                Automation Spectrum applies AI agents, digital twins,
+                enterprise knowledge, connected data and human-controlled
+                workflows to enterprise solutions and founder-led technology
+                initiatives, including the separately incorporated EnerG IQ Tech
+                platform.
+              </p>
+
+              <div className="as-tech-hero__actions">
+                <button
+                  type="button"
+                  className="as-tech-button as-tech-button--primary"
+                  onClick={handleContactClick}
+                >
+                  Discuss a technology project
+                  <ArrowRight size={18} />
+                </button>
+
+                <Link
+                  to="/products"
+                  className="as-tech-button as-tech-button--secondary"
+                >
+                  Explore our products
+                </Link>
+              </div>
+
+              <div className="as-tech-hero__assurance">
+                <div>
+                  <Check size={16} />
+                  Modular architecture
+                </div>
+
+                <div>
+                  <Check size={16} />
+                  Human-controlled AI
+                </div>
+
+                <div>
+                  <Check size={16} />
+                  Cloud, private and edge-ready
+                </div>
+              </div>
             </div>
 
-            <h1>
-              Applied AI architecture built for{" "}
-              <span>enterprise and operational environments.</span>
-            </h1>
+            <div className="as-tech-hero__visual" aria-hidden="true">
+              <div className="as-tech-core">
+                <span className="as-tech-core__icon">
+                  <BrainCircuit size={29} />
+                </span>
 
-            <p>
-              Automation Spectrum applies AI agents, digital twins,
-              enterprise knowledge, connected data and human-controlled
-              workflows to enterprise solutions and founder-led technology
-              initiatives, including the separately incorporated EnerG IQ Tech
-              platform.
-            </p>
+                <strong>Applied AI Core</strong>
+                <small>Automation Spectrum</small>
+              </div>
 
-            <div className="as-tech-hero__actions">
+              <div className="as-tech-ring as-tech-ring--one" />
+              <div className="as-tech-ring as-tech-ring--two" />
+              <div className="as-tech-ring as-tech-ring--three" />
+
+              <div className="as-tech-node as-tech-node--agents">
+                <BrainCircuit size={18} />
+
+                <span>
+                  <strong>AI agents</strong>
+                  <small>Reasoning and orchestration</small>
+                </span>
+              </div>
+
+              <div className="as-tech-node as-tech-node--twin">
+                <Layers3 size={18} />
+
+                <span>
+                  <strong>Digital twins</strong>
+                  <small>Context and simulation</small>
+                </span>
+              </div>
+
+              <div className="as-tech-node as-tech-node--knowledge">
+                <Database size={18} />
+
+                <span>
+                  <strong>Enterprise knowledge</strong>
+                  <small>Retrieval and intelligence</small>
+                </span>
+              </div>
+
+              <div className="as-tech-node as-tech-node--integration">
+                <Network size={18} />
+
+                <span>
+                  <strong>Connected systems</strong>
+                  <small>Data and integration</small>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Platform statement */}
+        <section className="as-tech-intro">
+          <div className="as-tech-container as-tech-intro__layout">
+            <div className="as-tech-section-heading">
+              <span className="as-tech-section-heading__eyebrow">
+                Product technology strategy
+              </span>
+
+              <h2>
+                Reusable engineering capabilities supporting specialised AI
+                platforms
+              </h2>
+            </div>
+
+            <div className="as-tech-intro__content">
+              <p>
+                EnerG IQ Tech and AIChatshoppie address different customer
+                problems and share a founder-led engineering and technology
+                background. EnerG IQ Tech is now being advanced through the
+                separately incorporated EnerG IQ Tech Pty Ltd, while
+                AIChatshoppie remains an Automation Spectrum technology platform.
+              </p>
+
+              <p>
+                Reusable engineering, AI, data and deployment capabilities
+                support product-specific experiences without requiring the
+                entire technical foundation to be rebuilt for every customer
+                or industry.
+              </p>
+
+              <div className="as-tech-intro__products">
+                <div className="as-tech-intro__product as-tech-intro__product--energy">
+                  <Zap size={20} />
+
+                  <span>
+                    <strong>EnerG IQ Tech</strong>
+                    <small>Energy and operational intelligence</small>
+                  </span>
+                </div>
+
+                <div className="as-tech-intro__product as-tech-intro__product--enterprise">
+                  <BrainCircuit size={20} />
+
+                  <span>
+                    <strong>AIChatshoppie</strong>
+                    <small>Enterprise AI and intelligent automation</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Technology layers */}
+        <section className="as-tech-section as-tech-layers">
+          <div className="as-tech-container">
+            <div className="as-tech-section-heading as-tech-section-heading--center">
+              <span className="as-tech-section-heading__eyebrow">
+                Technology architecture
+              </span>
+
+              <h2>Four connected layers from user experience to infrastructure</h2>
+
+              <p>
+                The architecture separates product experience, intelligence,
+                integration and infrastructure so each area can evolve without
+                compromising the whole platform.
+              </p>
+            </div>
+
+            <div className="as-tech-layers__grid">
+              {technologyLayers.map((layer) => {
+                const Icon = layer.icon;
+
+                return (
+                  <article className="as-tech-layer-card" key={layer.number}>
+                    <div className="as-tech-layer-card__top">
+                      <span className="as-tech-layer-card__number">
+                        {layer.number}
+                      </span>
+
+                      <span className="as-tech-layer-card__icon">
+                        <Icon size={23} />
+                      </span>
+                    </div>
+
+                    <span className="as-tech-layer-card__eyebrow">
+                      {layer.eyebrow}
+                    </span>
+
+                    <h3>{layer.title}</h3>
+                    <p>{layer.description}</p>
+
+                    <div className="as-tech-layer-card__capabilities">
+                      {layer.capabilities.map((capability) => (
+                        <div key={capability}>
+                          <Check size={15} />
+                          <span>{capability}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Core capabilities */}
+        <section className="as-tech-section as-tech-capabilities">
+          <div className="as-tech-container">
+            <div className="as-tech-section-heading">
+              <span className="as-tech-section-heading__eyebrow">
+                Core capabilities
+              </span>
+
+              <h2>Technology designed around practical enterprise problems</h2>
+
+              <p>
+                Individual technologies are combined into controlled workflows
+                that solve operational and enterprise use cases.
+              </p>
+            </div>
+
+            <div className="as-tech-capabilities__grid">
+              {coreCapabilities.map((capability) => {
+                const Icon = capability.icon;
+
+                return (
+                  <article
+                    className="as-tech-capability-card"
+                    key={capability.title}
+                  >
+                    <span className="as-tech-capability-card__icon">
+                      <Icon size={22} />
+                    </span>
+
+                    <h3>{capability.title}</h3>
+                    <p>{capability.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Workflow */}
+        <section className="as-tech-section as-tech-workflow">
+          <div className="as-tech-container">
+            <div className="as-tech-section-heading as-tech-section-heading--center">
+              <span className="as-tech-section-heading__eyebrow">
+                Intelligence workflow
+              </span>
+
+              <h2>From connected information to governed outcomes</h2>
+
+              <p>
+                The platform supports a complete decision lifecycle rather than
+                producing isolated AI responses.
+              </p>
+            </div>
+
+            <div className="as-tech-workflow__grid">
+              {workflowSteps.map((step) => {
+                const Icon = step.icon;
+
+                return (
+                  <article className="as-tech-workflow-step" key={step.number}>
+                    <div className="as-tech-workflow-step__header">
+                      <span>{step.number}</span>
+                      <Icon size={20} />
+                    </div>
+
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+
+            <div className="as-tech-workflow__summary">
+              <Workflow size={22} />
+
+              <p>
+                Connect → Understand → Analyse → Recommend → Approve → Measure
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Deployment */}
+        <section className="as-tech-section as-tech-deployment">
+          <div className="as-tech-container">
+            <div className="as-tech-section-heading">
+              <span className="as-tech-section-heading__eyebrow">
+                Deployment flexibility
+              </span>
+
+              <h2>Architecture that adapts to enterprise requirements</h2>
+
+              <p>
+                Deployment choices can be aligned with data sensitivity,
+                operational resilience, latency and integration requirements.
+              </p>
+            </div>
+
+            <div className="as-tech-deployment__grid">
+              {deploymentModels.map((model) => {
+                const Icon = model.icon;
+
+                return (
+                  <article className="as-tech-deployment-card" key={model.title}>
+                    <span className="as-tech-deployment-card__icon">
+                      <Icon size={23} />
+                    </span>
+
+                    <h3>{model.title}</h3>
+                    <p>{model.description}</p>
+
+                    <div className="as-tech-deployment-card__tags">
+                      {model.tags.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                      ))}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Governance */}
+        <section className="as-tech-section as-tech-governance">
+          <div className="as-tech-container as-tech-governance__layout">
+            <div className="as-tech-governance__intro">
+              <span className="as-tech-section-heading__eyebrow">
+                Responsible enterprise AI
+              </span>
+
+              <h2>Control and accountability remain part of the architecture</h2>
+
+              <p>
+                The AI technologies and product initiatives presented here
+                are designed to support review, governance and human
+                responsibility—particularly where recommendations may affect
+                operations, cost, assets or customers.
+              </p>
+
               <button
                 type="button"
                 className="as-tech-button as-tech-button--primary"
                 onClick={handleContactClick}
               >
-                Discuss a technology project
+                Discuss governance requirements
+                <ArrowRight size={18} />
+              </button>
+            </div>
+
+            <div className="as-tech-governance__grid">
+              {governanceItems.map((item) => {
+                const Icon = item.icon;
+
+                return (
+                  <article className="as-tech-governance-card" key={item.title}>
+                    <Icon size={22} />
+
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p>{item.description}</p>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Shared foundation */}
+        <section className="as-tech-section as-tech-foundation">
+          <div className="as-tech-container as-tech-foundation__layout">
+            <div className="as-tech-foundation__content">
+              <span className="as-tech-section-heading__eyebrow">
+                Engineering foundation
+              </span>
+
+              <h2>Modern product engineering behind the AI experience</h2>
+
+              <p>
+                Reliable AI products also require strong application
+                architecture, APIs, data systems, deployment practices and
+                production engineering.
+              </p>
+
+              <Link
+                to="/company"
+                className="as-tech-button as-tech-button--secondary"
+              >
+                About Automation Spectrum
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+
+            <div className="as-tech-foundation__list">
+              {sharedFoundation.map((item) => (
+                <div key={item}>
+                  <Check size={16} />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="as-tech-cta">
+          <div className="as-tech-cta__glow" />
+
+          <div className="as-tech-container as-tech-cta__content">
+            <div>
+              <span className="as-tech-section-heading__eyebrow">
+                Build with Automation Spectrum
+              </span>
+
+              <h2>
+                Explore a practical AI architecture for your enterprise or
+                operational environment.
+              </h2>
+
+              <p>
+                Start with a focused pilot, validate technical and business
+                value, and develop a clear pathway toward production.
+              </p>
+            </div>
+
+            <div className="as-tech-cta__actions">
+              <button
+                type="button"
+                className="as-tech-button as-tech-button--primary"
+                onClick={handleContactClick}
+              >
+                Start a conversation
                 <ArrowRight size={18} />
               </button>
 
               <Link
-                to="/products"
+                to="/pilot-programs"
                 className="as-tech-button as-tech-button--secondary"
               >
-                Explore our products
+                View pilot programs
               </Link>
             </div>
-
-            <div className="as-tech-hero__assurance">
-              <div>
-                <Check size={16} />
-                Modular architecture
-              </div>
-
-              <div>
-                <Check size={16} />
-                Human-controlled AI
-              </div>
-
-              <div>
-                <Check size={16} />
-                Cloud, private and edge-ready
-              </div>
-            </div>
           </div>
-
-          <div className="as-tech-hero__visual" aria-hidden="true">
-            <div className="as-tech-core">
-              <span className="as-tech-core__icon">
-                <BrainCircuit size={29} />
-              </span>
-
-              <strong>Applied AI Core</strong>
-              <small>Automation Spectrum</small>
-            </div>
-
-            <div className="as-tech-ring as-tech-ring--one" />
-            <div className="as-tech-ring as-tech-ring--two" />
-            <div className="as-tech-ring as-tech-ring--three" />
-
-            <div className="as-tech-node as-tech-node--agents">
-              <BrainCircuit size={18} />
-
-              <span>
-                <strong>AI agents</strong>
-                <small>Reasoning and orchestration</small>
-              </span>
-            </div>
-
-            <div className="as-tech-node as-tech-node--twin">
-              <Layers3 size={18} />
-
-              <span>
-                <strong>Digital twins</strong>
-                <small>Context and simulation</small>
-              </span>
-            </div>
-
-            <div className="as-tech-node as-tech-node--knowledge">
-              <Database size={18} />
-
-              <span>
-                <strong>Enterprise knowledge</strong>
-                <small>Retrieval and intelligence</small>
-              </span>
-            </div>
-
-            <div className="as-tech-node as-tech-node--integration">
-              <Network size={18} />
-
-              <span>
-                <strong>Connected systems</strong>
-                <small>Data and integration</small>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Platform statement */}
-      <section className="as-tech-intro">
-        <div className="as-tech-container as-tech-intro__layout">
-          <div className="as-tech-section-heading">
-            <span className="as-tech-section-heading__eyebrow">
-              Product technology strategy
-            </span>
-
-            <h2>
-              Reusable engineering capabilities supporting specialised AI
-              platforms
-            </h2>
-          </div>
-
-          <div className="as-tech-intro__content">
-            <p>
-              EnerG IQ Tech and AIChatshoppie address different customer
-              problems and share a founder-led engineering and technology
-              background. EnerG IQ Tech is now being advanced through the
-              separately incorporated EnerG IQ Tech Pty Ltd, while
-              AIChatshoppie remains an Automation Spectrum technology platform.
-            </p>
-
-            <p>
-              Reusable engineering, AI, data and deployment capabilities
-              support product-specific experiences without requiring the
-              entire technical foundation to be rebuilt for every customer
-              or industry.
-            </p>
-
-            <div className="as-tech-intro__products">
-              <div className="as-tech-intro__product as-tech-intro__product--energy">
-                <Zap size={20} />
-
-                <span>
-                  <strong>EnerG IQ Tech</strong>
-                  <small>Energy and operational intelligence</small>
-                </span>
-              </div>
-
-              <div className="as-tech-intro__product as-tech-intro__product--enterprise">
-                <BrainCircuit size={20} />
-
-                <span>
-                  <strong>AIChatshoppie</strong>
-                  <small>Enterprise AI and intelligent automation</small>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Technology layers */}
-      <section className="as-tech-section as-tech-layers">
-        <div className="as-tech-container">
-          <div className="as-tech-section-heading as-tech-section-heading--center">
-            <span className="as-tech-section-heading__eyebrow">
-              Technology architecture
-            </span>
-
-            <h2>Four connected layers from user experience to infrastructure</h2>
-
-            <p>
-              The architecture separates product experience, intelligence,
-              integration and infrastructure so each area can evolve without
-              compromising the whole platform.
-            </p>
-          </div>
-
-          <div className="as-tech-layers__grid">
-            {technologyLayers.map((layer) => {
-              const Icon = layer.icon;
-
-              return (
-                <article className="as-tech-layer-card" key={layer.number}>
-                  <div className="as-tech-layer-card__top">
-                    <span className="as-tech-layer-card__number">
-                      {layer.number}
-                    </span>
-
-                    <span className="as-tech-layer-card__icon">
-                      <Icon size={23} />
-                    </span>
-                  </div>
-
-                  <span className="as-tech-layer-card__eyebrow">
-                    {layer.eyebrow}
-                  </span>
-
-                  <h3>{layer.title}</h3>
-                  <p>{layer.description}</p>
-
-                  <div className="as-tech-layer-card__capabilities">
-                    {layer.capabilities.map((capability) => (
-                      <div key={capability}>
-                        <Check size={15} />
-                        <span>{capability}</span>
-                      </div>
-                    ))}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Core capabilities */}
-      <section className="as-tech-section as-tech-capabilities">
-        <div className="as-tech-container">
-          <div className="as-tech-section-heading">
-            <span className="as-tech-section-heading__eyebrow">
-              Core capabilities
-            </span>
-
-            <h2>Technology designed around practical enterprise problems</h2>
-
-            <p>
-              Individual technologies are combined into controlled workflows
-              that solve operational and enterprise use cases.
-            </p>
-          </div>
-
-          <div className="as-tech-capabilities__grid">
-            {coreCapabilities.map((capability) => {
-              const Icon = capability.icon;
-
-              return (
-                <article
-                  className="as-tech-capability-card"
-                  key={capability.title}
-                >
-                  <span className="as-tech-capability-card__icon">
-                    <Icon size={22} />
-                  </span>
-
-                  <h3>{capability.title}</h3>
-                  <p>{capability.description}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Workflow */}
-      <section className="as-tech-section as-tech-workflow">
-        <div className="as-tech-container">
-          <div className="as-tech-section-heading as-tech-section-heading--center">
-            <span className="as-tech-section-heading__eyebrow">
-              Intelligence workflow
-            </span>
-
-            <h2>From connected information to governed outcomes</h2>
-
-            <p>
-              The platform supports a complete decision lifecycle rather than
-              producing isolated AI responses.
-            </p>
-          </div>
-
-          <div className="as-tech-workflow__grid">
-            {workflowSteps.map((step) => {
-              const Icon = step.icon;
-
-              return (
-                <article className="as-tech-workflow-step" key={step.number}>
-                  <div className="as-tech-workflow-step__header">
-                    <span>{step.number}</span>
-                    <Icon size={20} />
-                  </div>
-
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
-                </article>
-              );
-            })}
-          </div>
-
-          <div className="as-tech-workflow__summary">
-            <Workflow size={22} />
-
-            <p>
-              Connect → Understand → Analyse → Recommend → Approve → Measure
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Deployment */}
-      <section className="as-tech-section as-tech-deployment">
-        <div className="as-tech-container">
-          <div className="as-tech-section-heading">
-            <span className="as-tech-section-heading__eyebrow">
-              Deployment flexibility
-            </span>
-
-            <h2>Architecture that adapts to enterprise requirements</h2>
-
-            <p>
-              Deployment choices can be aligned with data sensitivity,
-              operational resilience, latency and integration requirements.
-            </p>
-          </div>
-
-          <div className="as-tech-deployment__grid">
-            {deploymentModels.map((model) => {
-              const Icon = model.icon;
-
-              return (
-                <article className="as-tech-deployment-card" key={model.title}>
-                  <span className="as-tech-deployment-card__icon">
-                    <Icon size={23} />
-                  </span>
-
-                  <h3>{model.title}</h3>
-                  <p>{model.description}</p>
-
-                  <div className="as-tech-deployment-card__tags">
-                    {model.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Governance */}
-      <section className="as-tech-section as-tech-governance">
-        <div className="as-tech-container as-tech-governance__layout">
-          <div className="as-tech-governance__intro">
-            <span className="as-tech-section-heading__eyebrow">
-              Responsible enterprise AI
-            </span>
-
-            <h2>Control and accountability remain part of the architecture</h2>
-
-            <p>
-              The AI technologies and product initiatives presented here
-              are designed to support review, governance and human
-              responsibility—particularly where recommendations may affect
-              operations, cost, assets or customers.
-            </p>
-
-            <button
-              type="button"
-              className="as-tech-button as-tech-button--primary"
-              onClick={handleContactClick}
-            >
-              Discuss governance requirements
-              <ArrowRight size={18} />
-            </button>
-          </div>
-
-          <div className="as-tech-governance__grid">
-            {governanceItems.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <article className="as-tech-governance-card" key={item.title}>
-                  <Icon size={22} />
-
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Shared foundation */}
-      <section className="as-tech-section as-tech-foundation">
-        <div className="as-tech-container as-tech-foundation__layout">
-          <div className="as-tech-foundation__content">
-            <span className="as-tech-section-heading__eyebrow">
-              Engineering foundation
-            </span>
-
-            <h2>Modern product engineering behind the AI experience</h2>
-
-            <p>
-              Reliable AI products also require strong application
-              architecture, APIs, data systems, deployment practices and
-              production engineering.
-            </p>
-
-            <Link
-              to="/company"
-              className="as-tech-button as-tech-button--secondary"
-            >
-              About Automation Spectrum
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-
-          <div className="as-tech-foundation__list">
-            {sharedFoundation.map((item) => (
-              <div key={item}>
-                <Check size={16} />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="as-tech-cta">
-        <div className="as-tech-cta__glow" />
-
-        <div className="as-tech-container as-tech-cta__content">
-          <div>
-            <span className="as-tech-section-heading__eyebrow">
-              Build with Automation Spectrum
-            </span>
-
-            <h2>
-              Explore a practical AI architecture for your enterprise or
-              operational environment.
-            </h2>
-
-            <p>
-              Start with a focused pilot, validate technical and business
-              value, and develop a clear pathway toward production.
-            </p>
-          </div>
-
-          <div className="as-tech-cta__actions">
-            <button
-              type="button"
-              className="as-tech-button as-tech-button--primary"
-              onClick={handleContactClick}
-            >
-              Start a conversation
-              <ArrowRight size={18} />
-            </button>
-
-            <Link
-              to="/pilot-programs"
-              className="as-tech-button as-tech-button--secondary"
-            >
-              View pilot programs
-            </Link>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    
+    
+    
+    
+    </>
+    
   );
 }
 

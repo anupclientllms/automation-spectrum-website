@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 
 import "../styles/termsOfUse.css";
+import SEO from "./SEO";
 
 const termsSections = [
   {
@@ -684,130 +685,146 @@ const termsSections = [
 
 function TermsOfUsePage() {
   return (
-    <main className="as-terms-page">
-      <section className="as-terms-hero">
-        <div className="as-terms-hero__glow as-terms-hero__glow--one" />
-        <div className="as-terms-hero__glow as-terms-hero__glow--two" />
 
-        <div className="as-terms-container">
-          <Link to="/" className="as-terms-back">
-            <ArrowLeft size={16} />
-            Back to Automation Spectrum
-          </Link>
+    <>
 
-          <div className="as-terms-hero__badge">
-            <Gavel size={16} />
-            Website terms and conditions
-          </div>
+    
+      <SEO
+        title="Terms of Use | Automation Spectrum Pty Ltd"
+        description="Read the Automation Spectrum Pty Ltd Terms of Use covering website access, permitted usage, intellectual property, disclaimers, liability and conditions governing use of our website."
+        path="/terms-of-use"
+      />
 
-          <h1>Terms of Use</h1>
+    
+      <main className="as-terms-page">
+        <section className="as-terms-hero">
+          <div className="as-terms-hero__glow as-terms-hero__glow--one" />
+          <div className="as-terms-hero__glow as-terms-hero__glow--two" />
 
-          <p>
-            These terms govern access to the Automation Spectrum corporate
-            website and its public information about EnerG IQ Tech, AIChatshoppie,
-            technology capabilities and pilot programs.
-          </p>
+          <div className="as-terms-container">
+            <Link to="/" className="as-terms-back">
+              <ArrowLeft size={16} />
+              Back to Automation Spectrum
+            </Link>
 
-          <div className="as-terms-hero__meta">
-            <span>
-              <strong>Effective date</strong>
-              22 July 2026
-            </span>
-
-            <span>
-              <strong>Last updated</strong>
-              21 October 2026
-            </span>
-
-            <span>
-              <strong>Entity</strong>
-              Automation Spectrum Pty Ltd
-            </span>
-          </div>
-        </div>
-      </section>
-
-      <section className="as-terms-content">
-        <div className="as-terms-container as-terms-layout">
-          <aside className="as-terms-navigation">
-            <div className="as-terms-navigation__inner">
-              <span>On this page</span>
-
-              <nav aria-label="Terms of Use sections">
-                {termsSections.map((section) => (
-                  <a href={`#${section.id}`} key={section.id}>
-                    <small>{section.number}</small>
-                    {section.title}
-                  </a>
-                ))}
-              </nav>
-            </div>
-          </aside>
-
-          <article className="as-terms-document">
-            <div className="as-terms-summary">
-              <ShieldCheck size={23} />
-
-              <div>
-                <strong>Important distinction</strong>
-
-                <p>
-                  These Automation Spectrum website terms do not replace a pilot
-                  agreement, customer contract, subscription agreement, software
-                  licence, data-processing agreement or statement of work with
-                  the relevant legal entity, including EnerG IQ Tech Pty Ltd
-                  where applicable.
-                </p>
-              </div>
+            <div className="as-terms-hero__badge">
+              <Gavel size={16} />
+              Website terms and conditions
             </div>
 
-            {termsSections.map((section) => {
-              const Icon = section.icon;
+            <h1>Terms of Use</h1>
 
-              return (
-                <section
-                  id={section.id}
-                  className="as-terms-document__section"
-                  key={section.id}
-                >
-                  <div className="as-terms-document__heading">
-                    <span className="as-terms-document__icon">
-                      <Icon size={21} />
-                    </span>
+            <p>
+              These terms govern access to the Automation Spectrum corporate
+              website and its public information about EnerG IQ Tech, AIChatshoppie,
+              technology capabilities and pilot programs.
+            </p>
 
-                    <div>
+            <div className="as-terms-hero__meta">
+              <span>
+                <strong>Effective date</strong>
+                22 July 2026
+              </span>
+
+              <span>
+                <strong>Last updated</strong>
+                21 October 2026
+              </span>
+
+              <span>
+                <strong>Entity</strong>
+                Automation Spectrum Pty Ltd
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section className="as-terms-content">
+          <div className="as-terms-container as-terms-layout">
+            <aside className="as-terms-navigation">
+              <div className="as-terms-navigation__inner">
+                <span>On this page</span>
+
+                <nav aria-label="Terms of Use sections">
+                  {termsSections.map((section) => (
+                    <a href={`#${section.id}`} key={section.id}>
                       <small>{section.number}</small>
-                      <h2>{section.title}</h2>
-                    </div>
-                  </div>
-
-                  <div className="as-terms-document__body">
-                    {section.content}
-                  </div>
-                </section>
-              );
-            })}
-
-            <div className="as-terms-document__footer-note">
-              <Mail size={20} />
-
-              <div>
-                <strong>Questions about these terms?</strong>
-
-                <p>
-                  Contact Automation Spectrum before using the website in a way
-                  that may require permission or clarification.
-                </p>
-
-                <a href="mailto:contact@automationspectrum.com.au">
-                  contact@automationspectrum.com.au
-                </a>
+                      {section.title}
+                    </a>
+                  ))}
+                </nav>
               </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
+            </aside>
+
+            <article className="as-terms-document">
+              <div className="as-terms-summary">
+                <ShieldCheck size={23} />
+
+                <div>
+                  <strong>Important distinction</strong>
+
+                  <p>
+                    These Automation Spectrum website terms do not replace a pilot
+                    agreement, customer contract, subscription agreement, software
+                    licence, data-processing agreement or statement of work with
+                    the relevant legal entity, including EnerG IQ Tech Pty Ltd
+                    where applicable.
+                  </p>
+                </div>
+              </div>
+
+              {termsSections.map((section) => {
+                const Icon = section.icon;
+
+                return (
+                  <section
+                    id={section.id}
+                    className="as-terms-document__section"
+                    key={section.id}
+                  >
+                    <div className="as-terms-document__heading">
+                      <span className="as-terms-document__icon">
+                        <Icon size={21} />
+                      </span>
+
+                      <div>
+                        <small>{section.number}</small>
+                        <h2>{section.title}</h2>
+                      </div>
+                    </div>
+
+                    <div className="as-terms-document__body">
+                      {section.content}
+                    </div>
+                  </section>
+                );
+              })}
+
+              <div className="as-terms-document__footer-note">
+                <Mail size={20} />
+
+                <div>
+                  <strong>Questions about these terms?</strong>
+
+                  <p>
+                    Contact Automation Spectrum before using the website in a way
+                    that may require permission or clarification.
+                  </p>
+
+                  <a href="mailto:contact@automationspectrum.com.au">
+                    contact@automationspectrum.com.au
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      
+    
+    
+    </>
+    
   );
 }
 

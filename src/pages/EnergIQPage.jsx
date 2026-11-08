@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 
 import "../styles/energiq.css";
+import SEO from "./SEO";
 
 const platformCapabilities = [
   {
@@ -342,38 +343,561 @@ function EnergIQPage({ openContactModal }) {
   };
 
   return (
-    <main className="as-energiq-page">
-      {/* Hero */}
-      <section className="as-energiq-hero">
-        <div className="as-energiq-hero__ambient as-energiq-hero__ambient--one" />
-        <div className="as-energiq-hero__ambient as-energiq-hero__ambient--two" />
+    <>
+   
+      <SEO
+        title="EnerG IQ Tech | Industrial AI Energy Optimisation Platform"
+        description="Explore EnerG IQ Tech, an industrial AI energy optimisation platform combining edge AI gateways, physics-informed models, digital twins and decision agents to reduce energy costs and CO₂ emissions."
+        path="/products/energiqtech"
+      />
 
-        <div className="as-energiq-container as-energiq-hero__layout">
-          <div className="as-energiq-hero__content">
-            <div className="as-energiq-eyebrow">
-              <Zap size={15} />
-              A founder-led platform now advanced by EnerG IQ Tech Pty Ltd
+      <main className="as-energiq-page">
+        {/* Hero */}
+        <section className="as-energiq-hero">
+          <div className="as-energiq-hero__ambient as-energiq-hero__ambient--one" />
+          <div className="as-energiq-hero__ambient as-energiq-hero__ambient--two" />
+
+          <div className="as-energiq-container as-energiq-hero__layout">
+            <div className="as-energiq-hero__content">
+              <div className="as-energiq-eyebrow">
+                <Zap size={15} />
+                A founder-led platform now advanced by EnerG IQ Tech Pty Ltd
+              </div>
+
+              <h1>
+                AI-powered energy and{" "}
+                <span>operational intelligence.</span>
+              </h1>
+
+              <p>
+                EnerG IQ Tech helps energy-intensive organisations understand
+                operational performance, identify avoidable costs and make
+                controlled, data-informed decisions across assets, facilities
+                and energy systems.
+              </p>
+
+              <div className="as-energiq-hero__actions">
+                <button
+                  type="button"
+                  className="as-energiq-button as-energiq-button--primary"
+                  onClick={handleContactClick}
+                >
+                  Discuss an EnerG IQ Tech pilot
+                  <ArrowRight size={18} />
+                </button>
+
+                <a
+                  href="https://energiqtech.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="as-energiq-button as-energiq-button--secondary"
+                >
+                  Visit EnerG IQ Tech website
+                </a>
+              </div>
+
+              <div className="as-energiq-hero__assurance">
+                <div>
+                  <Check size={16} />
+                  Existing-data pilots
+                </div>
+
+                <div>
+                  <Check size={16} />
+                  Human-approved decisions
+                </div>
+
+                <div>
+                  <Check size={16} />
+                  Pilot-to-production pathway
+                </div>
+              </div>
             </div>
 
-            <h1>
-              AI-powered energy and{" "}
-              <span>operational intelligence.</span>
-            </h1>
+            <EnergIQHeroVisual />
+          </div>
+        </section>
 
-            <p>
-              EnerG IQ Tech helps energy-intensive organisations understand
-              operational performance, identify avoidable costs and make
-              controlled, data-informed decisions across assets, facilities
-              and energy systems.
-            </p>
+        {/* Company relationship */}
+        <section className="as-energiq-intro">
+          <div className="as-energiq-container as-energiq-intro__layout">
+            <div className="as-energiq-section-heading">
+              <span className="as-energiq-section-heading__eyebrow">
+                Product and company relationship
+              </span>
 
-            <div className="as-energiq-hero__actions">
+              <h2>EnerG IQ Tech is advancing through a separately incorporated company</h2>
+            </div>
+
+            <div className="as-energiq-intro__content">
+              <p>
+                EnerG IQ Tech was conceptualised and developed by its founder, with
+                Automation Spectrum Pty Ltd serving as the earlier business entity
+                associated with the initiative. Industry offerings such as Cold Storage AI,
+                Building AI, Warehouse &amp; Logistics AI and DER intelligence
+                are product configurations within the EnerG IQ Tech platform.
+              </p>
+
+              <p>
+                EnerG IQ Tech Pty Ltd was incorporated in October 2026 to advance the
+                platform&apos;s development, demonstration and commercialisation
+                as a separate Australian company.
+              </p>
+
+              <div className="as-energiq-intro__statement">
+                <Building2 size={19} />
+
+                <p>
+                  <strong>Current company:</strong> EnerG IQ Tech Pty Ltd
+                  <br />
+                  <strong>Historical association:</strong> Automation Spectrum Pty Ltd
+                  <br />
+                  <strong>Platform:</strong> EnerG IQ Tech
+                  <br />
+                  <strong>Solution:</strong> The relevant industry or operational
+                  configuration
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Platform capabilities */}
+        <section className="as-energiq-section as-energiq-capabilities">
+          <div className="as-energiq-container">
+            <div className="as-energiq-section-heading as-energiq-section-heading--center">
+              <span className="as-energiq-section-heading__eyebrow">
+                Platform capabilities
+              </span>
+
+              <h2>From operational data to controlled improvement</h2>
+
+              <p>
+                EnerG IQ Tech combines connected data, contextual models, AI analysis
+                and human oversight into practical operational workflows.
+              </p>
+            </div>
+
+            <div className="as-energiq-capabilities__grid">
+              {platformCapabilities.map((capability) => {
+                const Icon = capability.icon;
+
+                return (
+                  <article
+                    className="as-energiq-capability-card"
+                    key={capability.title}
+                  >
+                    <span className="as-energiq-capability-card__icon">
+                      <Icon size={22} />
+                    </span>
+
+                    <h3>{capability.title}</h3>
+                    <p>{capability.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Workflow */}
+        <section className="as-energiq-section as-energiq-workflow">
+          <div className="as-energiq-container">
+            <div className="as-energiq-section-heading as-energiq-section-heading--center">
+              <span className="as-energiq-section-heading__eyebrow">
+                Human-in-the-loop workflow
+              </span>
+
+              <h2>Detect, understand, recommend and measure</h2>
+
+              <p>
+                EnerG IQ Tech is designed to support accountable operational
+                decision-making rather than uncontrolled automation.
+              </p>
+            </div>
+
+            <div className="as-energiq-workflow__grid">
+              {workflowSteps.map((step) => {
+                const Icon = step.icon;
+
+                return (
+                  <article className="as-energiq-workflow-step" key={step.number}>
+                    <div className="as-energiq-workflow-step__header">
+                      <span>{step.number}</span>
+                      <Icon size={21} />
+                    </div>
+
+                    <h3>{step.title}</h3>
+                    <p>{step.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+
+            <div className="as-energiq-workflow__summary">
+              <Workflow size={21} />
+
+              <p>
+                Detect → Digital Twin → Analyse → Simulate → Approve → Measure
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Priority industries */}
+        <section className="as-energiq-section as-energiq-industries">
+          <div className="as-energiq-container">
+            <div className="as-energiq-section-heading">
+              <span className="as-energiq-section-heading__eyebrow">
+                Initial commercial focus
+              </span>
+
+              <h2>Focused industries with measurable operational opportunities</h2>
+
+              <p>
+                EnerG IQ Tech&apos;s near-term commercial focus is on environments
+                where energy intensity, equipment performance and operational
+                complexity create a clear business case.
+              </p>
+            </div>
+
+            <div className="as-energiq-industries__grid">
+              {priorityIndustries.map((industry) => {
+                const Icon = industry.icon;
+
+                return (
+                  <article
+                    className="as-energiq-industry-card"
+                    key={industry.title}
+                  >
+                    <span className="as-energiq-industry-card__icon">
+                      <Icon size={25} />
+                    </span>
+
+                    <h3>{industry.title}</h3>
+                    <p>{industry.description}</p>
+
+                    <div className="as-energiq-industry-card__examples">
+                      {industry.examples.map((example) => (
+                        <div key={example}>
+                          <Check size={15} />
+                          <span>{example}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* DER */}
+        <section className="as-energiq-section as-energiq-der">
+          <div className="as-energiq-container as-energiq-der__layout">
+            <div className="as-energiq-der__content">
+              <span className="as-energiq-section-heading__eyebrow">
+                Strategic energy opportunity
+              </span>
+
+              <h2>Distributed energy and portfolio intelligence</h2>
+
+              <p>
+                EnerG IQ Tech&apos;s connected-energy architecture can also support
+                distributed energy resources, flexible demand, batteries, solar
+                and portfolio-level decision intelligence.
+              </p>
+
+              <p>
+                These capabilities are strategically relevant to energy
+                retailers, network operators, VPP operators, infrastructure
+                portfolios and grant-supported energy innovation programs.
+              </p>
+
               <button
                 type="button"
                 className="as-energiq-button as-energiq-button--primary"
                 onClick={handleContactClick}
               >
-                Discuss an EnerG IQ Tech pilot
+                Discuss a DER opportunity
+                <ArrowRight size={18} />
+              </button>
+            </div>
+
+            <div className="as-energiq-der__diagram">
+              <div className="as-energiq-der__asset">
+                <Zap size={23} />
+                <span>
+                  <strong>Flexible load</strong>
+                  <small>Demand and operational response</small>
+                </span>
+              </div>
+
+              <div className="as-energiq-der__asset">
+                <BatteryCharging size={23} />
+                <span>
+                  <strong>Battery storage</strong>
+                  <small>Dispatch and optimisation</small>
+                </span>
+              </div>
+
+              <div className="as-energiq-der__asset">
+                <CloudCog size={23} />
+                <span>
+                  <strong>Portfolio intelligence</strong>
+                  <small>Connected visibility and coordination</small>
+                </span>
+              </div>
+
+              <div className="as-energiq-der__core">
+                <BrainCircuit size={28} />
+                <strong>EnerG IQ Tech DER Intelligence</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Connected sources */}
+        <section className="as-energiq-section as-energiq-connected">
+          <div className="as-energiq-container">
+            <div className="as-energiq-section-heading as-energiq-section-heading--center">
+              <span className="as-energiq-section-heading__eyebrow">
+                Connected operational environment
+              </span>
+
+              <h2>Designed to work with existing systems and data</h2>
+
+              <p>
+                EnerG IQ Tech can begin with available data and progressively connect
+                more operational systems as the customer moves from pilot to
+                production.
+              </p>
+            </div>
+
+            <div className="as-energiq-connected__grid">
+              {connectedSources.map((source) => {
+                const Icon = source.icon;
+
+                return (
+                  <article className="as-energiq-connected-card" key={source.title}>
+                    <span className="as-energiq-connected-card__icon">
+                      <Icon size={22} />
+                    </span>
+
+                    <h3>{source.title}</h3>
+                    <p>{source.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Use cases */}
+        <section className="as-energiq-section as-energiq-use-cases">
+          <div className="as-energiq-container">
+            <div className="as-energiq-section-heading">
+              <span className="as-energiq-section-heading__eyebrow">
+                Example operational scenarios
+              </span>
+
+              <h2>Use cases configured around the customer environment</h2>
+
+              <p>
+                The exact workflow depends on available telemetry, operational
+                constraints, customer priorities and agreed pilot outcomes.
+              </p>
+            </div>
+
+            <div className="as-energiq-use-cases__grid">
+              {useCases.map((useCase) => {
+                const Icon = useCase.icon;
+
+                return (
+                  <article className="as-energiq-use-case" key={useCase.title}>
+                    <span className="as-energiq-use-case__icon">
+                      <Icon size={22} />
+                    </span>
+
+                    <h3>{useCase.title}</h3>
+                    <p>{useCase.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Pilot model */}
+        <section className="as-energiq-section as-energiq-pilot">
+          <div className="as-energiq-container as-energiq-pilot__layout">
+            <div className="as-energiq-pilot__content">
+              <span className="as-energiq-section-heading__eyebrow">
+                EnerG IQ Tech pilot model
+              </span>
+
+              <h2>Begin with available data and a focused operational problem</h2>
+
+              <p>
+                An EnerG IQ Tech pilot can begin without immediately installing new
+                control hardware. Existing exports, telemetry, meter data or
+                representative information may be sufficient to validate the
+                initial use case.
+              </p>
+
+              <p>
+                Additional gateways, live integrations and control workflows can
+                be introduced when the pilot demonstrates sufficient technical
+                and commercial value.
+              </p>
+
+              <div className="as-energiq-pilot__actions">
+                <button
+                  type="button"
+                  className="as-energiq-button as-energiq-button--primary"
+                  onClick={handleContactClick}
+                >
+                  Discuss pilot suitability
+                  <ArrowRight size={18} />
+                </button>
+
+                <Link
+                  to="/pilot-programs"
+                  className="as-energiq-button as-energiq-button--secondary"
+                >
+                  View pilot process
+                </Link>
+              </div>
+            </div>
+
+            <div className="as-energiq-pilot__outcomes">
+              <span>Typical pilot outputs</span>
+
+              {pilotOutcomes.map((outcome) => (
+                <div key={outcome}>
+                  <CheckCircle2 size={17} />
+                  <span>{outcome}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Deployment */}
+        <section className="as-energiq-section as-energiq-deployment">
+          <div className="as-energiq-container">
+            <div className="as-energiq-section-heading as-energiq-section-heading--center">
+              <span className="as-energiq-section-heading__eyebrow">
+                Deployment architecture
+              </span>
+
+              <h2>Flexible architecture for operational environments</h2>
+
+              <p>
+                Deployment can be aligned with customer systems, data
+                requirements, latency, resilience and security expectations.
+              </p>
+            </div>
+
+            <div className="as-energiq-deployment__grid">
+              {deploymentOptions.map((option) => {
+                const Icon = option.icon;
+
+                return (
+                  <article
+                    className="as-energiq-deployment-card"
+                    key={option.title}
+                  >
+                    <span className="as-energiq-deployment-card__icon">
+                      <Icon size={23} />
+                    </span>
+
+                    <h3>{option.title}</h3>
+                    <p>{option.description}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Governance */}
+        <section className="as-energiq-section as-energiq-governance">
+          <div className="as-energiq-container as-energiq-governance__layout">
+            <div className="as-energiq-governance__content">
+              <span className="as-energiq-section-heading__eyebrow">
+                Operational trust
+              </span>
+
+              <h2>Designed to assist operational teams, not bypass them</h2>
+
+              <p>
+                EnerG IQ Tech can provide recommendations, simulations and evidence
+                while leaving critical operational decisions with authorised
+                users.
+              </p>
+
+              <p>
+                Approval records, recommendations and outcomes can be retained to
+                support auditability, learning and continuous improvement.
+              </p>
+            </div>
+
+            <div className="as-energiq-governance__cards">
+              <article>
+                <ShieldCheck size={23} />
+                <h3>Human approval</h3>
+                <p>Consequential actions remain controlled by authorised users.</p>
+              </article>
+
+              <article>
+                <Database size={23} />
+                <h3>Evidence and context</h3>
+                <p>Recommendations can include operational data and reasoning.</p>
+              </article>
+
+              <article>
+                <Activity size={23} />
+                <h3>Outcome tracking</h3>
+                <p>Applied actions and resulting performance can be reviewed.</p>
+              </article>
+
+              <article>
+                <Network size={23} />
+                <h3>Progressive integration</h3>
+                <p>Automation can increase only when the customer is ready.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="as-energiq-cta">
+          <div className="as-energiq-cta__glow" />
+
+          <div className="as-energiq-container as-energiq-cta__content">
+            <div>
+              <span className="as-energiq-section-heading__eyebrow">
+                Explore EnerG IQ Tech
+              </span>
+
+              <h2>
+                Bring us an energy-intensive operational problem worth solving.
+              </h2>
+
+              <p>
+                For current EnerG IQ Tech enquiries and pilot opportunities, visit the
+                EnerG IQ Tech website to connect with the separately incorporated company.
+              </p>
+            </div>
+
+            <div className="as-energiq-cta__actions">
+              <button
+                type="button"
+                className="as-energiq-button as-energiq-button--primary"
+                onClick={handleContactClick}
+              >
+                Start an EnerG IQ Tech discussion
                 <ArrowRight size={18} />
               </button>
 
@@ -383,527 +907,17 @@ function EnergIQPage({ openContactModal }) {
                 rel="noreferrer"
                 className="as-energiq-button as-energiq-button--secondary"
               >
-                Visit EnerG IQ Tech website
+                Explore EnerG IQ Tech
               </a>
             </div>
-
-            <div className="as-energiq-hero__assurance">
-              <div>
-                <Check size={16} />
-                Existing-data pilots
-              </div>
-
-              <div>
-                <Check size={16} />
-                Human-approved decisions
-              </div>
-
-              <div>
-                <Check size={16} />
-                Pilot-to-production pathway
-              </div>
-            </div>
           </div>
-
-          <EnergIQHeroVisual />
-        </div>
-      </section>
-
-      {/* Company relationship */}
-      <section className="as-energiq-intro">
-        <div className="as-energiq-container as-energiq-intro__layout">
-          <div className="as-energiq-section-heading">
-            <span className="as-energiq-section-heading__eyebrow">
-              Product and company relationship
-            </span>
-
-            <h2>EnerG IQ Tech is advancing through a separately incorporated company</h2>
-          </div>
-
-          <div className="as-energiq-intro__content">
-            <p>
-              EnerG IQ Tech was conceptualised and developed by its founder, with
-              Automation Spectrum Pty Ltd serving as the earlier business entity
-              associated with the initiative. Industry offerings such as Cold Storage AI,
-              Building AI, Warehouse &amp; Logistics AI and DER intelligence
-              are product configurations within the EnerG IQ Tech platform.
-            </p>
-
-            <p>
-              EnerG IQ Tech Pty Ltd was incorporated in October 2026 to advance the
-              platform&apos;s development, demonstration and commercialisation
-              as a separate Australian company.
-            </p>
-
-            <div className="as-energiq-intro__statement">
-              <Building2 size={19} />
-
-              <p>
-                <strong>Current company:</strong> EnerG IQ Tech Pty Ltd
-                <br />
-                <strong>Historical association:</strong> Automation Spectrum Pty Ltd
-                <br />
-                <strong>Platform:</strong> EnerG IQ Tech
-                <br />
-                <strong>Solution:</strong> The relevant industry or operational
-                configuration
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Platform capabilities */}
-      <section className="as-energiq-section as-energiq-capabilities">
-        <div className="as-energiq-container">
-          <div className="as-energiq-section-heading as-energiq-section-heading--center">
-            <span className="as-energiq-section-heading__eyebrow">
-              Platform capabilities
-            </span>
-
-            <h2>From operational data to controlled improvement</h2>
-
-            <p>
-              EnerG IQ Tech combines connected data, contextual models, AI analysis
-              and human oversight into practical operational workflows.
-            </p>
-          </div>
-
-          <div className="as-energiq-capabilities__grid">
-            {platformCapabilities.map((capability) => {
-              const Icon = capability.icon;
-
-              return (
-                <article
-                  className="as-energiq-capability-card"
-                  key={capability.title}
-                >
-                  <span className="as-energiq-capability-card__icon">
-                    <Icon size={22} />
-                  </span>
-
-                  <h3>{capability.title}</h3>
-                  <p>{capability.description}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Workflow */}
-      <section className="as-energiq-section as-energiq-workflow">
-        <div className="as-energiq-container">
-          <div className="as-energiq-section-heading as-energiq-section-heading--center">
-            <span className="as-energiq-section-heading__eyebrow">
-              Human-in-the-loop workflow
-            </span>
-
-            <h2>Detect, understand, recommend and measure</h2>
-
-            <p>
-              EnerG IQ Tech is designed to support accountable operational
-              decision-making rather than uncontrolled automation.
-            </p>
-          </div>
-
-          <div className="as-energiq-workflow__grid">
-            {workflowSteps.map((step) => {
-              const Icon = step.icon;
-
-              return (
-                <article className="as-energiq-workflow-step" key={step.number}>
-                  <div className="as-energiq-workflow-step__header">
-                    <span>{step.number}</span>
-                    <Icon size={21} />
-                  </div>
-
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
-                </article>
-              );
-            })}
-          </div>
-
-          <div className="as-energiq-workflow__summary">
-            <Workflow size={21} />
-
-            <p>
-              Detect → Digital Twin → Analyse → Simulate → Approve → Measure
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Priority industries */}
-      <section className="as-energiq-section as-energiq-industries">
-        <div className="as-energiq-container">
-          <div className="as-energiq-section-heading">
-            <span className="as-energiq-section-heading__eyebrow">
-              Initial commercial focus
-            </span>
-
-            <h2>Focused industries with measurable operational opportunities</h2>
-
-            <p>
-              EnerG IQ Tech&apos;s near-term commercial focus is on environments
-              where energy intensity, equipment performance and operational
-              complexity create a clear business case.
-            </p>
-          </div>
-
-          <div className="as-energiq-industries__grid">
-            {priorityIndustries.map((industry) => {
-              const Icon = industry.icon;
-
-              return (
-                <article
-                  className="as-energiq-industry-card"
-                  key={industry.title}
-                >
-                  <span className="as-energiq-industry-card__icon">
-                    <Icon size={25} />
-                  </span>
-
-                  <h3>{industry.title}</h3>
-                  <p>{industry.description}</p>
-
-                  <div className="as-energiq-industry-card__examples">
-                    {industry.examples.map((example) => (
-                      <div key={example}>
-                        <Check size={15} />
-                        <span>{example}</span>
-                      </div>
-                    ))}
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* DER */}
-      <section className="as-energiq-section as-energiq-der">
-        <div className="as-energiq-container as-energiq-der__layout">
-          <div className="as-energiq-der__content">
-            <span className="as-energiq-section-heading__eyebrow">
-              Strategic energy opportunity
-            </span>
-
-            <h2>Distributed energy and portfolio intelligence</h2>
-
-            <p>
-              EnerG IQ Tech&apos;s connected-energy architecture can also support
-              distributed energy resources, flexible demand, batteries, solar
-              and portfolio-level decision intelligence.
-            </p>
-
-            <p>
-              These capabilities are strategically relevant to energy
-              retailers, network operators, VPP operators, infrastructure
-              portfolios and grant-supported energy innovation programs.
-            </p>
-
-            <button
-              type="button"
-              className="as-energiq-button as-energiq-button--primary"
-              onClick={handleContactClick}
-            >
-              Discuss a DER opportunity
-              <ArrowRight size={18} />
-            </button>
-          </div>
-
-          <div className="as-energiq-der__diagram">
-            <div className="as-energiq-der__asset">
-              <Zap size={23} />
-              <span>
-                <strong>Flexible load</strong>
-                <small>Demand and operational response</small>
-              </span>
-            </div>
-
-            <div className="as-energiq-der__asset">
-              <BatteryCharging size={23} />
-              <span>
-                <strong>Battery storage</strong>
-                <small>Dispatch and optimisation</small>
-              </span>
-            </div>
-
-            <div className="as-energiq-der__asset">
-              <CloudCog size={23} />
-              <span>
-                <strong>Portfolio intelligence</strong>
-                <small>Connected visibility and coordination</small>
-              </span>
-            </div>
-
-            <div className="as-energiq-der__core">
-              <BrainCircuit size={28} />
-              <strong>EnerG IQ Tech DER Intelligence</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Connected sources */}
-      <section className="as-energiq-section as-energiq-connected">
-        <div className="as-energiq-container">
-          <div className="as-energiq-section-heading as-energiq-section-heading--center">
-            <span className="as-energiq-section-heading__eyebrow">
-              Connected operational environment
-            </span>
-
-            <h2>Designed to work with existing systems and data</h2>
-
-            <p>
-              EnerG IQ Tech can begin with available data and progressively connect
-              more operational systems as the customer moves from pilot to
-              production.
-            </p>
-          </div>
-
-          <div className="as-energiq-connected__grid">
-            {connectedSources.map((source) => {
-              const Icon = source.icon;
-
-              return (
-                <article className="as-energiq-connected-card" key={source.title}>
-                  <span className="as-energiq-connected-card__icon">
-                    <Icon size={22} />
-                  </span>
-
-                  <h3>{source.title}</h3>
-                  <p>{source.description}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Use cases */}
-      <section className="as-energiq-section as-energiq-use-cases">
-        <div className="as-energiq-container">
-          <div className="as-energiq-section-heading">
-            <span className="as-energiq-section-heading__eyebrow">
-              Example operational scenarios
-            </span>
-
-            <h2>Use cases configured around the customer environment</h2>
-
-            <p>
-              The exact workflow depends on available telemetry, operational
-              constraints, customer priorities and agreed pilot outcomes.
-            </p>
-          </div>
-
-          <div className="as-energiq-use-cases__grid">
-            {useCases.map((useCase) => {
-              const Icon = useCase.icon;
-
-              return (
-                <article className="as-energiq-use-case" key={useCase.title}>
-                  <span className="as-energiq-use-case__icon">
-                    <Icon size={22} />
-                  </span>
-
-                  <h3>{useCase.title}</h3>
-                  <p>{useCase.description}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Pilot model */}
-      <section className="as-energiq-section as-energiq-pilot">
-        <div className="as-energiq-container as-energiq-pilot__layout">
-          <div className="as-energiq-pilot__content">
-            <span className="as-energiq-section-heading__eyebrow">
-              EnerG IQ Tech pilot model
-            </span>
-
-            <h2>Begin with available data and a focused operational problem</h2>
-
-            <p>
-              An EnerG IQ Tech pilot can begin without immediately installing new
-              control hardware. Existing exports, telemetry, meter data or
-              representative information may be sufficient to validate the
-              initial use case.
-            </p>
-
-            <p>
-              Additional gateways, live integrations and control workflows can
-              be introduced when the pilot demonstrates sufficient technical
-              and commercial value.
-            </p>
-
-            <div className="as-energiq-pilot__actions">
-              <button
-                type="button"
-                className="as-energiq-button as-energiq-button--primary"
-                onClick={handleContactClick}
-              >
-                Discuss pilot suitability
-                <ArrowRight size={18} />
-              </button>
-
-              <Link
-                to="/pilot-programs"
-                className="as-energiq-button as-energiq-button--secondary"
-              >
-                View pilot process
-              </Link>
-            </div>
-          </div>
-
-          <div className="as-energiq-pilot__outcomes">
-            <span>Typical pilot outputs</span>
-
-            {pilotOutcomes.map((outcome) => (
-              <div key={outcome}>
-                <CheckCircle2 size={17} />
-                <span>{outcome}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Deployment */}
-      <section className="as-energiq-section as-energiq-deployment">
-        <div className="as-energiq-container">
-          <div className="as-energiq-section-heading as-energiq-section-heading--center">
-            <span className="as-energiq-section-heading__eyebrow">
-              Deployment architecture
-            </span>
-
-            <h2>Flexible architecture for operational environments</h2>
-
-            <p>
-              Deployment can be aligned with customer systems, data
-              requirements, latency, resilience and security expectations.
-            </p>
-          </div>
-
-          <div className="as-energiq-deployment__grid">
-            {deploymentOptions.map((option) => {
-              const Icon = option.icon;
-
-              return (
-                <article
-                  className="as-energiq-deployment-card"
-                  key={option.title}
-                >
-                  <span className="as-energiq-deployment-card__icon">
-                    <Icon size={23} />
-                  </span>
-
-                  <h3>{option.title}</h3>
-                  <p>{option.description}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Governance */}
-      <section className="as-energiq-section as-energiq-governance">
-        <div className="as-energiq-container as-energiq-governance__layout">
-          <div className="as-energiq-governance__content">
-            <span className="as-energiq-section-heading__eyebrow">
-              Operational trust
-            </span>
-
-            <h2>Designed to assist operational teams, not bypass them</h2>
-
-            <p>
-              EnerG IQ Tech can provide recommendations, simulations and evidence
-              while leaving critical operational decisions with authorised
-              users.
-            </p>
-
-            <p>
-              Approval records, recommendations and outcomes can be retained to
-              support auditability, learning and continuous improvement.
-            </p>
-          </div>
-
-          <div className="as-energiq-governance__cards">
-            <article>
-              <ShieldCheck size={23} />
-              <h3>Human approval</h3>
-              <p>Consequential actions remain controlled by authorised users.</p>
-            </article>
-
-            <article>
-              <Database size={23} />
-              <h3>Evidence and context</h3>
-              <p>Recommendations can include operational data and reasoning.</p>
-            </article>
-
-            <article>
-              <Activity size={23} />
-              <h3>Outcome tracking</h3>
-              <p>Applied actions and resulting performance can be reviewed.</p>
-            </article>
-
-            <article>
-              <Network size={23} />
-              <h3>Progressive integration</h3>
-              <p>Automation can increase only when the customer is ready.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="as-energiq-cta">
-        <div className="as-energiq-cta__glow" />
-
-        <div className="as-energiq-container as-energiq-cta__content">
-          <div>
-            <span className="as-energiq-section-heading__eyebrow">
-              Explore EnerG IQ Tech
-            </span>
-
-            <h2>
-              Bring us an energy-intensive operational problem worth solving.
-            </h2>
-
-            <p>
-              For current EnerG IQ Tech enquiries and pilot opportunities, visit the
-              EnerG IQ Tech website to connect with the separately incorporated company.
-            </p>
-          </div>
-
-          <div className="as-energiq-cta__actions">
-            <button
-              type="button"
-              className="as-energiq-button as-energiq-button--primary"
-              onClick={handleContactClick}
-            >
-              Start an EnerG IQ Tech discussion
-              <ArrowRight size={18} />
-            </button>
-
-            <a
-              href="https://energiqtech.com"
-              target="_blank"
-              rel="noreferrer"
-              className="as-energiq-button as-energiq-button--secondary"
-            >
-              Explore EnerG IQ Tech
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    
+    
+    
+    </>
+    
   );
 }
 

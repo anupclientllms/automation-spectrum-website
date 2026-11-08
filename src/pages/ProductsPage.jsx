@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 
 import "../styles/products.css";
+import SEO from "./SEO";
 
 const products = [
   {

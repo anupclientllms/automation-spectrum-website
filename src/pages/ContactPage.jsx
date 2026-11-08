@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ChevronRight } from "lucide-react";
 import "../styles/contactmodal.css";
+import SEO from "./SEO";
 
 export default function ContactModal({ isOpen, onClose }) {
   const [submitted, setSubmitted] = useState(false);
@@ -31,52 +32,65 @@ export default function ContactModal({ isOpen, onClose }) {
   };
 
   return (
-    <div className="modalOverlay" onClick={onClose}>
-      <div className="pilotModal" onClick={(e) => e.stopPropagation()}>
-        <button className="modalClose" onClick={onClose} type="button">
-          ×
-        </button>
+    <>
+    
+      <SEO
+        title="Contact Automation Spectrum | AI Consulting & Software Development"
+        description="Contact Automation Spectrum in Melbourne to discuss AI consulting, generative AI, business automation, custom software development and enterprise AI solutions."
+        path="/contact"
+      />
 
-        {!submitted ? (
-          <>
-            <div className="modalBadge">Pilot Program Open</div>
+      <div className="modalOverlay" onClick={onClose}>
+        <div className="pilotModal" onClick={(e) => e.stopPropagation()}>
+          <button className="modalClose" onClick={onClose} type="button">
+            × 
+          </button>
 
-            <h2>Start a pilot discussion</h2>
+          {!submitted ? (
+            <>
+              <div className="modalBadge">Pilot Program Open</div>
 
-            <p>
-              We’re onboarding early pilot partners to validate measurable energy
-              savings, demand optimisation, carbon impact and ROI across buildings
-              and connected energy assets.
-            </p>
+              <h2>Start a pilot discussion</h2>
 
-            <form onSubmit={handlePilotSubmit} className="pilotForm">
-              <input type="hidden" name="to_email" value="anup.clientllms@gmail.com" />
+              <p>
+                We’re onboarding early pilot partners to validate measurable energy
+                savings, demand optimisation, carbon impact and ROI across buildings
+                and connected energy assets.
+              </p>
 
-              <input name="name" placeholder="Name" required />
-              <input name="email" type="email" placeholder="Work Email" required />
-              <input name="organisation" placeholder="Organisation" required />
-              <textarea
-                name="message"
-                placeholder="Use case / site type / connected assets e.g. BMS, Solar PV, Battery, EV Charging, Smart Meters"
-              />
+              <form onSubmit={handlePilotSubmit} className="pilotForm">
+                <input type="hidden" name="to_email" value="anup.clientllms@gmail.com" />
 
-              <button type="submit" className="primary modalSubmit" disabled={sending}>
-                {sending ? "Sending..." : "Request Pilot Discussion"}
-                {!sending && <ChevronRight size={18} />}
+                <input name="name" placeholder="Name" required />
+                <input name="email" type="email" placeholder="Work Email" required />
+                <input name="organisation" placeholder="Organisation" required />
+                <textarea
+                  name="message"
+                  placeholder="Use case / site type / connected assets e.g. BMS, Solar PV, Battery, EV Charging, Smart Meters"
+                />
+
+                <button type="submit" className="primary modalSubmit" disabled={sending}>
+                  {sending ? "Sending..." : "Request Pilot Discussion"}
+                  {!sending && <ChevronRight size={18} />}
+                </button>
+              </form>
+            </>
+          ) : (
+            <div className="successBox">
+              <div className="modalBadge">Request Received</div>
+              <h2>Thanks — we’ll get back within 24 hours.</h2>
+              <p>Your pilot discussion request has been sent to EnerG IQ Tech.</p>
+              <button className="primary modalSubmit" onClick={onClose}>
+                Close
               </button>
-            </form>
-          </>
-        ) : (
-          <div className="successBox">
-            <div className="modalBadge">Request Received</div>
-            <h2>Thanks — we’ll get back within 24 hours.</h2>
-            <p>Your pilot discussion request has been sent to EnerG IQ Tech.</p>
-            <button className="primary modalSubmit" onClick={onClose}>
-              Close
-            </button>
-          </div>
-        )}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+      
+    
+    
+    </>
+    
   );
 }
